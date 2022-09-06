@@ -1,0 +1,1583 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+
+        <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Докуметация к проекту</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="img/favicon/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+
+<link rel="stylesheet" href="lib/bootstrap-4.6.1/dist/css/bootstrap.min.css" media="all">
+
+<link rel="stylesheet" href="lib/icomoon-v1.0/style.css" media="all">
+<link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css" media="all">
+<link rel="stylesheet" href="lib/range-slider/css/rSlider.min.css" media="all">
+
+
+<link rel="stylesheet" href="css/style.css" media="all">
+
+
+<link rel="preload" as="font" href="fonts/Arial/Arial-Regular.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="fonts/Arial/Arial-Bold.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="fonts/DINPro/DINPro-Medium.woff" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="fonts/DINPro/DINPro-Bold.woff" type="font/woff2" crossorigin>
+
+    </head>
+    <body class="body">
+        
+        <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            
+            <div class="header__drop-action-mobile">
+                <div class="header-stretch">
+                    <a class="menu-icon" data-toggle="collapse" href="#collapse-drop-menu" role="button" aria-expanded="false" aria-controls="collapse-drop-menu" aria-label="Открыть форму поиска">
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__logo">
+                <a class="d-inline-block py-2" href="/" aria-label="АО Ардатовский светотехнический завод">
+                    <img width="234" height="47" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/common/logo.svg" alt="АО Ардатовский светотехнический завод">
+                </a>
+            </div>
+
+            <div class="header__menu">
+                <nav class="header-menu header-stretch" aria-label="Главное меню">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item text-red">
+                            <a href="#" class="header-menu__link">Продукция</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Применение</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Скачать</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Где купить</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="header__search">
+                <div class="header-search header-stretch">
+                    <div class="migrate-search-desctop" id="js-migrate-search-desctop">
+                        <div id="js-migrate-search-target">
+    
+                            <div id="js-header-search-wrapper" class="lh-1">
+                                <form action="ACTION" method="get">
+                                    <div class="header-search__input-group" id="js-header-search-target">
+                                        <div class="input-group">
+                                            <input class="header-search__input form-control" id="site-search" type="search" name="q" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+                                            <div class="input-group-append">
+                                                <button class="header-search__button btn btn-red" type="button">Поиск</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void(0)" class="header-search__label m-0" id="js-header-search-action">
+                                        <span class="header-search__action header-search__action_open icon-search fz-20 lh-1 align-middle" id="js-header-search-open"></span>
+                                        <span class="header-search__action header-search__action_close icon-cross-thin fz-20 lh-1 align-middle" id="js-header-search-close"></span>
+                                    </a>
+                                </form>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header__phone">
+                <div class="header-stretch">
+                    <span class="d-lg-none mr-10">Телефон:</span>
+                    <a class="ff-dinpro fz-19 fw-700 text-nowrap" href="tel:88005509112">
+                        8 800 550 9112
+                    </a>
+                </div>
+            </div>
+    
+            <div class="header__drop-action">
+                <div class="header-stretch">
+                    <a class="header-collapse-action" data-toggle="collapse" href="#collapse-drop-menu" role="button" aria-expanded="false" aria-controls="collapse-drop-menu" aria-label="Дополнительное меню">
+                        <span class="icon-menu d-none d-lg-inline-block fz-25 lh-1 align-middle"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__search-action-mobile">
+                <div class="header-stretch">
+                    <a class="header-collapse-action" data-toggle="collapse" href="#collapse-search" role="button" aria-expanded="false" aria-controls="collapse-search" aria-label="Открыть форму поиска">
+                        <span class="icon-search fz-20 lh-1 align-middle"></span>
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="header__drop">
+
+        <div class="collapse hide" id="collapse-search">
+            <div class="container">
+                <div id="js-migrate-search-mobile">
+    
+                </div>
+            </div>
+        </div>
+        <div class="collapse collapse-drop-menu" id="collapse-drop-menu" aria-label="Меню пользователя">
+            <div class="header-drop scrollbar">
+
+                <a class="header-drop__close" data-toggle="collapse" href="#collapse-drop-menu" role="button" aria-expanded="false" aria-controls="collapse-drop-menu" aria-label="Закрыть дополнительное меню">
+                    <span class="icon-close fz-30 lh-1 align-middle"></span>
+                </a>
+
+
+                <div class="header-drop__inner">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="header-drop__menu">
+                                <li>
+                                    <a class="text-red" href="#">Продукция</a>
+                                </li>
+                                <li>
+                                    <a href="#">Применение</a>
+                                </li>
+                                <li>
+                                    <a href="#">Скачать</a>
+                                </li>
+                                <li>
+                                    <a href="#">Где купить</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="header-drop__company mb-30 mb-sm-0">
+                                <div class="header-drop__company-title">
+                                    Компания
+                                </div>
+                                <div class="header-drop__company-address">
+                                    431890, Республика Мордовия, <br>
+                                    Ардатовский район, р.п. Тургенево, <br>
+                                    ул. Заводская, 73
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                
+                            <div class="mb-20 d-inline-block">
+                                <a class="header-drop__button collapse-action" data-toggle="collapse" href="#collapse-lang" role="button" aria-expanded="false" aria-controls="collapse-lang">
+                                    <div>
+                                        <img class="mr-20" width="33" height="22" src="img/common/lang-ru.svg" alt="Русский язык"><strong class="mr-15">Русский</strong><span class="collapse-caret icon-chevron-bold"></span>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="collapse-lang">
+                                    <a href="#" class="header-drop__button mt-5">
+                                        <div>
+                                            <img class="mr-20" width="33" height="22" src="img/common/lang-en.svg" alt="English language"><strong class="mr-20">English</strong>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-35 mb-md-85">
+                                <a href="#" class="">
+                                    <div class="header-drop__button">
+                                        <img class="mr-20" width="33" height="22" src="img/common/user.svg" alt="English language"><strong class="mr-20">Регистрация</strong>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="header-social d-flex align-items-center mb-25 mb-md-90">
+                                <a class="header-social__item" href="#">
+                                    <span class="icon-telegram"></span>
+                                </a>
+                                <a class="header-social__item" href="#">
+                                    <span class="icon-vkontakte"></span>
+                                </a>
+                                <a class="header-social__item" href="#">
+                                    <span class="icon-facebook"></span>
+                                </a>
+                                <a class="header-social__item" href="#">
+                                    <span class="icon-instagram"></span>
+                                </a>
+                            </div>
+
+                            <div class="mb-5">
+                                <a class="header-drop__email" href="mailto:mirsveta@astz.ru">mirsveta@astz.ru</a>
+                            </div>
+                            <div>
+                                <a class="header-drop__phone" href="tel:88005509112">8 800 550 9112</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</header>
+    
+        <main class="main">
+
+
+            <div class="container">
+                <h1 class="text-center text-uppercase fz-36 fw-700 pt-80 mb-60">
+                    Докуметация к проекту
+                </h1>
+
+                <h2 class="mb-20">UI-KIT:</h2>
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <h3>
+                            Элементы форм
+                        </h3>
+                        <div class="mb-30">
+                            <h4>
+                                Buttons
+                            </h4>
+                            <p class="typography">
+                                Здесь приведены только те наборы классов кнопок Bootstrap, которые используются на сайте.
+                            </p>
+                            
+                            <h4 class="fz-18">normal</h4>
+                            <div class="mb-10">
+                                <a href="javascript:void(0)" class="btn btn-red">btn btn-red</a>
+                            </div>
+                            <div class="mb-10">
+                                <a href="javascript:void(0)" class="btn btn-blue-dark">btn btn-blue-dark</a>
+                            </div>
+                            <div class="mb-10">
+                                <a href="javascript:void(0)" class="btn btn-outline-blue-dark">btn btn-outline-blue-dark</a>
+                            </div>
+                            <div class="d-inline-block mb-10 p-10 lazyload bgi-cover" data-bg="img/_content/home/p5.jpg">
+                                <a href="javascript:void(0)" class="btn btn-outline-light">btn btn-outline-light</a>
+                            </div>
+
+                            <h4 class="fz-18">small</h4>
+                            <div class="mb-10">
+                                <a href="javascript:void(0)" class="btn btn-sm btn-red">btn btn-sm btn-red</a>
+                            </div>
+                            <div class="mb-10">
+                                <a href="javascript:void(0)" class="btn btn-sm btn-blue-dark">btn btn-sm btn-blue-dark</a>
+                            </div>
+                            <div class="mb-10">
+                                <a href="javascript:void(0)" class="btn btn-sm btn-outline-blue-dark">btn btn-sm btn-outline-blue-dark</a>
+                            </div>
+                            <div class="d-inline-block mb-10 p-10 lazyload bgi-cover" data-bg="img/_content/home/p5.jpg">
+                                <a href="javascript:void(0)" class="btn btn-sm btn-outline-light">btn btn-sm btn-outline-light</a>
+                            </div>
+
+                            <h4 class="fz-18">large</h4>
+                            <div class="mb-10">
+                                <a href="javascript:void(0)" class="btn btn-lg btn-red">btn btn-lg btn-red</a>
+                            </div>
+                            <div class="mb-10">
+                                <a href="javascript:void(0)" class="btn btn-lg btn-blue-dark">btn btn-lg btn-blue-dark</a>
+                            </div>
+                            <div class="mb-10">
+                                <a href="javascript:void(0)" class="btn btn-lg btn-outline-blue-dark">btn btn-lg btn-outline-blue-dark</a>
+                            </div>
+                            <div class="d-inline-block mb-10 p-10 lazyload bgi-cover" data-bg="img/_content/home/p5.jpg">
+                                <a href="javascript:void(0)" class="btn btn-lg btn-outline-light">btn btn-lg btn-outline-light</a>
+                            </div>
+
+
+                            <h4 class="fz-18">min width</h4>
+                            <div class="mb-10">
+                                <a href="javascript:void(0)" class="btn btn-sm btn-mw btn-red">btn-mw</a>
+                            </div>
+                            <div class="mb-10">
+                                <a href="javascript:void(0)" class="btn btn-mw btn-red">btn-mw</a>
+                            </div>
+                            <div class="mb-10">
+                                <a href="javascript:void(0)" class="btn btn-lg btn-mw btn-red">btn-mw</a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="mb-30">
+                            <h4>Custom checkbox</h4>
+
+                            <h5>По умолчанию</h5>
+                            <div class="custom-control custom-checkbox mb-20">
+                                <input type="checkbox" checked class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">custom-control custom-checkbox</label>
+                            </div>
+
+                            <h5>Красные</h5>
+                            <div class="custom-control custom-control-red custom-checkbox mb-20">
+                                <input type="checkbox" checked class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">custom-control custom-control-red custom-checkbox</label>
+                            </div>
+
+                            <h5>Синие</h5>
+                            <div class="custom-control custom-control-blue-dark custom-checkbox mb-20">
+                                <input type="checkbox" checked class="custom-control-input" id="customCheck3">
+                                <label class="custom-control-label" for="customCheck3">custom-control custom-control-blue-dark custom-checkbox</label>
+                            </div>
+
+                            <h5>Специальные</h5>
+                            <div class="custom-control custom-checkbox round-checkbox mb-20">
+                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                <label class="custom-control-label" for="customCheck4">Фотометрия ies</label>
+                                <!-- <label class="custom-control-label" for="customCheck4">custom-control custom-checkbox round-checkbox</label> -->
+                            </div>
+                        </div>
+    
+                        <div class="mb-30">
+                            <h4>Custom radio</h4>
+
+                            <h5>По умолчанию</h5>
+                            <div class="custom-control custom-radio mb-20">
+                                <input checked type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio1">custom-control custom-radio</label>
+                            </div>
+                            <div class="custom-control custom-radio mb-20">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">custom-control custom-radio</label>
+                            </div>
+
+                            <h5>Красные</h5>
+                            <div class="custom-control custom-control-red custom-radio mb-20">
+                                <input checked type="radio" id="customRadio21" name="customRadio2" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio21">custom-control custom-control-red custom-radio</label>
+                            </div>
+                            <div class="custom-control custom-control-red custom-radio mb-20">
+                                <input type="radio" id="customRadio22" name="customRadio2" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio22">custom-control custom-control-red custom-radio</label>
+                            </div>
+
+                            <h5>Синие</h5>
+                            <div class="custom-control custom-control-blue-dark custom-radio mb-20">
+                                <input checked type="radio" id="customRadio31" name="customRadio3" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio31">custom-control custom-control-blue-dark custom-radio</label>
+                            </div>
+                            <div class="custom-control custom-control-blue-dark custom-radio mb-20">
+                                <input type="radio" id="customRadio32" name="customRadio3" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio32">custom-control custom-control-blue-dark custom-radio</label>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-30">
+                            <h4>form-control</h4>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="mb-20">
+                                        <h5>small</h5>
+                                        <input class="form-control form-control-sm" type="text" placeholder="form-control form-control-sm">
+                                    </div>
+                                    <div class="mb-20">
+                                        <h5>normal</h5>
+                                        <input class="form-control" type="text" placeholder="form-control">
+                                    </div>
+                                    <div class="mb-20">
+                                        <h5>large</h5>
+                                        <input class="form-control form-control-lg" type="text" placeholder="form-control form-control-lg">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-50">
+                            <h4>lib-select</h4>
+                            <p>на основе js библиотеки <a class="text-red" href="https://github.com/xi/select">https://github.com/xi/select</a></p>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="mb-20">
+                                        <h5>small</h5>
+                                        <div class="lib-select lib-select-sm">
+                                            <select class="js-lib-select">
+                                                <option selected>lib-select lib-select-sm > js-lib-select</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-20">
+                                        <h5>normal</h5>
+                                        <div class="lib-select">
+                                            <select class="js-lib-select">
+                                                <option selected>lib-select > js-lib-select</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-20">
+                                        <h5>large</h5>
+                                        <div class="lib-select lib-select-lg mb-3">
+                                            <select class="js-lib-select">
+                                                <option selected>lib-select lib-select-lg > js-lib-select</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card card-body mb-30 bg-light filter">
+                            <h3>filter</h3>
+                            <p>Оберните представленные выше поля ввода в контейнер с классом ".filter", для того чтобы привести их в следующий вид:</p>
+
+                            <div class="mb-30">
+                                <h4>Custom checkbox</h4>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" checked class="custom-control-input" id="f-customCheck1">
+                                            <label class="custom-control-label" for="f-customCheck1">custom-control</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-30">
+                                <h4>Custom radio</h4>
+                                <div class="custom-control custom-radio mb-20">
+                                    <input checked type="radio" id="f-customRadio1" name="f-customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="f-customRadio1">Toggle this custom radio</label>
+                                </div>
+                                <div class="custom-control custom-radio mb-20">
+                                    <input type="radio" id="f-customRadio2" name="f-customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="f-customRadio2">Or toggle this other custom radio</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-30">
+                                <h4>form-control</h4>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <input class="form-control" type="text" placeholder="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-30">
+                                <h4>lib-select</h4>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="mb-20">
+                                            <div class="lib-select">
+                                                <select class="js-lib-select">
+                                                    <option selected>lib-select > js-lib-select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-30">
+                                <h4>range-slider</h4>
+                                <p>
+                                    Дополнительно, в фильтре может присутствовать range-slider. <br> 
+                                    На основе js библиотеки <a class="text-red" href="https://slawomir-zaziablo.github.io/range-slider/">https://slawomir-zaziablo.github.io/range-slider/</a>
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="range-slider">
+                                            <div class="form-group">
+                                                <!-- <label for="light-flow">Световой поток, Лм</label> -->
+                                                <div class="row no-gutters mb-20">
+                                                    <div class="col">
+                                                        <label class="range-slider__label" for="f-light-flow-from">от</label>
+                                                        <input class="range-slider__input form-control form-control-sm js-range-slider-from" id="f-light-flow-from" type="text" placeholder="">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="col">
+                                                        <label class="range-slider__label" for="f-light-flow-to">до</label>
+                                                        <input class="range-slider__input form-control form-control-sm js-range-slider-to" id="f-light-flow-to" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <!-- 
+                                                    Задаем макс и мин значения с помощью data- аттрибутов. 
+                                                    Значение from не должно быть меньше min. 
+                                                    Значение to не должно быть больше max.
+                                                -->
+                                                <input 
+                                                    class="js-range-slider" 
+                                                    type="text" 
+                                                    id="f-light-flow"
+                                                    data-min="0"
+                                                    data-max="10"
+                                                    data-from="2"
+                                                    data-to="9"
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card card-body bg-light filter filter_red">
+                            <h3>filter_red</h3>
+                            <p>Оберните представленные выше поля ввода в контейнер с классом ".filter.filter_red", для того чтобы привести их в следующий вид:</p>
+                        
+                            <div class="mb-30">
+                                <h4>Custom checkbox</h4>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" checked class="custom-control-input" id="fr-customCheck1">
+                                            <label class="custom-control-label" for="fr-customCheck1">custom-control</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="mb-30">
+                                <h4>Custom radio</h4>
+                                <div class="custom-control custom-radio mb-20">
+                                    <input checked type="radio" id="fr-customRadio1" name="fr-customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="fr-customRadio1">Toggle this custom radio</label>
+                                </div>
+                                <div class="custom-control custom-radio mb-20">
+                                    <input type="radio" id="fr-customRadio2" name="fr-customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="fr-customRadio2">Or toggle this other custom radio</label>
+                                </div>
+                            </div>
+                        
+                            <div class="mb-30">
+                                <h4>form-control</h4>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <input class="form-control" type="text" placeholder="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-30">
+                                <h4>lib-select</h4>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="mb-20">
+                                            <div class="lib-select">
+                                                <select class="js-lib-select">
+                                                    <option selected>lib-select > js-lib-select</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-30">
+                                <h4>range-slider</h4>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="range-slider">
+                                            <div class="form-group">
+                                                <!-- <label for="light-flow">Световой поток, Лм</label> -->
+                                                <div class="row no-gutters mb-20">
+                                                    <div class="col">
+                                                        <label class="range-slider__label" for="fr-light-flow-from">от</label>
+                                                        <input class="range-slider__input form-control form-control-sm js-range-slider-from" id="fr-light-flow-from" type="text" placeholder="">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        &nbsp;
+                                                    </div>
+                                                    <div class="col">
+                                                        <label class="range-slider__label" for="fr-light-flow-to">до</label>
+                                                        <input class="range-slider__input form-control form-control-sm js-range-slider-to" id="fr-light-flow-to" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <!-- 
+                                                    Задаем макс и мин значения с помощью data- аттрибутов. 
+                                                    Значение from не должно быть меньше min. 
+                                                    Значение to не должно быть больше max.
+                                                -->
+                                                <input 
+                                                    class="js-range-slider" 
+                                                    type="text" 
+                                                    id="fr-light-flow"
+                                                    data-min="0"
+                                                    data-max="10"
+                                                    data-from="2"
+                                                    data-to="9"
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+
+
+                    </div>
+                </div>
+
+
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <h3>
+                            Show more
+                        </h3>
+                        <div class="d-flex align-items-center">
+                            <div class="flex-grow-1 border-bottom"></div>
+                            <div>
+                                <a href="javascript:void(0)" class="btn btn-link btn-sm">
+                                    <span class="mr-20">Доп. свойства фильтра</span><span class="icon-chevron-bold rotate-90 align-middle"></span> 
+                                </a>
+                                <!-- <a class="collapse-action btn btn-link btn-sm" data-toggle="collapse" href="#collapse-additional-params" role="button" aria-expanded="false" aria-controls="collapse-params">
+                                    <span class="mr-20">Доп. свойства фильтра</span><span class="collapse-caret icon-chevron-bold"></span> 
+                                </a> -->
+                            </div>
+                            <div class="flex-grow-1 border-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <h3>
+                            tabs
+                        </h3>
+                        <p>Оберните стандартные Bootstrap табы в контейнер с классом ".tabs", для того чтобы привести их в следующий вид: </p>
+
+                        <div class="tabs">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        id="basic-tab"
+                                        data-toggle="tab"
+                                        href="#basic"
+                                        role="tab"
+                                        aria-controls="basic"
+                                        aria-selected="true"
+                                    >
+                                        Базовые модели
+                                        <span class="tabs__amount">124</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="driven-tab"
+                                        data-toggle="tab"
+                                        href="#driven"
+                                        role="tab"
+                                        aria-controls="driven"
+                                        aria-selected="false"
+                                    >
+                                        Управляемые
+                                        <span class="tabs__amount">10</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="emergency-supply-tab"
+                                        data-toggle="tab"
+                                        href="#emergency-supply"
+                                        role="tab"
+                                        aria-controls="emergency-supply"
+                                        aria-selected="false"
+                                    >
+                                        С блоком аварийного питания (БАП)
+                                        <span class="tabs__amount">10</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="archival-tab"
+                                        data-toggle="tab"
+                                        href="#archival"
+                                        role="tab"
+                                        aria-controls="archival"
+                                        aria-selected="false"
+                                    >
+                                        Архивные
+                                        <span class="tabs__amount">10</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        id="accessories-tab"
+                                        data-toggle="tab"
+                                        href="#accessories"
+                                        role="tab"
+                                        aria-controls="accessories"
+                                        aria-selected="false"
+                                    >
+                                        Аксессуары
+                                        <span class="tabs__amount">105</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div
+                                    class="tab-pane fade show active"
+                                    id="basic"
+                                    role="tabpanel"
+                                    aria-labelledby="basic-tab"
+                                >
+                                    <div class="bg-grey-light py-20 px-30 mt-30">
+                                        Базовые модели
+                                    </div>
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="driven"
+                                    role="tabpanel"
+                                    aria-labelledby="driven-tab"
+                                >
+                                    <div class="bg-grey-light py-20 px-30 mt-30">
+                                        Управляемые
+                                    </div>
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="emergency-supply"
+                                    role="tabpanel"
+                                    aria-labelledby="emergency-supply-tab"
+                                >
+                                    <div class="bg-grey-light py-20 px-30 mt-30">
+                                         С блоком аварийного питания (БАП)
+                                    </div>
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="archival"
+                                    role="tabpanel"
+                                    aria-labelledby="archival-tab"
+                                >
+                                    <div class="bg-grey-light py-20 px-30 mt-30">
+                                        Архивные
+                                    </div>
+                                </div>
+                                <div
+                                    class="tab-pane fade"
+                                    id="accessories"
+                                    role="tabpanel"
+                                    aria-labelledby="accessories-tab"
+                                >
+                                    <div class="bg-grey-light py-20 px-30 mt-30">
+                                        Аксессуары
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <h3>
+                            collapse
+                        </h3>
+                        
+                        <div class="mb-30">
+                            <a class="collapse-action text-uppercase ff-dinpro fw-700 fz-16 fz-lg-18" data-toggle="collapse" href="#collapse-params" role="button" aria-expanded="true" aria-controls="collapse-params">
+                                <span class="mr-20">collapse-action</span><span class="collapse-caret icon-chevron-bold"></span> 
+                            </a>
+                            <div class="collapse show" id="collapse-params">
+                                <div class="bg-grey-light py-20 px-30 mt-30">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, cupiditate soluta. Repudiandae, illo, unde praesentium, laudantium consequatur voluptate quo aut autem ut cumque amet ea cupiditate maiores quaerat laborum dignissimos.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1 border-bottom"></div>
+                                <div>
+                                    <a class="collapse-action btn btn-link btn-sm" data-toggle="collapse" href="#collapse-additional-params" role="button" aria-expanded="false" aria-controls="collapse-additional-params">
+                                        <span class="mr-20">Доп. свойства фильтра</span><span class="collapse-caret icon-chevron-bold"></span> 
+                                    </a>
+                                </div>
+                                <div class="flex-grow-1 border-bottom"></div>
+                            </div>
+                            <div class="collapse" id="collapse-additional-params">
+                                <div class="bg-grey-light py-20 px-30 mt-30">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, cupiditate soluta. Repudiandae, illo, unde praesentium, laudantium consequatur voluptate quo aut autem ut cumque amet ea cupiditate maiores quaerat laborum dignissimos.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h2 class="mb-20">Типографика:</h2>
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <div class="mb-30">
+                            Типографика необходима для тех случаев, где разметка контента вставляется из WYSIWYG редактора. 
+                            <br>
+                            Стили применяются напрямую к HTML селекторам, без применения CSS классов. <br> 
+                            Вывод контента сформированного с помощью WYSIWYG редактора, нужно обернуть в блок с классом .typography
+                        </div>
+
+                        <div class="typography mb-20">
+                            <hr>
+                            <h4>Заголовки:</h4>
+            
+                            <h1>Header 1</h1>
+                            <h2>Header 2</h2>
+                            <h3>Header 3</h3>
+                            <h4>Header 4</h4>
+                            <h5>Header 5</h5>
+                            <h6>Header 6</h6>
+            
+                            <hr>
+                            <h4>Параграф:</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex, sunt accusantium cumque eum doloremque beatae nihil voluptate</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet soluta numquam, distinctio consequatur ad tempora similique ipsum repudiandae ipsam magni temporibus nobis, suscipit. Nulla, quidem ipsum ipsam cumque dolorem eligendi!</p>
+                            
+                            <hr>
+                            <h4>Форматирование текста:</h4>
+                            <p><strong>strong text</strong></p>
+                            <p><i>italic text</i></p>
+                            <p><mark>marked text</mark></p>
+                            <p><del>crossed out text</del></p>
+                            
+                            <hr>
+                            
+                            <h4>Ссылка:</h4>
+                            <a href="#">Go to main page</a>
+                            
+                            <hr>
+                            <h4>Маркированные списки:</h4>
+                            <ul>
+                                <li>marker list</li>
+                                <li>marker list</li>
+                                <li>marker list</li>
+                            </ul>
+                            
+                            <hr>
+                            <h4>Нумерованные списки:</h4>
+                            <ol>
+                                <li>number list</li>
+                                <li>number list</li>
+                                <li>number list</li>
+                            </ol>
+                            
+                            <hr>
+                            <h4>Цитаты (blockquote):</h4>
+                            <blockquote>
+                                <p>
+                                    Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just saw something. It seemed obvious to them after a while. That's because they were able to connect experiences they've had and synthesize new things.
+                                </p>
+                                <p>
+                                    <strong>Steve Jobs</strong>
+                                </p>
+                            </blockquote>
+                            
+                            <hr>
+                            <h4>Таблица:</h4>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>heading</th>
+                                        <th colspan="2">heading</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>content</td>
+                                        <td>content</td>
+                                        <td>content</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            
+                            <br>
+                            <br>
+                            
+                            <hr>
+                            <h4>Изображение:</h4>
+                            <img src="https://dummyimage.com/1500x500/bbaadd/fff" alt="">
+                            
+                            
+                            <br>
+                            <br>
+                            
+                            <h4>Figure:</h4>
+                            
+                            <figure class="">
+                                <img src="https://dummyimage.com/1500x500/bbaadd/fff" alt="">
+                                <figcaption>Рис. 1 подпись к изображению</figcaption>
+                            </figure>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+                <h2 class="mb-20">Хелперы:</h2>
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <div>
+                            <div class="typography">
+                                <h3>Управление текстом</h3>
+                                
+                                <h4>Семейство шрифтов</h4>
+                                <div class="ff-dinpro">ff-dinpro - установит шрифт DINPro</div>
+                                <div class="ff-arial">ff-arial - установит шрифт Arial</div>
+                                
+                                <h4>Жирность начертания шрифта</h4>
+                                Доступны следующие комбинации семейств и начертаний:
+                                <h5 class="mt-20">DINPro</h5>
+                                <div class="ff-dinpro fw-500">ff-dinpro fw-500</div>
+                                <div class="ff-dinpro fw-700">ff-dinpro fw-700</div>
+                                
+                                <h5>Arial</h5>
+                                <div class="ff-arial fw-400">ff-arial fw-400</div>
+                                <div class="ff-arial fw-700">ff-arial fw-700</div>
+    
+                                <h4>Размер шрифта</h4>
+    
+                                <div class="fz-12">fz-12</div>
+                                <div class="fz-14">fz-14</div>
+                                <div class="fz-15">fz-15</div>
+                                <div class="fz-16">fz-16</div>
+                                <div class="fz-18">fz-18</div>
+                                <div class="fz-20">fz-20</div>
+                                <div class="fz-25">fz-25</div>
+                                <div class="fz-30">fz-30</div>
+                                <div class="fz-36">fz-36</div>
+                                <div class="fz-40">fz-40</div>
+                            </div>
+
+            
+                            <p class="typography">
+                                Размер шрифта можно менять в зависимости от размеров экрана по аналогии с отзывчивыми классами bootstrap <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/">https://getbootstrap.com/docs/4.0/utilities/spacing/</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <h3>
+                            Очистка списков
+                        </h3>
+                        <p class="text-title">Обычный список:</p>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul>
+                        <p class="text-title">Список с классом .ul-clean:</p>
+                        <ul class="ul-clean">
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>item 3</li>
+                        </ul>
+
+                    </div>
+                </div> 
+                
+                
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <h3>
+                            Вращение
+                        </h3>
+                        <p>
+                            Как можно было заметить, все иконки стрелок направлены в правую сторону. <br>
+                            чтобы их развернуть используйте класс rotate-[90, n90, 180]
+                        </p>
+                        <p>
+                            Примеры: <br>
+                            <div><span class="icon-chevron-bold"></span> .icon-chevron-bold</div>
+                            <div><span class="icon-chevron-bold rotate-90"></span> .icon-chevron-bold .rotate-90 (повернуть на 90<sup>o</sup>)</div>
+                            <div><span class="icon-chevron-bold rotate-n90"></span> .icon-chevron-bold .rotate-n90 (повернуть на -90<sup>o</sup>)</div>
+                            <div><span class="icon-chevron-bold rotate-180"></span> .icon-chevron-bold .rotate-180 (повернуть на 180<sup>o</sup>)</div>
+                        </p>
+                        <p>
+                            Если добавить класс .rotate-transition вращение при динамической смене класса будет происходить с плавной анимацией. 
+                            <br>
+                            <br>
+                            <button onclick="jQuery(this).toggleClass('rotate-180')" class="btn btn-red rotate-transition"><span>Нажми меня</span></button>
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <h3 class="mb-30">
+                            scrollbar
+                        </h3>
+                        <p>
+                            Класс .scrollbar добавляет кастомный скроллбар для блоков со свойством overflow: auto;
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="border overflow-auto scrollbar" style="height: 200px;">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur explicabo reiciendis dolores saepe similique minima sit dolorum repellendus corrupti dolore maiores voluptates labore illo, molestiae beatae, ipsum eius. Ab, maxime!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur explicabo reiciendis dolores saepe similique minima sit dolorum repellendus corrupti dolore maiores voluptates labore illo, molestiae beatae, ipsum eius. Ab, maxime!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur explicabo reiciendis dolores saepe similique minima sit dolorum repellendus corrupti dolore maiores voluptates labore illo, molestiae beatae, ipsum eius. Ab, maxime!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur explicabo reiciendis dolores saepe similique minima sit dolorum repellendus corrupti dolore maiores voluptates labore illo, molestiae beatae, ipsum eius. Ab, maxime!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur explicabo reiciendis dolores saepe similique minima sit dolorum repellendus corrupti dolore maiores voluptates labore illo, molestiae beatae, ipsum eius. Ab, maxime!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <h3 class="mb-30">
+                            обрезка текста
+                        </h3>
+                        <h4>
+                            text-truncate-[2,3,4]
+                        </h4>
+                        <p>Устанавливает максимальную высоту блока на соответствующее количество строк, и не дает тексту выходить за его пределы</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                text-truncate-2
+                                <div class="border text-truncate-2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, omnis. Totam fuga, tenetur eligendi ipsa, quasi ea doloremque autem maxime possimus dolorum rem error harum perferendis alias quia, similique perspiciatis.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                .text-truncate-3
+                                <div class="border text-truncate-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, omnis. Totam fuga, tenetur eligendi ipsa, quasi ea doloremque autem maxime possimus dolorum rem error harum perferendis alias quia, similique perspiciatis.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                .text-truncate-4
+                                <div class="border text-truncate-4">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, omnis. Totam fuga, tenetur eligendi ipsa, quasi ea doloremque autem maxime possimus dolorum rem error harum perferendis alias quia, similique perspiciatis.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                .text-truncate-4
+                                <div class="border text-truncate-4">
+                                    Здесь мало текста, но высота блока задана классом .text-truncate-[2,3,4]
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4>
+                            text-truncate-autoheight
+                        </h4>
+                        <p>Отменяет минимальную высоту блока с классом .text-truncate-*</p>
+                        <div class="row">
+                            <div class="col-md-3">
+                                text-truncate-2.text-truncate-autoheight
+                                <div class="border text-truncate-2 text-truncate-autoheight">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, omnis. Totam fuga, tenetur eligendi ipsa, quasi ea doloremque autem maxime possimus dolorum rem error harum perferendis alias quia, similique perspiciatis.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                .text-truncate-3.text-truncate-autoheight
+                                <div class="border text-truncate-3 text-truncate-autoheight">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, omnis. Totam fuga, tenetur eligendi ipsa, quasi ea doloremque autem maxime possimus dolorum rem error harum perferendis alias quia, similique perspiciatis.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                .text-truncate-4.text-truncate-autoheight
+                                <div class="border text-truncate-4 text-truncate-autoheight">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, omnis. Totam fuga, tenetur eligendi ipsa, quasi ea doloremque autem maxime possimus dolorum rem error harum perferendis alias quia, similique perspiciatis.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                .text-truncate-4.text-truncate-autoheight
+                                <div class="border text-truncate-4 text-truncate-autoheight">
+                                    Здесь мало текста, поэтому высота блока меньше заданной
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h2 class="mb-20">Кастомизация Bootstrap</h2>
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <p class="typography">
+                            Конфигурационный файл вынесен в <code>lib/bootstrap-4.6.1/scss/__customization.scss</code>
+                            <br>
+                            В нем содержатся все настройки фреймворка.
+                            <br>
+                            <br>
+                            Неиспользуемые компоненты закомментированы в файле <code>lib/bootstrap-4.6.1/scss/bootstrap.scss</code>
+                            <br>
+                            После внесения изменений в конфигурацию bootstrap, его нужно пересобрать. Подробнее здесь <a href="https://getbootstrap.com/docs/4.4/getting-started/build-tools/">https://getbootstrap.com/docs/4.4/getting-started/build-tools/</a>
+                            <br>
+                            Незабудьте после сборки удалить папку <code>node_modules/</code> или добавьте путь к ней в .gitignore
+                        </p>
+                        <h3 class="mb-30">
+                            Цвета
+                        </h3>
+
+                        <div class="mb-20">
+                            <div class="bg-blue-dark">
+                                <div class="p-20">bg-blue-dark</div>
+                            </div>
+                            <div class="bg-red">
+                                <div class="p-20">bg-red</div>
+                            </div>
+                            <div class="bg-grey-dark">
+                                <div class="p-20">bg-grey-dark</div>
+                            </div>
+                            <div class="bg-grey">
+                                <div class="p-20">bg-grey</div>
+                            </div>
+                            <div class="bg-grey-light">
+                                <div class="p-20">bg-grey-light</div>
+                            </div>
+                        </div>
+
+                        <p class="typography"><a href="https://getbootstrap.com/docs/4.4/utilities/colors/">Подробнее о bootstrap цветах</a></p>
+
+
+                        <h3 class="mb-30">
+                            Отступы
+                        </h3>
+                        <div class="mb-30">
+                            <h5>Внутренние</h5>
+                            <div class="border p-5">p-5</div>
+                            <div class="border p-10">p-10</div>
+                            <div class="border p-15">p-15</div>
+                            <div class="border p-20">p-20</div>
+                            <div class="border p-25">p-25</div>
+                            <div class="border p-30">p-30</div>
+                            <div class="border p-35">p-35</div>
+                            <div class="border p-40">p-40</div>
+                            <div class="border p-45">p-45</div>
+                            <div class="border p-50">p-50</div>
+                            <div class="border p-55">p-55</div>
+                            <div class="border p-60">p-60</div>
+                            <div class="border p-65">p-65</div>
+                            <div class="border p-70">p-70</div>
+                            <div class="border p-75">p-75</div>
+                            <div class="border p-80">p-80</div>
+                            <div class="border p-85">p-85</div>
+                            <div class="border p-90">p-90</div>
+                        </div>
+
+                        <div class="mb-30">
+                            <h5>Внешние</h5>
+                            <div class="border m-5">m-5</div>
+                            <div class="border m-10">m-10</div>
+                            <div class="border m-15">m-15</div>
+                            <div class="border m-20">m-20</div>
+                            <div class="border m-25">m-25</div>
+                            <div class="border m-30">m-30</div>
+                            <div class="border m-35">m-35</div>
+                            <div class="border m-40">m-40</div>
+                            <div class="border m-45">m-45</div>
+                            <div class="border m-50">m-50</div>
+                            <div class="border m-55">m-55</div>
+                            <div class="border m-60">m-60</div>
+                            <div class="border m-65">m-65</div>
+                            <div class="border m-70">m-70</div>
+                            <div class="border m-75">m-75</div>
+                            <div class="border m-80">m-80</div>
+                            <div class="border m-85">m-85</div>
+                            <div class="border m-90">m-90</div>
+                        </div>
+
+                        <p class="typography"><a href="https://getbootstrap.com/docs/4.0/utilities/spacing/#how-it-works">Подробнее о bootstrap отступах</a></p>
+
+                    </div>
+                </div>
+                
+                <!-- 
+                <h2 class="mb-20">TITLE_TITLE_TITLE_TITLE_</h2>
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <h3 class="mb-30">
+                            TITLE_TITLE_TITLE_TITLE_
+                        </h3>
+                        CONTENT_CONTENT_CONTENT_CONTENT_
+                    </div>
+                </div> -->
+                
+                <!-- 
+                <h2 class="mb-20">TITLE_TITLE_TITLE_TITLE_</h2>
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <h3 class="mb-30">
+                            TITLE_TITLE_TITLE_TITLE_
+                        </h3>
+                        CONTENT_CONTENT_CONTENT_CONTENT_
+                    </div>
+                </div> -->
+                
+                <!-- 
+                <h2 class="mb-20">TITLE_TITLE_TITLE_TITLE_</h2>
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <h3 class="mb-30">
+                            TITLE_TITLE_TITLE_TITLE_
+                        </h3>
+                        CONTENT_CONTENT_CONTENT_CONTENT_
+                    </div>
+                </div> -->
+                
+                <!-- 
+                <h2 class="mb-20">TITLE_TITLE_TITLE_TITLE_</h2>
+                <div class="card mb-50">
+                    <div class="card-body">
+                        <h3 class="mb-30">
+                            TITLE_TITLE_TITLE_TITLE_
+                        </h3>
+                        CONTENT_CONTENT_CONTENT_CONTENT_
+                    </div>
+                </div> -->
+
+
+            </div>
+
+        </main>
+
+        
+        <footer class="footer bg-blue-dark text-white pt-55 pb-30">
+            <div class="container">
+                <div class="mb-35">
+                    <div class="row">
+                        <div class="col-lg-3 col-xl-2 offset-xl-1">
+    
+                            <div>
+                                <div class="d-none d-lg-block ff-dinpro fz-18 fw-700 text-uppercase">
+                                    Продукты
+                                </div>
+        
+                                <div class="footer-collapse-title d-block d-lg-none ff-dinpro fz-18 py-10 text-uppercase" data-toggle="collapse" data-target="#footer-collapse-1" aria-controls="footer-collapse-1" role="navigation">
+                                    Продукты
+                                </div>
+                            </div>
+    
+                            <div class="hide d-lg-block collapse" id="footer-collapse-1">
+                                <ul class="ul-clean pt-15 pt-lg-30 pr-xl-30">
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Общественные
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Промышленные
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Уличные
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Прожекторы
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Тепличные
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Облучатели
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Аварийные облучатели
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Аппараты
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Системы управления освещением
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-lg-none border-bottom border-white"></div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 offset-xl-1">
+    
+                            <div>
+                                <div class="d-none d-lg-block ff-dinpro fz-18 fw-700 text-uppercase">
+                                    Скачать
+                                </div>
+        
+                                <div class="footer-collapse-title d-block d-lg-none ff-dinpro fz-18 py-10 text-uppercase" data-toggle="collapse" data-target="#footer-collapse-2" aria-controls="footer-collapse-2" role="navigation">
+                                    Скачать
+                                </div>
+                            </div>
+    
+                            <div class="hide d-lg-block collapse" id="footer-collapse-2">
+                                <ul class="ul-clean pt-15 pt-lg-30 pr-xl-30">
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Калькулятор
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Расчет освещения
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Рекламные материалы
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Каталог
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Сертификаты
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Техническая информация
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Нормативные документы
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Видеоматериалы
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Презентации
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-lg-none border-bottom border-white"></div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 offset-xl-1">
+    
+                            <div>
+                                <div class="d-none d-lg-block ff-dinpro fz-18 fw-700 text-uppercase">
+                                    Сотрудничество
+                                </div>
+        
+                                <div class="footer-collapse-title d-block d-lg-none ff-dinpro fz-18 py-10 text-uppercase" data-toggle="collapse" data-target="#footer-collapse-3" aria-controls="footer-collapse-3" role="navigation">
+                                    Сотрудничество
+                                </div>
+                            </div>
+    
+                            <div class="hide d-lg-block collapse" id="footer-collapse-3">
+                                <ul class="ul-clean pt-15 pt-lg-30 pr-xl-30">
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Региональные представительства
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Прайс-лист
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Указания к применению
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Руководство
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Торговые дома
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Дилеры
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-lg-none border-bottom border-white"></div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 offset-xl-1">
+    
+                            <div>
+                                <div class="d-none d-lg-block ff-dinpro fz-18 fw-700 text-uppercase">
+                                    Компания
+                                </div>
+        
+                                <div class="footer-collapse-title d-block d-lg-none ff-dinpro fz-18 py-10 text-uppercase" data-toggle="collapse" data-target="#footer-collapse-4" aria-controls="footer-collapse-4" role="navigation">
+                                    Компания
+                                </div>
+                            </div>
+    
+                            <div class="hide d-lg-block collapse" id="footer-collapse-4">
+                                <ul class="ul-clean pt-15 pt-lg-30 pr-xl-30">
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            О компании
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            История завода
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Награды
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Качество
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Корпоративный стиль
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Вакансии
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Клиентам 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-lg-none border-bottom border-white"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-xl-2 order-lg-1">
+                        <div class="footer-social d-flex align-items-center mb-15 mb-md-0 pt-lg-10 ml-lg-n10">
+                            <a class="footer-social__item" href="#">
+                                <span class="icon-telegram"></span>
+                            </a>
+                            <a class="footer-social__item" href="#">
+                                <span class="icon-vkontakte"></span>
+                            </a>
+                            <a class="footer-social__item" href="#">
+                                <span class="icon-facebook"></span>
+                            </a>
+                            <a class="footer-social__item" href="#">
+                                <span class="icon-instagram"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-xl-9 offset-xl-1">
+                        <div class="fz-14">
+                            <div class="mb-3">
+                                <a href="#">Карта сайта</a> | 
+                                <a href="#">Политика о конфиденциальности</a> | 
+                                <a href="#">Пользовательское соглашение</a>
+                            </div>
+                            <div>
+                                © 2022.ОАО "Ардатовский светотехнический завод
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script async src="lib/lazysizes/lazysizes.min.js"></script>
+        <script defer src="lib/jquery/jquery-3.6.0.min.js"></script>
+        <script defer src="lib/bootstrap-4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script defer src="lib/swiper/swiper-bundle.min.js"></script>
+        <script defer src="lib/range-slider/js/rSlider.min.js"></script>
+        <script defer src="lib/select/select.js"></script>
+
+        <script defer src="js/calculator.js"></script> <!-- Калькулятор освещенности. Желательно подключить только детальной странице товара. Там 5К строк!!! -->
+
+        <script defer src="js/script.js"></script>
+
+
+        <div class="fixed-bottom text-uppercase text-danger fz-20">
+            <div class="d-block d-sm-none">xs</div>
+            <div class="d-none d-sm-block d-md-none">sm</div>
+            <div class="d-none d-md-block d-lg-none">md</div>
+            <div class="d-none d-lg-block d-xl-none">lg</div>
+            <div class="d-none d-xl-block">xl</div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,1075 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+
+        <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Главная страница</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="img/favicon/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+
+<link rel="stylesheet" href="lib/bootstrap-4.6.1/dist/css/bootstrap.min.css" media="all">
+<link rel="stylesheet" href="lib/icomoon-v1.0/style.css" media="all">
+<link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css" media="all">
+<link rel="stylesheet" href="lib/range-slider/css/rSlider.min.css" media="all">
+
+
+<link rel="stylesheet" href="css/style.css" media="all">
+
+
+<link rel="preload" as="font" href="fonts/Arial/Arial-Regular.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="fonts/Arial/Arial-Bold.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="fonts/DINPro/DINPro-Medium.woff" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="fonts/DINPro/DINPro-Bold.woff" type="font/woff2" crossorigin>
+
+    </head>
+    <body class="body">
+        
+        <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            
+            <div class="header__drop-action-mobile">
+                <div class="header-stretch">
+                    <a class="menu-icon" data-toggle="collapse" href="#collapse-drop-menu" role="button" aria-expanded="false" aria-controls="collapse-drop-menu" aria-label="Открыть форму поиска">
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__logo">
+                <a class="d-inline-block py-2" href="/" aria-label="АО Ардатовский светотехнический завод">
+                    <img width="234" height="47" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/common/logo.svg" alt="АО Ардатовский светотехнический завод">
+                </a>
+            </div>
+
+            <div class="header__menu">
+                <nav class="header-menu header-stretch" aria-label="Главное меню">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item text-red">
+                            <a href="#" class="header-menu__link">Продукция</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Применение</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Скачать</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Где купить</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="header__search">
+                <div class="header-search header-stretch">
+                    <div class="migrate-search-desctop" id="js-migrate-search-desctop">
+                        <div id="js-migrate-search-target">
+    
+                            <div id="js-header-search-wrapper" class="lh-1">
+                                <form action="ACTION" method="get">
+                                    <div class="header-search__input-group" id="js-header-search-target">
+                                        <div class="input-group">
+                                            <input class="header-search__input form-control" id="site-search" type="search" name="q" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+                                            <div class="input-group-append">
+                                                <button class="header-search__button btn btn-red" type="button">Поиск</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void(0)" class="header-search__label m-0" id="js-header-search-action">
+                                        <span class="header-search__action header-search__action_open icon-search fz-20 lh-1 align-middle" id="js-header-search-open"></span>
+                                        <span class="header-search__action header-search__action_close icon-cross-thin fz-20 lh-1 align-middle" id="js-header-search-close"></span>
+                                    </a>
+                                </form>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header__phone">
+                <div class="header-stretch">
+                    <span class="d-lg-none mr-10">Телефон:</span>
+                    <a class="ff-dinpro fz-19 fw-700 text-nowrap" href="tel:88005509112">
+                        8 800 550 9112
+                    </a>
+                </div>
+            </div>
+    
+            <div class="header__drop-action">
+                <div class="header-stretch">
+                    <a class="header-collapse-action" data-toggle="collapse" href="#collapse-drop-menu" role="button" aria-expanded="false" aria-controls="collapse-drop-menu" aria-label="Дополнительное меню">
+                        <span class="icon-menu d-none d-lg-inline-block fz-25 lh-1 align-middle"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__search-action-mobile">
+                <div class="header-stretch">
+                    <a class="header-collapse-action" data-toggle="collapse" href="#collapse-search" role="button" aria-expanded="false" aria-controls="collapse-search" aria-label="Открыть форму поиска">
+                        <span class="icon-search fz-20 lh-1 align-middle"></span>
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="header__drop">
+
+        <div class="collapse hide" id="collapse-search">
+            <div class="container">
+                <div id="js-migrate-search-mobile">
+    
+                </div>
+            </div>
+        </div>
+        <div class="collapse collapse-drop-menu" id="collapse-drop-menu" aria-label="Меню пользователя">
+            <div class="header-drop scrollbar">
+
+                <a class="header-drop__close" data-toggle="collapse" href="#collapse-drop-menu" role="button" aria-expanded="false" aria-controls="collapse-drop-menu" aria-label="Закрыть дополнительное меню">
+                    <span class="icon-close fz-30 lh-1 align-middle"></span>
+                </a>
+
+
+                <div class="header-drop__inner">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="header-drop__menu">
+                                <li>
+                                    <a class="text-red" href="#">Продукция</a>
+                                </li>
+                                <li>
+                                    <a href="#">Применение</a>
+                                </li>
+                                <li>
+                                    <a href="#">Скачать</a>
+                                </li>
+                                <li>
+                                    <a href="#">Где купить</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="header-drop__company mb-30 mb-sm-0">
+                                <div class="header-drop__company-title">
+                                    Компания
+                                </div>
+                                <div class="header-drop__company-address">
+                                    431890, Республика Мордовия, <br>
+                                    Ардатовский район, р.п. Тургенево, <br>
+                                    ул. Заводская, 73
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                
+                            <div class="mb-20 d-inline-block">
+                                <a class="header-drop__button collapse-action" data-toggle="collapse" href="#collapse-lang" role="button" aria-expanded="false" aria-controls="collapse-lang">
+                                    <div>
+                                        <img class="mr-20" width="33" height="22" src="img/common/lang-ru.svg" alt="Русский язык"><strong class="mr-15">Русский</strong><span class="collapse-caret icon-chevron-bold"></span>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="collapse-lang">
+                                    <a href="#" class="header-drop__button mt-5">
+                                        <div>
+                                            <img class="mr-20" width="33" height="22" src="img/common/lang-en.svg" alt="English language"><strong class="mr-20">English</strong>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-35 mb-md-85">
+                                <a href="#" class="">
+                                    <div class="header-drop__button">
+                                        <img class="mr-20" width="33" height="22" src="img/common/user.svg" alt="English language"><strong class="mr-20">Регистрация</strong>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="header-social d-flex align-items-center mb-25 mb-md-90">
+                                <a class="header-social__item" href="#">
+                                    <span class="icon-telegram"></span>
+                                </a>
+                                <a class="header-social__item" href="#">
+                                    <span class="icon-vkontakte"></span>
+                                </a>
+                                <a class="header-social__item" href="#">
+                                    <span class="icon-facebook"></span>
+                                </a>
+                                <a class="header-social__item" href="#">
+                                    <span class="icon-instagram"></span>
+                                </a>
+                            </div>
+
+                            <div class="mb-5">
+                                <a class="header-drop__email" href="mailto:mirsveta@astz.ru">mirsveta@astz.ru</a>
+                            </div>
+                            <div>
+                                <a class="header-drop__phone" href="tel:88005509112">8 800 550 9112</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</header>
+    
+        <main class="main">
+
+            <h1 class="d-none">
+                АО Ардатовский светотехнический завод
+                <!-- На главной странице нет заголовка первого уровня, но по стандарту w3c он должен быть. Пусть даже скрытый.  -->
+            </h1>
+
+            <div class="swiper home-slider js-simple-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/b1.jpg" alt="">
+                        <div class="home-slider-content">
+                            <div class="home-slider-content__inner">
+                                <div class="home-slider-content__limiter">
+                                    <div class="home-slider-content__title">
+                                        Проектные решения любой сложности
+                                    </div>
+                                    <div class="home-slider-content__subtitle">
+                                        Высокое качество световых приборов
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-outline-light px-45 text-uppercase">Перейти</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/b2.jpg" alt="">
+                        <div class="home-slider-content">
+                            <div class="home-slider-content__inner">
+                                <div class="home-slider-content__limiter">
+                                    <div class="home-slider-content__title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </div>
+                                    <div class="home-slider-content__subtitle">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aspernatur dolores fuga laudantium minus vero mollitia a quos natus, soluta voluptates voluptatibus rem voluptatum quas distinctio ipsum unde consequuntur! Vitae.
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-outline-light px-45 text-uppercase">Перейти</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <a href="javascript:void(0)" class="swiper-button-prev" role="button" aria-label="Предыдущий слайд">
+                    <span class="icon-chevron-slider rotate-180"></span>
+                </a>
+                <a href="javascript:void(0)" class="swiper-button-next" role="button" aria-label="Следующий слайд">
+                    <span class="icon-chevron-slider"></span>
+                </a>
+            </div>
+
+            <div class="py-25 py-lg-60"></div>
+
+            <section class="animation-fade-up">
+                <div class="container">
+                    <div class="text-center mb-20 mb-lg-60">
+                        <h2 class="ff-dinpro fz-20 fz-lg-36 fw-700 text-uppercase mb-5 mb-lg-10">
+                            Новости
+                        </h2>
+                        <div class="fz-14 fz-lg-18 text-uppercase">
+                            Обзор мероприятий
+                        </div>
+                    </div>
+
+                    <div class="row" id="home-accordion">
+                        <div class="col-lg-6 mb-30 mb-lg-0">
+                            <div>
+                                <div>
+                                    <a
+                                        class="d-block ff-dinpro fz-16 fz-md-20 fz-xl-25 fw-700 py-15 py-md-20 py-xl-30 border-bottom border-red js-collapse-lock-self"
+                                        data-toggle="collapse"
+                                        href="javascript:void(0)"
+                                        data-target=".collapse-home-1"
+                                        aria-expanded="true"
+                                        id="heading-home-1"
+                                    >
+                                        Сейсмический сертификат соответствия
+                                    </a>
+                                
+                                    <div
+                                        class="collapse show collapse-home-1"
+                                        data-parent="#home-accordion"
+                                    >
+                                        <div class="bg-grey-light py-15 py-lg-35 pl-1 pr-10">
+                                            <div class="text-grey-dark mb-35  px-20">
+                                                Светильники серий ДПО15, ДСП15, ДСП49, ДПО78, ДБО83, ДБО85 и прожектора ДО15 получили сертификат соответствия требованиям ГОСТ 30546.1-98 в части стойкости к сейсмическим воздействия интенсивностью максимального расчетного землетрясения 8 балов.
+                                                <br><br>
+                                                Получение данных сертификатов обеспечивает возможность применения световых приборов АСТЗ при проектировании сейсмостойких атомных станций.
+                                            </div>
+                                            <div class="text-dark fw-700 pl-20">
+                                                <a href="#">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <a
+                                        class="d-block ff-dinpro fz-16 fz-md-20 fz-xl-25 fw-700 py-15 py-md-20 py-xl-30 border-bottom border-red js-collapse-lock-self"
+                                        data-toggle="collapse"
+                                        href="javascript:void(0)"
+                                        data-target=".collapse-home-2"
+                                        aria-expanded="false"
+                                        id="heading-home-2"
+                                    >
+                                        Хороший свет АСТЗ CRI 90
+                                    </a>
+                                
+                                    <div
+                                        class="collapse collapse-home-2"
+                                        data-parent="#home-accordion"
+                                    >
+                                        <div class="bg-grey-light py-15 py-lg-35 pl-1 pr-10">
+                                            <div class="text-grey-dark mb-35 px-20">
+                                                Светильники серий ДПО15, ДСП15, ДСП49, ДПО78, ДБО83, ДБО85 и прожектора ДО15 получили сертификат соответствия требованиям ГОСТ 30546.1-98 в части стойкости к сейсмическим воздействия интенсивностью максимального расчетного землетрясения 8 балов.
+                                                <br><br>
+                                                Получение данных сертификатов обеспечивает возможность применения световых приборов АСТЗ при проектировании сейсмостойких атомных станций.
+                                            </div>
+                                            <div class="text-dark fw-700 pl-20">
+                                                <a href="#">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <a
+                                        class="d-block ff-dinpro fz-16 fz-md-20 fz-xl-25 fw-700 py-15 py-md-20 py-xl-30 border-bottom border-red js-collapse-lock-self"
+                                        data-toggle="collapse"
+                                        href="javascript:void(0)"
+                                        data-target=".collapse-home-3"
+                                        aria-expanded="false"
+                                        id="heading-home-3"
+                                    >
+                                        Продукция АСТЗ в реестре Минпромторга РФ
+                                    </a>
+                                
+                                    <div
+                                        class="collapse collapse-home-3"
+                                        data-parent="#home-accordion"
+                                    >
+                                        <div class="bg-grey-light py-15 py-lg-35 pl-1 pr-10">
+                                            <div class="text-grey-dark mb-35 px-20">
+                                                Светильники серий ДПО15, ДСП15, ДСП49, ДПО78, ДБО83, ДБО85 и прожектора ДО15 получили сертификат соответствия требованиям ГОСТ 30546.1-98 в части стойкости к сейсмическим воздействия интенсивностью максимального расчетного землетрясения 8 балов.
+                                                <br><br>
+                                                Получение данных сертификатов обеспечивает возможность применения световых приборов АСТЗ при проектировании сейсмостойких атомных станций.
+                                            </div>
+                                            <div class="text-dark fw-700 pl-20">
+                                                <a href="#">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <a
+                                        class="d-block ff-dinpro fz-16 fz-md-20 fz-xl-25 fw-700 py-15 py-md-20 py-xl-30 border-bottom border-red js-collapse-lock-self"
+                                        data-toggle="collapse"
+                                        href="javascript:void(0)"
+                                        data-target=".collapse-home-4"
+                                        aria-expanded="false"
+                                        id="heading-home-4"
+                                    >
+                                        Федеральное движение «Честный свет»
+                                    </a>
+                                
+                                    <div
+                                        class="collapse collapse-home-4"
+                                        data-parent="#home-accordion"
+                                    >
+                                        <div class="bg-grey-light py-15 py-lg-35 pl-1 pr-10">
+                                            <div class="text-grey-dark mb-35 px-20">
+                                                Светильники серий ДПО15, ДСП15, ДСП49, ДПО78, ДБО83, ДБО85 и прожектора ДО15 получили сертификат соответствия требованиям ГОСТ 30546.1-98 в части стойкости к сейсмическим воздействия интенсивностью максимального расчетного землетрясения 8 балов.
+                                                <br><br>
+                                                Получение данных сертификатов обеспечивает возможность применения световых приборов АСТЗ при проектировании сейсмостойких атомных станций.
+                                            </div>
+                                            <div class="text-dark fw-700 pl-20">
+                                                <a href="#">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div
+                            class="collapse show collapse-home-1"
+                            data-parent="#home-accordion"
+                            >
+                            <div class="aspect-ratio aspect-ratio_70">
+                                <a href="#">
+                                    <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/1.jpg" alt="Сейсмический сертификат соответствия">
+                                </a>
+                            </div>
+                            </div>
+                            <div
+                            class="collapse collapse-home-2"
+                            data-parent="#home-accordion"
+                            >
+                            <div class="aspect-ratio aspect-ratio_70">
+                                <a href="#">
+                                    <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/b1.jpg" alt="Хороший свет АСТЗ CRI 90">
+                                </a>
+                            </div>
+                            </div>
+                            <div
+                            class="collapse collapse-home-3"
+                            data-parent="#home-accordion"
+                            >
+                            <div class="aspect-ratio aspect-ratio_70">
+                                <a href="#">
+                                    <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/home/bg-pre-footer-mobile.png" alt="Продукция АСТЗ в реестре Минпромторга РФ">
+                                </a>
+                            </div>
+                            </div>
+                            <div
+                            class="collapse collapse-home-4"
+                            data-parent="#home-accordion"
+                            >
+                            <div class="aspect-ratio aspect-ratio_70">
+                                <a href="#">
+                                    <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/pr3.jpg" alt="Федеральное движение «Честный свет»">
+                                </a>
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="py-25 py-lg-60"></div>
+
+            <section class="animation-fade-up">
+                <div class="container">
+                    <div class="text-center mb-30 mb-lg-60">
+                        <h2 class="ff-dinpro fz-20 fz-lg-36 fw-700 text-uppercase">
+                            Продукция
+                        </h2>
+                    </div>
+
+                    <div class="slider">
+                        <div class="slider__navigation">
+                            <a href="javascript:void(0)" class="slider__prev mt-n50 js-slider-navigation-prev" role="button" aria-label="Предыдущий слайд">
+                                <span class="icon-chevron-slider rotate-180"></span>
+                            </a>
+                        </div>
+                        <div class="slider__body">
+                            <div class="swiper js-five-columns-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                            <img class="rounded swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/p1.jpg" alt="Общественные">
+                                        </a>
+                                        <div class="py-10 py-xl-30 px-10">
+                                            <a href="#" class="text-truncate-2 text-truncate-autoheight fz-20">Общественные</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                            <img class="rounded swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/p2.jpg" alt="Промышленные">
+                                        </a>
+                                        <div class="py-10 py-xl-30 px-10">
+                                            <a href="#" class="text-truncate-2 text-truncate-autoheight fz-20">Промышленные</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                            <img class="rounded swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/p3.jpg" alt="Уличные">
+                                        </a>
+                                        <div class="py-10 py-xl-30 px-10">
+                                            <a href="#" class="text-truncate-2 text-truncate-autoheight fz-20">Уличные</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                            <img class="rounded swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/p4.jpg" alt="Прожекторы">
+                                        </a>
+                                        <div class="py-10 py-xl-30 px-10">
+                                            <a href="#" class="text-truncate-2 text-truncate-autoheight fz-20">Прожекторы</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                            <img class="rounded swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/p5.jpg" alt="Аварийное">
+                                        </a>
+                                        <div class="py-10 py-xl-30 px-10">
+                                            <a href="#" class="text-truncate-2 text-truncate-autoheight fz-20">Аварийное</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="slider__navigation">
+                            <a href="javascript:void(0)" class="slider__next mt-n50 js-slider-navigation-next" role="button" aria-label="Следующий слайд">
+                                <span class="icon-chevron-slider"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="py-25 py-lg-60"></div>
+
+            <section class="animation-fade-up">
+                <div class="container">
+                    <div class="text-center mb-30 mb-lg-60">
+                        <h2 class="ff-dinpro fz-20 fz-lg-36 fw-700 text-uppercase mb-10">
+                            Проекты
+                        </h2>
+                        <div class="fz-14 fz-lg-18 text-uppercase">
+                            Образование - Коммерческие Помещения - Складские - Спортивные - Уличное - Другое
+                        </div>
+                    </div>
+
+                    <div class="slider">
+                        <div class="slider__navigation d-lg-none">
+                            <a href="javascript:void(0)" class="slider__prev js-slider-navigation-prev" role="button" aria-label="Предыдущий слайд">
+                                <span class="icon-chevron-slider rotate-180"></span>
+                            </a>
+                        </div>
+                        <div class="slider__body">
+                            <div class="swiper js-three-columns-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide border">
+                                        <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                            <img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/pr1.jpg" alt="Школа № 354 г. Реутов Московская Область">
+                                        </a>
+                                        <div class="text-left py-10 pt-xl-30 pb-xl-20 px-30">
+                                            <a href="#" class="text-truncate-2 text-uppercase ff-dinpro fw-700 fz-14 fz-md-18 mb-5 mb-lg-25">Школа № 354 г. Реутов Московская Область</a>
+                                            <a href="#" class="fw-700 fz-15">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide border">
+                                        <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                            <img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/pr2.jpg" alt="БАССЕЙН ДЕТСКОГО САДА г. ">
+                                        </a>
+                                        <div class="text-left py-10 pt-xl-30 pb-xl-20 px-30">
+                                            <a href="#" class="text-truncate-2 text-uppercase ff-dinpro fw-700 fz-14 fz-md-18 mb-5 mb-lg-25">БАССЕЙН ДЕТСКОГО САДА г. </a>
+                                            <a href="#" class="fw-700 fz-15">Подробнее</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide border">
+                                        <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                            <img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/pr3.jpg" alt="ТЕПЛИЦА МОСКОВСКАЯ ОБЛАСТЬ">
+                                        </a>
+                                        <div class="text-left py-10 pt-xl-30 pb-xl-20 px-30">
+                                            <a href="#" class="text-truncate-2 text-uppercase ff-dinpro fw-700 fz-14 fz-md-18 mb-5 mb-lg-25">ТЕПЛИЦА МОСКОВСКАЯ ОБЛАСТЬ</a>
+                                            <a href="#" class="fw-700 fz-15">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="slider__navigation d-lg-none">
+                            <a href="javascript:void(0)" class="slider__next js-slider-navigation-next" role="button" aria-label="Следующий слайд">
+                                <span class="icon-chevron-slider"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="py-25 py-lg-60"></div>
+
+            <section class="animation-fade-up">
+                <div class="container">
+                    <div class="text-center mb-30 mb-lg-60">
+                        <h2 class="ff-dinpro fz-20 fz-lg-36 fw-700 text-uppercase mb-10">
+                            Новинки
+                        </h2>
+                        <div class="fz-14 fz-lg-18 text-uppercase">
+                            Наша продукция
+                        </div>
+                    </div>
+
+                    <div class="slider">
+                        <div class="slider__navigation">
+                            <a href="javascript:void(0)" class="slider__prev mt-n50 js-slider-navigation-prev" role="button" aria-label="Предыдущий слайд">
+                                <span class="icon-chevron-slider rotate-180"></span>
+                            </a>
+                        </div>
+                        <div class="slider__body">
+                            <div class="swiper js-five-columns-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide border">
+                                        <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                            <img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/n1.jpg" alt="Общественные">
+                                        </a>
+                                        <div class="text-left px-25 pt-25 pb-40">
+                                            <a href="#" class="text-truncate-2 ff-dinpro fw-700 fz-20">Серия ДПП03 LED</a>
+                                            <div class="fz-16">Общее освещение помещений производственного и иного назначения.</div>
+                                            <a href="#" class="d-inline-block fz-18 fw-700">
+                                                380 товаров
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide border">
+                                        <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                            <img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/n1.jpg" alt="Общественные">
+                                        </a>
+                                        <div class="text-left px-25 pt-25 pb-40">
+                                            <a href="#" class="text-truncate-2 ff-dinpro fw-700 fz-20">Серия ДПП03 LED</a>
+                                            <div class="fz-16">Общее освещение помещений производственного и иного назначения.</div>
+                                            <a href="#" class="d-inline-block fz-18 fw-700">
+                                                380 товаров
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide border">
+                                        <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                            <img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/n1.jpg" alt="Общественные">
+                                        </a>
+                                        <div class="text-left px-25 pt-25 pb-40">
+                                            <a href="#" class="text-truncate-2 ff-dinpro fw-700 fz-20">Серия ДПП03 LED</a>
+                                            <div class="fz-16">Общее освещение помещений производственного и иного назначения.</div>
+                                            <a href="#" class="d-inline-block fz-18 fw-700">
+                                                380 товаров
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide border">
+                                        <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                            <img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/n1.jpg" alt="Общественные">
+                                        </a>
+                                        <div class="text-left px-25 pt-25 pb-40">
+                                            <a href="#" class="text-truncate-2 ff-dinpro fw-700 fz-20">Серия ДПП03 LED</a>
+                                            <div class="fz-16">Общее освещение помещений производственного и иного назначения.</div>
+                                            <a href="#" class="d-inline-block fz-18 fw-700">
+                                                380 товаров
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide border">
+                                        <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                            <img class="swiper-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/_content/home/n1.jpg" alt="Общественные">
+                                        </a>
+                                        <div class="text-left px-25 pt-25 pb-40">
+                                            <a href="#" class="text-truncate-2 ff-dinpro fw-700 fz-20">Серия ДПП03 LED</a>
+                                            <div class="fz-16">Общее освещение помещений производственного и иного назначения.</div>
+                                            <a href="#" class="d-inline-block fz-18 fw-700">
+                                                380 товаров
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                        <div class="slider__navigation">
+                            <a href="javascript:void(0)" class="slider__next mt-n50 js-slider-navigation-next" role="button" aria-label="Следующий слайд">
+                                <span class="icon-chevron-slider"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="py-25 py-lg-60"></div>
+
+            <section>
+                <div class="pre-footer bg-blue-dark text-white pt-40 pb-0 py-lg-85 lazyload bgi-cover" data-bg="img/home/bg-pre-footer.png">
+                    <div class="container">
+                        <h2 class="d-none">Подписаться на рассылку</h2>
+                        <!-- по стандарту w3c, section должен содержать как минмум один заголовок второго или третьего уровня. Пусть даже скрытый.  -->
+
+                        <div class="ff-dinpro fz-25 fw-700 mb-20 mb-lg-40">
+                            Подпишитесь на нашу рассылку<span class="d-none d-lg-inline">, <br>
+                            чтобы быть в курсе актуальных новинок,  <br>
+                            последних тенденций освещения и текущих событий</span>
+                        </div>
+                        <div class="fz-18 mb-45">
+                            <div class="d-lg-inline-block mr-25">
+                                <span class="icon-mark fz-12 mr-5"></span><span>Тенденции освещения</span>
+                            </div>
+                            <div class="d-lg-inline-block mr-25">
+                                <span class="icon-mark fz-12 mr-5"></span><span>Текущие события</span>
+                            </div>
+                            <div class="d-lg-inline-block mr-25">
+                                <span class="icon-mark fz-12 mr-5"></span><span>Секрет производства</span>
+                            </div>
+                        </div>
+                        <div class="pre-footer__form">
+                            <form action="ACTION" method="POST">
+                                <div class="pre-footer__limiter mb-15">
+                                    <input type="text" class="form-control form-control-lg" id="subscribe-name" placeholder="Имя*" aria-label="Имя">
+                                </div>
+                                <div class="pre-footer__limiter mb-30">
+                                    <input type="email" class="form-control form-control-lg" id="subscribe-email" placeholder="Электронный адрес*" aria-label="Электронный адрес">
+                                    <!-- <input type="email" class="form-control form-control-lg is-invalid" id="subscribe-email" placeholder="Электронный адрес*" aria-label="Электронный адрес"> -->
+                                    <!-- <div class="invalid-feedback">
+                                        Please choose a username.
+                                    </div> -->
+                                </div>
+
+                                <div class="custom-control custom-control-red custom-checkbox mb-30">
+                                    <input type="checkbox" class="custom-control-input" id="subscribe-areement">
+                                    <label class="custom-control-label" for="subscribe-areement">
+                                        Нажимая кнопку "Отправить" Вы даёте свое согласие на обработку введенной персональной <br>
+                                        информации в соответствии с Федеральным Законом №152-ФЗ от 27.07.2006 "О персональных данных"
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-control-red custom-checkbox mb-25">
+                                    <input type="checkbox" class="custom-control-input" id="subscribe-newsletter">
+                                    <label class="custom-control-label" for="subscribe-newsletter">
+                                        Согласие на получение рассылки
+                                    </label>
+                                </div>
+                                <div class="mb-40 pl-25">
+                                    * поля обязательные для заполнения
+                                </div>
+                                <div>
+                                    <input type="submit" class="btn btn-lg btn-red fw-700" value="Отправить">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="d-lg-none pt-40">
+                            <img class="lazyload img-fluid w-100" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/home/bg-pre-footer-mobile.png" alt="АО Ардатовский светотехнический завод">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        
+        <footer class="footer bg-blue-dark text-white pt-55 pb-30">
+            <div class="container">
+                <div class="mb-35">
+                    <div class="row">
+                        <div class="col-lg-3 col-xl-2 offset-xl-1">
+    
+                            <div>
+                                <div class="d-none d-lg-block ff-dinpro fz-18 fw-700 text-uppercase">
+                                    Продукты
+                                </div>
+        
+                                <div class="footer-collapse-title d-block d-lg-none ff-dinpro fz-18 py-10 text-uppercase" data-toggle="collapse" data-target="#footer-collapse-1" aria-controls="footer-collapse-1" role="navigation">
+                                    Продукты
+                                </div>
+                            </div>
+    
+                            <div class="hide d-lg-block collapse" id="footer-collapse-1">
+                                <ul class="ul-clean pt-15 pt-lg-30 pr-xl-30">
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Общественные
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Промышленные
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Уличные
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Прожекторы
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Тепличные
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Облучатели
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Аварийные облучатели
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Аппараты
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Системы управления освещением
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-lg-none border-bottom border-white"></div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 offset-xl-1">
+    
+                            <div>
+                                <div class="d-none d-lg-block ff-dinpro fz-18 fw-700 text-uppercase">
+                                    Скачать
+                                </div>
+        
+                                <div class="footer-collapse-title d-block d-lg-none ff-dinpro fz-18 py-10 text-uppercase" data-toggle="collapse" data-target="#footer-collapse-2" aria-controls="footer-collapse-2" role="navigation">
+                                    Скачать
+                                </div>
+                            </div>
+    
+                            <div class="hide d-lg-block collapse" id="footer-collapse-2">
+                                <ul class="ul-clean pt-15 pt-lg-30 pr-xl-30">
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Калькулятор
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Расчет освещения
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Рекламные материалы
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Каталог
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Сертификаты
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Техническая информация
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Нормативные документы
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Видеоматериалы
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Презентации
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-lg-none border-bottom border-white"></div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 offset-xl-1">
+    
+                            <div>
+                                <div class="d-none d-lg-block ff-dinpro fz-18 fw-700 text-uppercase">
+                                    Сотрудничество
+                                </div>
+        
+                                <div class="footer-collapse-title d-block d-lg-none ff-dinpro fz-18 py-10 text-uppercase" data-toggle="collapse" data-target="#footer-collapse-3" aria-controls="footer-collapse-3" role="navigation">
+                                    Сотрудничество
+                                </div>
+                            </div>
+    
+                            <div class="hide d-lg-block collapse" id="footer-collapse-3">
+                                <ul class="ul-clean pt-15 pt-lg-30 pr-xl-30">
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Региональные представительства
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Прайс-лист
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Указания к применению
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Руководство
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Торговые дома
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Дилеры
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-lg-none border-bottom border-white"></div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 offset-xl-1">
+    
+                            <div>
+                                <div class="d-none d-lg-block ff-dinpro fz-18 fw-700 text-uppercase">
+                                    Компания
+                                </div>
+        
+                                <div class="footer-collapse-title d-block d-lg-none ff-dinpro fz-18 py-10 text-uppercase" data-toggle="collapse" data-target="#footer-collapse-4" aria-controls="footer-collapse-4" role="navigation">
+                                    Компания
+                                </div>
+                            </div>
+    
+                            <div class="hide d-lg-block collapse" id="footer-collapse-4">
+                                <ul class="ul-clean pt-15 pt-lg-30 pr-xl-30">
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            О компании
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            История завода
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Награды
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Качество
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Корпоративный стиль
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Вакансии
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Клиентам 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-lg-none border-bottom border-white"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-xl-2 order-lg-1">
+                        <div class="footer-social d-flex align-items-center mb-15 mb-md-0 pt-lg-10 ml-lg-n10">
+                            <a class="footer-social__item" href="#">
+                                <span class="icon-telegram"></span>
+                            </a>
+                            <a class="footer-social__item" href="#">
+                                <span class="icon-vkontakte"></span>
+                            </a>
+                            <a class="footer-social__item" href="#">
+                                <span class="icon-facebook"></span>
+                            </a>
+                            <a class="footer-social__item" href="#">
+                                <span class="icon-instagram"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-xl-9 offset-xl-1">
+                        <div class="fz-14">
+                            <div class="mb-3">
+                                <a href="#">Карта сайта</a> | 
+                                <a href="#">Политика о конфиденциальности</a> | 
+                                <a href="#">Пользовательское соглашение</a>
+                            </div>
+                            <div>
+                                © 2022.ОАО "Ардатовский светотехнический завод
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script async src="lib/lazysizes/lazysizes.min.js"></script>
+        <script defer src="lib/jquery/jquery-3.6.0.min.js"></script>
+        <script defer src="lib/bootstrap-4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script defer src="lib/swiper/swiper-bundle.min.js"></script>
+        <script defer src="lib/range-slider/js/rSlider.min.js"></script>
+        <script defer src="lib/select/select.js"></script>
+
+        <script defer src="js/calculator.js"></script> <!-- Калькулятор освещенности. Желательно подключить только детальной странице товара. Там 5К строк!!! -->
+
+        <script defer src="js/script.js"></script>
+
+
+        <div class="fixed-bottom text-uppercase text-danger fz-20">
+            <div class="d-block d-sm-none">xs</div>
+            <div class="d-none d-sm-block d-md-none">sm</div>
+            <div class="d-none d-md-block d-lg-none">md</div>
+            <div class="d-none d-lg-block d-xl-none">lg</div>
+            <div class="d-none d-xl-block">xl</div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,1 @@
+<img width="234" alt="АО Ардатовский светотехнический завод" src="<?=SITE_TEMPLATE_PATH?>/img/common/logo.svg" height="47" class=" lazyloaded" data-src="<?=SITE_TEMPLATE_PATH?>/img/common/logo.svg">

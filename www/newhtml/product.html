@@ -1,0 +1,2948 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Страница товара</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="img/favicon/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+
+<link rel="stylesheet" href="lib/bootstrap-4.6.1/dist/css/bootstrap.min.css" media="all">
+
+<link rel="stylesheet" href="lib/icomoon-v1.0/style.css" media="all">
+<link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css" media="all">
+<link rel="stylesheet" href="lib/range-slider/css/rSlider.min.css" media="all">
+
+
+<link rel="stylesheet" href="css/style.css" media="all">
+
+
+<link rel="preload" as="font" href="fonts/Arial/Arial-Regular.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="fonts/Arial/Arial-Bold.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="fonts/DINPro/DINPro-Medium.woff" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="fonts/DINPro/DINPro-Bold.woff" type="font/woff2" crossorigin>
+
+</head>
+<body class="body">
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            
+            <div class="header__drop-action-mobile">
+                <div class="header-stretch">
+                    <a class="menu-icon" data-toggle="collapse" href="#collapse-drop-menu" role="button" aria-expanded="false" aria-controls="collapse-drop-menu" aria-label="Открыть форму поиска">
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line"></span>
+                        <span class="menu-icon__line"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__logo">
+                <a class="d-inline-block py-2" href="/" aria-label="АО Ардатовский светотехнический завод">
+                    <img width="234" height="47" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/common/logo.svg" alt="АО Ардатовский светотехнический завод">
+                </a>
+            </div>
+
+            <div class="header__menu">
+                <nav class="header-menu header-stretch" aria-label="Главное меню">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item text-red">
+                            <a href="#" class="header-menu__link">Продукция</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Применение</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Скачать</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Где купить</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="header__search">
+                <div class="header-search header-stretch">
+                    <div class="migrate-search-desctop" id="js-migrate-search-desctop">
+                        <div id="js-migrate-search-target">
+    
+                            <div id="js-header-search-wrapper" class="lh-1">
+                                <form action="ACTION" method="get">
+                                    <div class="header-search__input-group" id="js-header-search-target">
+                                        <div class="input-group">
+                                            <input class="header-search__input form-control" id="site-search" type="search" name="q" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+                                            <div class="input-group-append">
+                                                <button class="header-search__button btn btn-red" type="button">Поиск</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="javascript:void(0)" class="header-search__label m-0" id="js-header-search-action">
+                                        <span class="header-search__action header-search__action_open icon-search fz-20 lh-1 align-middle" id="js-header-search-open"></span>
+                                        <span class="header-search__action header-search__action_close icon-cross-thin fz-20 lh-1 align-middle" id="js-header-search-close"></span>
+                                    </a>
+                                </form>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="header__phone">
+                <div class="header-stretch">
+                    <span class="d-lg-none mr-10">Телефон:</span>
+                    <a class="ff-dinpro fz-19 fw-700 text-nowrap" href="tel:88005509112">
+                        8 800 550 9112
+                    </a>
+                </div>
+            </div>
+    
+            <div class="header__drop-action">
+                <div class="header-stretch">
+                    <a class="header-collapse-action" data-toggle="collapse" href="#collapse-drop-menu" role="button" aria-expanded="false" aria-controls="collapse-drop-menu" aria-label="Дополнительное меню">
+                        <span class="icon-menu d-none d-lg-inline-block fz-25 lh-1 align-middle"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__search-action-mobile">
+                <div class="header-stretch">
+                    <a class="header-collapse-action" data-toggle="collapse" href="#collapse-search" role="button" aria-expanded="false" aria-controls="collapse-search" aria-label="Открыть форму поиска">
+                        <span class="icon-search fz-20 lh-1 align-middle"></span>
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="header__drop">
+
+        <div class="collapse hide" id="collapse-search">
+            <div class="container">
+                <div id="js-migrate-search-mobile">
+    
+                </div>
+            </div>
+        </div>
+        <div class="collapse collapse-drop-menu" id="collapse-drop-menu" aria-label="Меню пользователя">
+            <div class="header-drop scrollbar">
+
+                <a class="header-drop__close" data-toggle="collapse" href="#collapse-drop-menu" role="button" aria-expanded="false" aria-controls="collapse-drop-menu" aria-label="Закрыть дополнительное меню">
+                    <span class="icon-close fz-30 lh-1 align-middle"></span>
+                </a>
+
+
+                <div class="header-drop__inner">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="header-drop__menu">
+                                <li>
+                                    <a class="text-red" href="#">Продукция</a>
+                                </li>
+                                <li>
+                                    <a href="#">Применение</a>
+                                </li>
+                                <li>
+                                    <a href="#">Скачать</a>
+                                </li>
+                                <li>
+                                    <a href="#">Где купить</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="header-drop__company mb-30 mb-sm-0">
+                                <div class="header-drop__company-title">
+                                    Компания
+                                </div>
+                                <div class="header-drop__company-address">
+                                    431890, Республика Мордовия, <br>
+                                    Ардатовский район, р.п. Тургенево, <br>
+                                    ул. Заводская, 73
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                
+                            <div class="mb-20 d-inline-block">
+                                <a class="header-drop__button collapse-action" data-toggle="collapse" href="#collapse-lang" role="button" aria-expanded="false" aria-controls="collapse-lang">
+                                    <div>
+                                        <img class="mr-20" width="33" height="22" src="img/common/lang-ru.svg" alt="Русский язык"><strong class="mr-15">Русский</strong><span class="collapse-caret icon-chevron-bold"></span>
+                                    </div>
+                                </a>
+                                <div class="collapse" id="collapse-lang">
+                                    <a href="#" class="header-drop__button mt-5">
+                                        <div>
+                                            <img class="mr-20" width="33" height="22" src="img/common/lang-en.svg" alt="English language"><strong class="mr-20">English</strong>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-35 mb-md-85">
+                                <a href="#" class="">
+                                    <div class="header-drop__button">
+                                        <img class="mr-20" width="33" height="22" src="img/common/user.svg" alt="English language"><strong class="mr-20">Регистрация</strong>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="header-social d-flex align-items-center mb-25 mb-md-90">
+                                <a class="header-social__item" href="#">
+                                    <span class="icon-telegram"></span>
+                                </a>
+                                <a class="header-social__item" href="#">
+                                    <span class="icon-vkontakte"></span>
+                                </a>
+                                <a class="header-social__item" href="#">
+                                    <span class="icon-facebook"></span>
+                                </a>
+                                <a class="header-social__item" href="#">
+                                    <span class="icon-instagram"></span>
+                                </a>
+                            </div>
+
+                            <div class="mb-5">
+                                <a class="header-drop__email" href="mailto:mirsveta@astz.ru">mirsveta@astz.ru</a>
+                            </div>
+                            <div>
+                                <a class="header-drop__phone" href="tel:88005509112">8 800 550 9112</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</header>
+
+<main class="main">
+
+    <div class="breadcrumb-wrapper mb-40 mb-lg-80">
+        <nav aria-label="Цепочка навигации">
+            <div class="container">
+                <ol class="breadcrumb scrollbar">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Продукция</a></li>
+                    <li class="breadcrumb-item"><a href="#">Промышленное освещение</a></li>
+                    <li class="breadcrumb-item"><a href="#">Серия ДСП47 Arsenal</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Светодиодный светильник ДСП47-80-222 Arsenal
+                        RD 750
+                    </li>
+                </ol>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="text-center mb-30 mb-lg-60">
+            <h1 class="fz-20 fz-lg-36 ff-dinpro fw-700 text-uppercase mb-0">
+                Промышленное освещение
+            </h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="product">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="product-slider">
+                        <div class="product__3d">
+                            <a href="#" class="text-red" aria-hidden="true">
+                                <span class="icon-3d"></span>
+                            </a>
+                        </div>
+                        <div class="swiper product-slider__top js-product-slider-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container">
+                                        <div class="aspect-ratio aspect-ratio_85">
+                                            <img src="img/_content/series/1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container">
+                                        <div class="aspect-ratio aspect-ratio_85">
+                                            <img src="https://dummyimage.com/900x600/F4F4F4/888" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container">
+                                        <div class="aspect-ratio aspect-ratio_85">
+                                            <img src="https://dummyimage.com/1600x900/F4F4F4/888" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container">
+                                        <div class="aspect-ratio aspect-ratio_85">
+                                            <img src="https://dummyimage.com/1400x700/F4F4F4/888" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container">
+                                        <div class="aspect-ratio aspect-ratio_85">
+                                            <img src="https://dummyimage.com/1200x1200/F4F4F4/888" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container">
+                                        <div class="aspect-ratio aspect-ratio_85">
+                                            <img src="https://dummyimage.com/800x1600/F4F4F4/888" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-container">
+                                        <div class="aspect-ratio aspect-ratio_85">
+                                            <img src="https://dummyimage.com/900x600/F4F4F4/888" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider d-flex justify-content-center align-items-center">
+                            <div>
+                                <a
+                                        href="javascript:void(0)"
+                                        class="d-inline-block lh-1 p-10 mt-45 js-thumbs-prev"
+                                        role="button"
+                                        aria-label="Предыдущий слайд"
+                                >
+                                    <span class="icon-chevron-bold fz-18 rotate-180"></span>
+                                </a>
+                            </div>
+                            <div class="slider__body">
+                                <div class="swiper product-slider__thumbs js-product-slider-thumbs">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-container">
+                                                <div class="aspect-ratio aspect-ratio_100">
+                                                    <img src="img/_content/series/1.png" alt="">
+                                                    <a href="#" class="product-slider__open" data-toggle="modal"
+                                                       data-target="#modal-product-slider"
+                                                       aria-label="Посмотреть изображение полностью">
+                                                        <span class="icon-search"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-container">
+                                                <div class="aspect-ratio aspect-ratio_100">
+                                                    <img src="https://dummyimage.com/900x600/F4F4F4/888" alt="">
+                                                    <a href="#" class="product-slider__open" data-toggle="modal"
+                                                       data-target="#modal-product-slider"
+                                                       aria-label="Посмотреть изображение полностью">
+                                                        <span class="icon-search"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-container">
+                                                <div class="aspect-ratio aspect-ratio_100">
+                                                    <img src="https://dummyimage.com/1600x900/F4F4F4/888" alt="">
+                                                    <a href="#" class="product-slider__open" data-toggle="modal"
+                                                       data-target="#modal-product-slider"
+                                                       aria-label="Посмотреть изображение полностью">
+                                                        <span class="icon-search"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-container">
+                                                <div class="aspect-ratio aspect-ratio_100">
+                                                    <img src="https://dummyimage.com/1400x700/F4F4F4/888" alt="">
+                                                    <a href="#" class="product-slider__open" data-toggle="modal"
+                                                       data-target="#modal-product-slider"
+                                                       aria-label="Посмотреть изображение полностью">
+                                                        <span class="icon-search"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-container">
+                                                <div class="aspect-ratio aspect-ratio_100">
+                                                    <img src="https://dummyimage.com/1200x1200/F4F4F4/888" alt="">
+                                                    <a href="#" class="product-slider__open" data-toggle="modal"
+                                                       data-target="#modal-product-slider"
+                                                       aria-label="Посмотреть изображение полностью">
+                                                        <span class="icon-search"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-container">
+                                                <div class="aspect-ratio aspect-ratio_100">
+                                                    <img src="https://dummyimage.com/800x1600/F4F4F4/888" alt="">
+                                                    <a href="#" class="product-slider__open" data-toggle="modal"
+                                                       data-target="#modal-product-slider"
+                                                       aria-label="Посмотреть изображение полностью">
+                                                        <span class="icon-search"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="swiper-slide-container">
+                                                <div class="aspect-ratio aspect-ratio_100">
+                                                    <img src="https://dummyimage.com/900x600/F4F4F4/888" alt="">
+                                                    <a href="#" class="product-slider__open" data-toggle="modal"
+                                                       data-target="#modal-product-slider"
+                                                       aria-label="Посмотреть изображение полностью">
+                                                        <span class="icon-search"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <a
+                                        href="javascript:void(0)"
+                                        class="d-inline-block lh-1 p-10 mt-45 js-thumbs-next"
+                                        role="button"
+                                        aria-label="Следующий слайд"
+                                >
+                                    <span class="icon-chevron-bold fz-18"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- slider Modal -->
+                        <div class="modal fade" id="modal-product-slider" tabindex="-1" role="dialog"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button
+                                                type="button"
+                                                class="close"
+                                                data-dismiss="modal"
+                                                aria-label="Закрыть диалговое окно"
+                                        >
+                                            <span class="icon-close" aria-hidden="true"></span>
+                                        </button>
+
+                                        <div class="slider">
+                                            <div class="slider__navigation">
+                                                <a href="javascript:void(0)"
+                                                   class="slider__prev js-modal-prev" role="button"
+                                                   aria-label="Предыдущий слайд">
+                                                    <span class="icon-chevron-thin rotate-180"></span>
+                                                </a>
+                                            </div>
+                                            <div class="slider__body">
+                                                <div class="swiper js-product-slider-modal">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <a href="img/_content/series/1.png">
+                                                                <img class="swiper-lazy"
+                                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                                     data-src="img/_content/series/1.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="https://dummyimage.com/900x600/F4F4F4/888">
+                                                                <img class="swiper-lazy"
+                                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                                     data-src="https://dummyimage.com/900x600/F4F4F4/888"
+                                                                     alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="https://dummyimage.com/1600x900/F4F4F4/888">
+                                                                <img class="swiper-lazy"
+                                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                                     data-src="https://dummyimage.com/1600x900/F4F4F4/888"
+                                                                     alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="https://dummyimage.com/1400x700/F4F4F4/888">
+                                                                <img class="swiper-lazy"
+                                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                                     data-src="https://dummyimage.com/1400x700/F4F4F4/888"
+                                                                     alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="https://dummyimage.com/1200x1200/F4F4F4/888">
+                                                                <img class="swiper-lazy"
+                                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                                     data-src="https://dummyimage.com/1200x1200/F4F4F4/888"
+                                                                     alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="https://dummyimage.com/800x1600/F4F4F4/888">
+                                                                <img class="swiper-lazy"
+                                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                                     data-src="https://dummyimage.com/800x1600/F4F4F4/888"
+                                                                     alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <a href="https://dummyimage.com/900x600/F4F4F4/888">
+                                                                <img class="swiper-lazy"
+                                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                                     data-src="https://dummyimage.com/900x600/F4F4F4/888"
+                                                                     alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+                                            </div>
+                                            <div class="slider__navigation">
+                                                <a href="javascript:void(0)"
+                                                   class="slider__next js-modal-next" role="button"
+                                                   aria-label="Следующий слайд">
+                                                    <span class="icon-chevron-thin"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6 pt-30 pt-md-0">
+                    <div class="border-left pl-0 pl-md-30">
+
+                        <div class="ff-dinpro fz-22 fw-700 mb-10">
+                            Светодиодный светильник <br>
+                            ДСП47-80-222 Arsenal RD 750
+                        </div>
+                        <div class="ff-dinpro fz-20 mb-25">
+                            Код: 1233580222
+                        </div>
+
+                        <div class="product-properties" id="properties-accordion">
+                            <div class="product-properties__labels">
+                                <div class="product-properties__label">
+                                    <a href="#prop-1" class="d-block aspect-ratio aspect-ratio_100"
+                                       data-toggle="collapse" role="button" aria-expanded="false" aria-controls="prop-1"
+                                       id="heading-properties-1">
+                                                <span>
+                                                    <img class="lazyload"
+                                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                         data-src="img/_content/series/props/1.png" alt="PROPERTY_NAME">
+                                                </span>
+                                    </a>
+                                </div>
+
+                                <div class="product-properties__label">
+                                    <a href="#prop-2" class="d-block aspect-ratio aspect-ratio_100"
+                                       data-toggle="collapse" role="button" aria-expanded="false" aria-controls="prop-2"
+                                       id="heading-properties-2">
+                                                <span>
+                                                    <img class="lazyload"
+                                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                         data-src="img/_content/series/props/2.png" alt="PROPERTY_NAME">
+                                                </span>
+                                    </a>
+                                </div>
+
+                                <div class="product-properties__label">
+                                    <a href="#prop-3" class="d-block aspect-ratio aspect-ratio_100"
+                                       data-toggle="collapse" role="button" aria-expanded="false" aria-controls="prop-3"
+                                       id="heading-properties-3">
+                                                <span>
+                                                    <img class="lazyload"
+                                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                         data-src="img/_content/series/props/3.png" alt="PROPERTY_NAME">
+                                                </span>
+                                    </a>
+                                </div>
+
+                                <div class="product-properties__label">
+                                    <a href="#prop-4" class="d-block aspect-ratio aspect-ratio_100"
+                                       data-toggle="collapse" role="button" aria-expanded="false" aria-controls="prop-4"
+                                       id="heading-properties-4">
+                                                <span>
+                                                    <img class="lazyload"
+                                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                         data-src="img/_content/series/props/4.png" alt="PROPERTY_NAME">
+                                                </span>
+                                    </a>
+                                </div>
+
+                                <div class="product-properties__label">
+                                    <a href="#prop-5" class="d-block aspect-ratio aspect-ratio_100"
+                                       data-toggle="collapse" role="button" aria-expanded="false" aria-controls="prop-5"
+                                       id="heading-properties-5">
+                                                <span>
+                                                    <img class="lazyload"
+                                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                         data-src="img/_content/series/props/5.png" alt="PROPERTY_NAME">
+                                                </span>
+                                    </a>
+                                </div>
+
+                                <div class="product-properties__label">
+                                    <a href="#prop-6" class="d-block aspect-ratio aspect-ratio_100"
+                                       data-toggle="collapse" role="button" aria-expanded="false" aria-controls="prop-6"
+                                       id="heading-properties-6">
+                                                <span>
+                                                    <img class="lazyload"
+                                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                         data-src="img/_content/series/props/6.png" alt="PROPERTY_NAME">
+                                                </span>
+                                    </a>
+                                </div>
+
+                                <div class="product-properties__label">
+                                    <a href="#prop-7" class="d-block aspect-ratio aspect-ratio_100"
+                                       data-toggle="collapse" role="button" aria-expanded="false" aria-controls="prop-7"
+                                       id="heading-properties-7">
+                                                <span>
+                                                    <img class="lazyload"
+                                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                         data-src="img/_content/series/props/7.png" alt="PROPERTY_NAME">
+                                                </span>
+                                    </a>
+                                </div>
+
+                                <div class="product-properties__label">
+                                    <a href="#prop-8" class="d-block aspect-ratio aspect-ratio_100"
+                                       data-toggle="collapse" role="button" aria-expanded="false" aria-controls="prop-8"
+                                       id="heading-properties-8">
+                                                <span>
+                                                    <img class="lazyload"
+                                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                         data-src="img/_content/series/props/8.png" alt="PROPERTY_NAME">
+                                                </span>
+                                    </a>
+                                </div>
+
+                                <div class="product-properties__label">
+                                    <a href="#prop-9" class="d-block aspect-ratio aspect-ratio_100"
+                                       data-toggle="collapse" role="button" aria-expanded="false" aria-controls="prop-9"
+                                       id="heading-properties-9">
+                                                <span>
+                                                    <img class="lazyload"
+                                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                         data-src="img/_content/series/props/9.png" alt="PROPERTY_NAME">
+                                                </span>
+                                    </a>
+                                </div>
+
+                                <div class="product-properties__label">
+                                    <a href="#prop-10" class="d-block aspect-ratio aspect-ratio_100"
+                                       data-toggle="collapse" role="button" aria-expanded="false"
+                                       aria-controls="prop-10" id="heading-properties-10">
+                                                <span>
+                                                    <img class="lazyload"
+                                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                         data-src="img/_content/series/props/10.png"
+                                                         alt="PROPERTY_NAME">
+                                                </span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="product-properties__descriptions">
+
+                                <div class="product-properties__description collapse" id="prop-1"
+                                     data-parent="#properties-accordion" aria-labelledby="heading-properties-1">
+                                    <div class="properties-description">
+                                        <div class="properties-description__img">
+                                            <div class=" aspect-ratio aspect-ratio_100">
+                                                <img class="lazyload"
+                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                     data-src="img/_content/series/props/1.png" alt="PROPERTY_NAME">
+                                            </div>
+                                        </div>
+                                        <div class="properties-description__text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse totam tempore
+                                            reiciendis, facere quas maiores officiis recusandae aliquid magni deleniti?
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-properties__description collapse" id="prop-2"
+                                     data-parent="#properties-accordion" aria-labelledby="heading-properties-2">
+                                    <div class="properties-description">
+                                        <div class="properties-description__img">
+                                            <div class=" aspect-ratio aspect-ratio_100">
+                                                <img class="lazyload"
+                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                     data-src="img/_content/series/props/2.png" alt="PROPERTY_NAME">
+                                            </div>
+                                        </div>
+                                        <div class="properties-description__text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse totam tempore
+                                            reiciendis, facere quas maiores officiis
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-properties__description collapse" id="prop-3"
+                                     data-parent="#properties-accordion" aria-labelledby="heading-properties-3">
+                                    <div class="properties-description">
+                                        <div class="properties-description__img">
+                                            <div class=" aspect-ratio aspect-ratio_100">
+                                                <img class="lazyload"
+                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                     data-src="img/_content/series/props/3.png" alt="PROPERTY_NAME">
+                                            </div>
+                                        </div>
+                                        <div class="properties-description__text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse totam tempore
+                                            reiciendis, faceredolor sit amet consectetur adipisicing elit. Esse totam
+                                            tempore reiciendis, facere quas maiores officiis recusandae aliquid magni
+                                            deleniti?it. Esse totam tempore reiciendis, facere quas maiores officiis
+                                            recusandae aliquid magni deleniti?
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-properties__description collapse" id="prop-4"
+                                     data-parent="#properties-accordion" aria-labelledby="heading-properties-4">
+                                    <div class="properties-description">
+                                        <div class="properties-description__img">
+                                            <div class=" aspect-ratio aspect-ratio_100">
+                                                <img class="lazyload"
+                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                     data-src="img/_content/series/props/4.png" alt="PROPERTY_NAME">
+                                            </div>
+                                        </div>
+                                        <div class="properties-description__text">
+                                            Esse totam tempore reiciendis, faceredolor sit amet consectetur adipisicing
+                                            elit. Esse totam tempore reiciendis, facere quas maiores officiis recusandae
+                                            aliquid magni deleniti?it. Esse totam tempore reiciendis, facere quas
+                                            maiores officiis recusandae aliquid magni deleniti?
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-properties__description collapse" id="prop-5"
+                                     data-parent="#properties-accordion" aria-labelledby="heading-properties-5">
+                                    <div class="properties-description">
+                                        <div class="properties-description__img">
+                                            <div class=" aspect-ratio aspect-ratio_100">
+                                                <img class="lazyload"
+                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                     data-src="img/_content/series/props/5.png" alt="PROPERTY_NAME">
+                                            </div>
+                                        </div>
+                                        <div class="properties-description__text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse totam tempore
+                                            reiciendis, faceredolor sit amet consectetur adipisicing elit. Esse totam
+                                            tempore reiciendis, facere quas maiores officiis recusandae aliquid magni
+                                            deleniti?ficiis recusandae aliquid magni deleniti?
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-properties__description collapse" id="prop-6"
+                                     data-parent="#properties-accordion" aria-labelledby="heading-properties-6">
+                                    <div class="properties-description">
+                                        <div class="properties-description__img">
+                                            <div class=" aspect-ratio aspect-ratio_100">
+                                                <img class="lazyload"
+                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                     data-src="img/_content/series/props/6.png" alt="PROPERTY_NAME">
+                                            </div>
+                                        </div>
+                                        <div class="properties-description__text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse totam tempore
+                                            reiciendis, faceredolor sit amet consectetur adipisicing elit. Esse totam
+                                            tempore reiciendis, facere quas maiores officiis recusandae aliqnsectetur
+                                            adipisicing elit. Esse totam tempore reiciendis, faceredolor sit amet
+                                            consectetur adipisicing elit. Esse totam tempore reiciendis, facere quas
+                                            maiores officiis recusandae aliquid magni deleniti?
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-properties__description collapse" id="prop-7"
+                                     data-parent="#properties-accordion" aria-labelledby="heading-properties-7">
+                                    <div class="properties-description">
+                                        <div class="properties-description__img">
+                                            <div class=" aspect-ratio aspect-ratio_100">
+                                                <img class="lazyload"
+                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                     data-src="img/_content/series/props/7.png" alt="PROPERTY_NAME">
+                                            </div>
+                                        </div>
+                                        <div class="properties-description__text">
+                                            Lorem ipsum dolor sit amet conmet consectetur adipisicing elit. Esse totam
+                                            tempore reiciendis, facere quas maiores officiis recusandae aliquid magni
+                                            deleniti?
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-properties__description collapse" id="prop-8"
+                                     data-parent="#properties-accordion" aria-labelledby="heading-properties-8">
+                                    <div class="properties-description">
+                                        <div class="properties-description__img">
+                                            <div class=" aspect-ratio aspect-ratio_100">
+                                                <img class="lazyload"
+                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                     data-src="img/_content/series/props/8.png" alt="PROPERTY_NAME">
+                                            </div>
+                                        </div>
+                                        <div class="properties-description__text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse totam tempore
+                                            reiciendis, faceredolor sit amet consectetur adipisicing elit. Esse totam
+                                            tempore reiciendis, facere quas maiores officiis recusandae aliquid magni
+                                            deleniti?
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-properties__description collapse" id="prop-9"
+                                     data-parent="#properties-accordion" aria-labelledby="heading-properties-9">
+                                    <div class="properties-description">
+                                        <div class="properties-description__img">
+                                            <div class=" aspect-ratio aspect-ratio_100">
+                                                <img class="lazyload"
+                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                     data-src="img/_content/series/props/9.png" alt="PROPERTY_NAME">
+                                            </div>
+                                        </div>
+                                        <div class="properties-description__text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse totam tempore
+                                            reiciendis, faceredolor sit amet consectetur adipisicing elit. Esse totam
+                                            tempore reiciendis, facere quas maiores officiis recusandae aliquid magni
+                                            deleniti?
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-properties__description collapse" id="prop-10"
+                                     data-parent="#properties-accordion" aria-labelledby="heading-properties-10">
+                                    <div class="properties-description">
+                                        <div class="properties-description__img">
+                                            <div class=" aspect-ratio aspect-ratio_100">
+                                                <img class="lazyload"
+                                                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                     data-src="img/_content/series/props/10.png" alt="PROPERTY_NAME">
+                                            </div>
+                                        </div>
+                                        <div class="properties-description__text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse totam tempore
+                                            reiciendis, faceredolor sit amet consectetur adipisicing elit. Esse totam
+                                            tempore reiciendis,
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="border-bottom mb-20 mb-lg-30"></div>
+                        <div>
+                            <div class="ff-dinpro fw-700 fz-18 mb-5">
+                                Применение
+                            </div>
+                            <div class="mb-15 mb-lg-20">
+                                Предназначены для освещения производственных, складских и иных помещений с высокими
+                                пролетами от 4 до 15 м.
+                            </div>
+
+                            <div class="mb-15 mb-lg-20">
+                                <div><span class="ff-dinpro fw-500 fz-18">Корпус:</span> алюминий</div>
+                                <div><span class="ff-dinpro fw-500 fz-18">Стекло:</span> темперированное прозрачное
+                                    стекло
+                                </div>
+                                <div><span class="ff-dinpro fw-500 fz-18">Уплотнительная прокладка:</span> силиконовая
+                                    резина
+                                </div>
+                                <div><span class="ff-dinpro fw-500 fz-18">Крышки:</span> алюминий</div>
+                                <div><span class="ff-dinpro fw-500 fz-18">Монтажная панель:</span> листовая сталь,
+                                    оцинкованная
+                                </div>
+                                <div><span class="ff-dinpro fw-500 fz-18">КСС (Угол излучения):</span> "К"
+                                    концентрированная (27°)
+                                </div>
+                                <div><span class="ff-dinpro fw-500 fz-18">Установка:</span> на поверхность или
+                                    вертикальный трос
+                                </div>
+                            </div>
+
+                            <div class="ff-dinpro fw-700 fz-20 mb-30 mb-lg-60">
+                                Базовая цена: 7 243,00 руб.
+                            </div>
+
+
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1 border-bottom"></div>
+                                <div>
+                                    <a class="collapse-action btn btn-link btn-sm" data-toggle="collapse"
+                                       href="#collapse-distributors" role="button" aria-expanded="false"
+                                       aria-controls="collapse-distributors">
+                                        <span class="mr-20">Дистрибьюторы</span><span
+                                            class="collapse-caret icon-chevron-bold"></span>
+                                    </a>
+                                </div>
+                                <div class="flex-grow-1 border-bottom"></div>
+                            </div>
+                            <div class="collapse" id="collapse-distributors">
+                                <div class="pt-10">
+                                    <div class="d-flex justify-content-between border-bottom border-grey-light py-5 px-lg-20">
+                                        <div class="mr-10">
+                                            <a href="#">ГК ФОРУМ ЭЛЕКТРО</a>
+                                        </div>
+                                        <div class="ml-10">
+                                            10 шт.
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between border-bottom border-grey-light py-5 px-lg-20">
+                                        <div class="mr-10">
+                                            <a href="#">ЭТМ</a>
+                                        </div>
+                                        <div class="ml-10">
+                                            7 шт.
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between border-bottom border-grey-light py-5 px-lg-20">
+                                        <div class="mr-10">
+                                            <a href="#">Ассоциация компаний “Русский свет”</a>
+                                        </div>
+                                        <div class="ml-10">
+                                            по запросу
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between border-bottom border-grey-light py-5 px-lg-20">
+                                        <div class="mr-10">
+                                            <a href="#">АВС-электро</a>
+                                        </div>
+                                        <div class="ml-10">
+                                            по запросу
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between border-bottom border-grey-light py-5 px-lg-20">
+                                        <div class="mr-10">
+                                            <a href="#">ИДЖИТЕХ</a>
+                                        </div>
+                                        <div class="ml-10">
+                                            по запросу
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between mx-n10 mx-xl-n20">
+                                    <div>
+                                        <a class="btn btn-link px-10 px-xl-20" href="#"><span
+                                                class="icon-chevron-bold fz-12 rotate-180"
+                                                aria-hidden="true"></span><span
+                                                class="d-none d-xl-inline ml-20">Назад</span></a>
+                                    </div>
+                                    <div>
+                                        <a class="btn btn-link px-10 px-xl-20" href="#">1</a>
+                                        <a class="btn btn-link px-10 px-xl-20" href="#">2</a>
+                                        <a class="btn btn-link px-10 px-xl-20" href="#">3</a>
+                                        <span>...</span>
+                                        <a class="btn btn-link px-10 px-xl-20" href="#">36</a>
+                                        <a class="btn btn-link px-10 px-xl-20" href="#"><span
+                                                class="d-none d-xl-inline mr-20">Дальше</span><span
+                                                class="icon-chevron-bold fz-12" aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-25 py-lg-75"></div>
+
+    <div class="container">
+        <div class="tabs">
+            <ul class="nav nav-tabs" id="series-tabs" role="tablist">
+                <li class="nav-item">
+                    <a
+                            class="nav-link active"
+                            id="features-tab"
+                            data-toggle="tab"
+                            href="#features"
+                            role="tab"
+                            aria-controls="features"
+                            aria-selected="true"
+                    >
+                        Характеристики
+                        <!-- <span class="tabs__amount">124</span> -->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a
+                            class="nav-link"
+                            id="description-tab"
+                            data-toggle="tab"
+                            href="#description"
+                            role="tab"
+                            aria-controls="description"
+                            aria-selected="false"
+                    >
+                        Описание серии
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a
+                            class="nav-link"
+                            id="downloads-tab"
+                            data-toggle="tab"
+                            href="#downloads"
+                            role="tab"
+                            aria-controls="downloads"
+                            aria-selected="false"
+                    >
+                        Документы для скачивания
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a
+                            class="nav-link"
+                            id="projects-tab"
+                            data-toggle="tab"
+                            href="#projects"
+                            role="tab"
+                            aria-controls="projects"
+                            aria-selected="false"
+                    >
+                        Проекты
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a
+                            class="nav-link"
+                            id="accessories-tab"
+                            data-toggle="tab"
+                            href="#accessories"
+                            role="tab"
+                            aria-controls="accessories"
+                            aria-selected="false"
+                    >
+                        Аксессуары
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a
+                            class="nav-link"
+                            id="calculation-tab"
+                            data-toggle="tab"
+                            href="#calculation"
+                            role="tab"
+                            aria-controls="calculation"
+                            aria-selected="false"
+                    >
+                        Расчет освещенности
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content" id="series-tabs-content">
+                <div
+                        class="tab-pane fade show active"
+                        id="features"
+                        role="tabpanel"
+                        aria-labelledby="features-tab"
+                >
+                    <div class="pt-30 pt-lg-50">
+
+                        <div class="card-columns">
+
+                            <div class="card border-0 mb-40 mb-xl-80">
+                                <div>
+                                    <div class="ff-dinpro fz-18 fw-500 border-bottom border-red pb-20 px-30">
+                                        Электротехнические характеристики
+                                    </div>
+                                    <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                        <div class="pr-10">
+                                            Тип напряжения
+                                        </div>
+                                        <div class="pl-10">
+                                            переменный
+                                        </div>
+                                    </div>
+                                    <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                        <div class="pr-10">
+                                            Рабочее напряжение питания, В min
+                                        </div>
+                                        <div class="pl-10">
+                                            198
+                                        </div>
+                                    </div>
+                                    <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                        <div class="pr-10">
+                                            Рабочее напряжение питания, В max
+                                        </div>
+                                        <div class="pl-10">
+                                            242
+                                        </div>
+                                    </div>
+                                    <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                        <div class="pr-10">
+                                            Частота тока питающей сети, Гц min
+                                        </div>
+                                        <div class="pl-10">
+                                            50
+                                        </div>
+                                    </div>
+                                    <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                        <div class="pr-10">
+                                            Частота тока питающей сети, Гц max
+                                        </div>
+                                        <div class="pl-10">
+                                            55
+                                        </div>
+                                    </div>
+                                    <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                        <div class="pr-10">
+                                            Мощность светового прибора, Вт
+                                        </div>
+                                        <div class="pl-10">
+                                            80
+                                        </div>
+                                    </div>
+                                    <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                        <div class="pr-10">
+                                            Коэффициент мощности (PF)
+                                        </div>
+                                        <div class="pl-10">
+                                            0,98
+                                        </div>
+                                    </div>
+                                    <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                        <div class="pr-10">
+                                            ПРА
+                                        </div>
+                                        <div class="pl-10">
+                                            драйвер с управлением по протоколу DALI
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="text-center mt-30">
+                                    <img class="img-fluid lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/product/f1.png" alt="">
+                                </div>
+
+                            </div>
+
+
+                            <div class="card border-0 mb-40 mb-xl-80">
+                                <div class="ff-dinpro fz-18 fw-500 border-bottom border-red pb-20 px-30">
+                                    Рекомендуемое количество светильников на автоматический выключатель
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Тип аппарата защиты
+                                    </div>
+                                    <div class="pl-10">
+                                        C16
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Количество светильников на аппарат, шт
+                                    </div>
+                                    <div class="pl-10">
+                                        50
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Пусковой ток, А
+                                    </div>
+                                    <div class="pl-10">
+                                        5
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Длительность пускового тока, мкс
+                                    </div>
+                                    <div class="pl-10">
+                                        0,212
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 mb-40 mb-xl-80">
+                                <div class="ff-dinpro fz-18 fw-500 border-bottom border-red pb-20 px-30">
+                                    Упаковка, маркировка
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Длина упаковки, м
+                                    </div>
+                                    <div class="pl-10">
+                                        0,5
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Ширина упаковки, м
+                                    </div>
+                                    <div class="pl-10">
+                                        0,1
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Высота упаковки, м
+                                    </div>
+                                    <div class="pl-10">
+                                        0,1
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Количество в упаковке, шт
+                                    </div>
+                                    <div class="pl-10">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        EAN13
+                                    </div>
+                                    <div class="pl-10">
+                                        4600773037300
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        ITF14
+                                    </div>
+                                    <div class="pl-10">
+                                        14600773037307
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Вес упаковки, кг
+                                    </div>
+                                    <div class="pl-10">
+                                        4,00
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 mb-40 mb-xl-80">
+                                <div class="ff-dinpro fz-18 fw-500 border-bottom border-red pb-20 px-30">
+                                    Габаритные характеристики
+                                </div>
+                                <div class="text-center mt-30">
+                                    <img class="img-fluid lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/product/f2.png" alt="">
+                                </div>
+                                <div class="ff-dinpro fz-18 fw-500 border-bottom border-red pb-20 px-30"></div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Длина упаковки, м
+                                    </div>
+                                    <div class="pl-10">
+                                        0,5
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Ширина упаковки, м
+                                    </div>
+                                    <div class="pl-10">
+                                        0,1
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Высота упаковки, м
+                                    </div>
+                                    <div class="pl-10">
+                                        0,1
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--  -->
+                            <!-- используйте этот блок для того чтобы разорвать заполнение колонки, если это необходимо -->
+                            <div class="card-columns-break"></div>
+                            <!--  -->
+                            <!--  -->
+
+                            <div class="card border-0 mb-40 mb-xl-80">
+                                <div class="ff-dinpro fz-18 fw-500 border-bottom border-red pb-20 px-30">
+                                    Эксплуатационные характеристики
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Климатическое исполнение
+                                    </div>
+                                    <div class="pl-10">
+                                        У1
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Температура эксплуатации (Та)
+                                    </div>
+                                    <div class="pl-10">
+                                        -20...+45°С
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Степень защиты
+                                    </div>
+                                    <div class="pl-10">
+                                        IP65
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Класс защиты от электрического тока
+                                    </div>
+                                    <div class="pl-10">
+                                        I
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Класс пожароопасной зоны
+                                    </div>
+                                    <div class="pl-10">
+                                        П-IIа
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Класс энергетической эффективности светодиодных светильников
+                                    </div>
+                                    <div class="pl-10">
+                                        143
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 mb-40 mb-xl-80">
+                                <div class="ff-dinpro fz-18 fw-500 border-bottom border-red pb-20 px-30">
+                                    Светотехнические параметры
+                                </div>
+
+                                <div class="text-center my-30">
+                                    <img class="img-fluid lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/product/f3.png" alt="">
+                                </div>
+
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Кривая силы света
+                                    </div>
+                                    <div class="pl-10">
+                                        Д
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Угол рассеяния, °
+                                    </div>
+                                    <div class="pl-10">
+                                        114
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Класс светораспределения
+                                    </div>
+                                    <div class="pl-10">
+                                        П
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Коэффициент пульсации (СП), %
+                                    </div>
+                                    <div class="pl-10">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Цветовая температура, К
+                                    </div>
+                                    <div class="pl-10">
+                                        5000
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Световой поток, лм
+                                    </div>
+                                    <div class="pl-10">
+                                        11 437
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Световая отдача, лм/Вт
+                                    </div>
+                                    <div class="pl-10">
+                                        143
+                                    </div>
+                                </div>
+                                <div class="product-feature-param d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="pr-10">
+                                        Индекс цветопередачи
+                                    </div>
+                                    <div class="pl-10">
+                                        70
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                        class="tab-pane fade"
+                        id="description"
+                        role="tabpanel"
+                        aria-labelledby="description-tab"
+                >
+                    <div class="pt-30 pt-lg-50">
+
+                        <ul>
+                            <li class="mb-20">
+                                Мгновенное включение, стабильная работа и защита обеспечива- ются блоком питания,
+                                работающим в сетях переменного тока в диа- пазоне напряжений 220 В (диапазон рабочих
+                                напряжений 198-264 В), частоты 50 Гц (диапазон 45-55 Гц) и в сетях постоянного тока с
+                                номинальным напряжением 220 В (диапазон рабочих напряжений 176-280 В, причем запуск при
+                                напряжении не менее 190 В). Качество электроэнергии должно соответствовать требованиям
+                                ГОСТ 32144-2013.
+                            </li>
+                            <li class="mb-20">
+                                Светильники предназначены для эксплуатации в помещениях с содержанием
+                                коррозионно-активных агентов для типа атмосферы I и II по ГОСТ 15150-69 п. 3.14.
+                            </li>
+                            <li class="mb-20">
+                                Светильники соответствуют требованиям безопасности по ГОСТ IEC 60598-1-2013 и
+                                требованиям электромагнитной совместимости по ГОСТ IEC 61547-2013, ГОСТ 30804.3.2-2013,
+                                ГОСТ 30804.3.3-2013, СТБ ЕН 55015-2006.
+                            </li>
+                        </ul>
+
+
+                        <div class="py-25 py-lg-60"></div>
+
+
+                        <div class="modification d-none d-lg-block">
+                            <div class="modification__title">
+                                        <span>
+                                            ДСП47-80-
+                                        </span>
+                                <span class="modification__key modification__key_1 active js-mod-key" id="js-mod-key-1"
+                                      data-target="js-mod-val-1">
+                                            0
+                                            <div class="modification__line"></div>
+                                        </span>
+                                <span class="modification__key modification__key_2 js-mod-key" id="js-mod-key-2"
+                                      data-target="js-mod-val-2">
+                                            0
+                                            <div class="modification__line""></div>
+                            </span>
+                            <span class="modification__key modification__key_3 js-mod-key" id="js-mod-key-3"
+                                  data-target="js-mod-val-3">
+                                            1
+                                            <div class="modification__line"></div>
+                                        </span>
+                            <span class="modification__key modification__key_4 js-mod-key" id="js-mod-key-4"
+                                  data-target="js-mod-val-4">
+                                            &nbsp; Arsenal 750 
+                                            <div class="modification__line"></div>
+                                        </span>
+                            &nbsp; 1233580001
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-4 col-lg-3">
+                                <div class="modification__val modification__val_1 active js-mod-val" id="js-mod-val-1"
+                                     data-target="js-mod-key-1">
+                                    <strong>0</strong> - КСС «Д» (114°); <br>
+                                    <strong>1</strong> - КСС «К+Г» (30°+48°); <br>
+                                    <strong>2</strong> - КСС «К» (27°); <br>
+                                    <strong>3</strong> - КСС «К» (36°); <br>
+                                    <strong>4</strong> - КСС «К+Г» (14°+55°); <br>
+                                    <strong>5</strong> - КСС «Г» (60°); <br>
+                                    <strong>6</strong> - КСС «Д» (95°); <br>
+                                    <strong>7</strong> - КСС «К+Д» (34°+96°). <br>
+                                    <div class="modification__line"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3">
+                                <div class="modification__val modification__val_2 js-mod-val" id="js-mod-val-2"
+                                     data-target="js-mod-key-2">
+                                    0 - базовое исполнение; <br>
+                                    1 - RA (драйвер с управлением по протоколу 1-10В); <br>
+                                    2 - RD (драйвер с управлением по протоколу DALI); <br>
+                                    3 - NL (драйвер с функцией дежурного освещения); <br>
+                                    4 - EM (с блоком аварийного питания УХЛ4); <br>
+                                    41* - EM1 (с блоком аварийного питания на 1 час УХЛ4); <br>
+                                    6 - DC EL (с функцией аварийного освещения ЦАО). <br>
+                                    <div class="modification__line"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3">
+                                <div class="modification__val modification__val_3 js-mod-val" id="js-mod-val-3"
+                                     data-target="js-mod-key-3">
+                                    1 - прозрачный рассеиватель; <br>
+                                    2 - темперированное прозрачное стекло; <br>
+                                    3 - опаловый рассеиватель; <br>
+                                    4 - темперированное опаловое стекло. <br>
+                                    <div class="modification__line"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-3 pt-30 pt-lg-0">
+                                <div class="modification__val modification__val_4 js-mod-val" id="js-mod-val-4"
+                                     data-target="js-mod-key-4">
+                                    Arsenal - коммерческое название. <br>
+                                    RD - драйвер с управлением по протоколу DALI+TD (TD - функция диммирования
+                                    касанием). <br>
+                                    NL - драйвер с функцией дежурного освещения. <br>
+                                    EM1 - наличие блока аварийного питания (УХЛ4). <br>
+                                    DC EL - драйвер с функцией аварийного освещения (ЦАО). <br>
+                                    750 - Ra=70 и T=5000K. <br>
+                                    <div class="modification__line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modification-mobile d-lg-none" id="mod-accordion">
+
+                        <div class="text-grey fz-14 mb-10">
+                            Нажмите выделенную часть в наименовании модификации, для того чтобы узнать что она означает
+                        </div>
+
+                        <div class="d-flex align-items-center ff-dinpro fz-18 mb-15">
+                            ДСП47-80-
+                            <a href="#mod-1" class="modification-mobile__hilight" data-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="mod-1" id="heading-mod-1">
+                                0
+                            </a>
+                            <a href="#mod-2" class="modification-mobile__hilight" data-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="mod-2" id="heading-mod-2">
+                                0
+                            </a>
+                            <a href="#mod-3" class="modification-mobile__hilight" data-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="mod-3" id="heading-mod-3">
+                                1
+                            </a>
+                            &nbsp;
+                            <a href="#mod-4" class="modification-mobile__hilight" data-toggle="collapse" role="button"
+                               aria-expanded="false" aria-controls="mod-4" id="heading-mod-4">
+                                Arsenal 750
+                            </a>
+                            <span class="d-none d-sm-block">
+                                            1233580001
+                                        </span>
+                        </div>
+
+                        <div>
+                            <div class="collapse" id="mod-1" data-parent="#mod-accordion"
+                                 aria-labelledby="heading-mod-1">
+                                <div class="bg-grey-light py-10 px-20 ">
+                                    <strong>0</strong> - КСС «Д» (114°); <br>
+                                    <strong>1</strong> - КСС «К+Г» (30°+48°); <br>
+                                    <strong>2</strong> - КСС «К» (27°); <br>
+                                    <strong>3</strong> - КСС «К» (36°); <br>
+                                    <strong>4</strong> - КСС «К+Г» (14°+55°); <br>
+                                    <strong>5</strong> - КСС «Г» (60°); <br>
+                                    <strong>6</strong> - КСС «Д» (95°); <br>
+                                    <strong>7</strong> - КСС «К+Д» (34°+96°). <br>
+                                </div>
+                            </div>
+
+                            <div class="collapse" id="mod-2" data-parent="#mod-accordion"
+                                 aria-labelledby="heading-mod-2">
+                                <div class="bg-grey-light py-10 px-20 ">
+                                    0 - базовое исполнение; <br>
+                                    1 - RA (драйвер с управлением по протоколу 1-10В); <br>
+                                    2 - RD (драйвер с управлением по протоколу DALI); <br>
+                                    3 - NL (драйвер с функцией дежурного освещения); <br>
+                                    4 - EM (с блоком аварийного питания УХЛ4); <br>
+                                    41* - EM1 (с блоком аварийного питания на 1 час УХЛ4); <br>
+                                    6 - DC EL (с функцией аварийного освещения ЦАО). <br>
+                                </div>
+                            </div>
+
+                            <div class="collapse" id="mod-3" data-parent="#mod-accordion"
+                                 aria-labelledby="heading-mod-3">
+                                <div class="bg-grey-light py-10 px-20 ">
+                                    1 - прозрачный рассеиватель; <br>
+                                    2 - темперированное прозрачное стекло; <br>
+                                    3 - опаловый рассеиватель; <br>
+                                    4 - темперированное опаловое стекло. <br>
+                                </div>
+                            </div>
+
+                            <div class="collapse" id="mod-4" data-parent="#mod-accordion"
+                                 aria-labelledby="heading-mod-4">
+                                <div class="bg-grey-light py-10 px-20 ">
+                                    Arsenal - коммерческое название. <br>
+                                    RD - драйвер с управлением по протоколу DALI+TD (TD - функция диммирования
+                                    касанием). <br>
+                                    NL - драйвер с функцией дежурного освещения. <br>
+                                    EM1 - наличие блока аварийного питания (УХЛ4). <br>
+                                    DC EL - драйвер с функцией аварийного освещения (ЦАО). <br>
+                                    750 - Ra=70 и T=5000K. <br>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div
+                    class="tab-pane fade"
+                    id="downloads"
+                    role="tabpanel"
+                    aria-labelledby="downloads-tab"
+            >
+                <div class="pt-30 pt-lg-50">
+
+                    <div class="text-center fz-30 mt-30 mb-30 mb-xl-60">
+                        Документы для скачивания <strong class="ff-dinpro">ДСП47-80-001 Arsenal 750</strong>
+                    </div>
+
+                    <div class="row mb-30 mb-xl-60">
+                        <div class="col-lg-4">
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-1">
+                                <label class="custom-control-label" for="download-docs-1">Описание</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-2">
+                                <label class="custom-control-label" for="download-docs-2">Паспорт</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-3">
+                                <label class="custom-control-label" for="download-docs-3">Декларация соответствия</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-4">
+                                <label class="custom-control-label" for="download-docs-4">Модель</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-5">
+                                <label class="custom-control-label" for="download-docs-5">Фотометрия LDT</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-6">
+                                <label class="custom-control-label" for="download-docs-6">Медицинское свидетельство</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-7">
+                                <label class="custom-control-label" for="download-docs-7">Пожарный сертификат</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-8">
+                                <label class="custom-control-label" for="download-docs-8">Сертификат</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-9">
+                                <label class="custom-control-label" for="download-docs-9">Модель 3D</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+
+                        <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-10">
+                                <label class="custom-control-label" for="download-docs-10">Таблица КИ</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-11">
+                                <label class="custom-control-label" for="download-docs-11">Схема</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-12">
+                                <label class="custom-control-label" for="download-docs-12">Чертеж</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-13">
+                                <label class="custom-control-label" for="download-docs-13">Монтажный чертеж</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-14">
+                                <label class="custom-control-label" for="download-docs-14">Фотометрия IES</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+                                <input type="checkbox" checked class="custom-control-input" id="download-docs-15">
+                                <label class="custom-control-label" for="download-docs-15">КСС</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center text-center text-md-left">
+                        <div class="col-md-6 mb-md-15 text-md-right mb-15 mb-md-0">
+                            <a href="#" class="btn btn-mw btn-blue-dark">
+                                <span class="text-uppercase fz-18">Скачать выбранные</span>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-mw btn-outline-blue-dark">
+                                <span class="icon-download fz-20 mr-20"></span><span class="text-uppercase fz-18">Скачать все</span>
+                                (Pdf)
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div
+                    class="tab-pane fade"
+                    id="projects"
+                    role="tabpanel"
+                    aria-labelledby="projects-tab"
+            >
+                <div class="pt-30 pt-lg-50">
+
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s1.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s2.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s3.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s4.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s5.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s1.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s2.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s3.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s4.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s5.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s1.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s2.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s3.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s4.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-20 mb-lg-35">
+                            <div class="border">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_60">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/series/s5.png"
+                                         alt="Школа № 354 г. Реутов Московская Область">
+                                </a>
+                                <div class="text-left pt-20 pb-40 px-20">
+                                    <a href="#" class="text-truncate-2 text-uppercase fw-700 fz-14 fz-md-16 mb-10">Школа
+                                        № 354 г. Реутов Московская Область</a>
+                                    <a href="#" class="fw-700 fz-12">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div
+                    class="tab-pane fade"
+                    id="accessories"
+                    role="tabpanel"
+                    aria-labelledby="accessories-tab"
+            >
+                <div class="pt-30 pt-lg-50">
+
+                    <div class="product-table table-responsive scrollbar mb-35">
+                        <table class="table table-hover">
+                            <thead class="text-nowrap">
+                            <tr>
+                                <th colspan="3">
+                                    <div>Наименование</div>
+                                    <div class="fz-15">
+                                        <span class="mr-10">Новинки</span>
+                                        <span class="product-table__new"></span>
+                                    </div>
+                                </th>
+                                <th>Габариты, мм</th>
+                                <th>Габариты Д/Ш/В, мм</th>
+                                <th>Масса, кг</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#" aria-label="Разъем 2 IP68">
+                                        <div class="product-table__img lazyload"
+                                             data-bg="img/_content/product/ac10.png"></div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap ff-dinpro fw-700 mb-5">
+                                        <a href="#">Разъем 2 IP68</a>
+                                    </div>
+                                    <div>Код: 1233000001</div>
+                                </td>
+                                <td>
+                                    <span class="product-table__new"></span>
+                                </td>
+                                <td class="long-cell">
+                                    Разъем под 2-х жильный провод (для светильников с управлением), IP68
+                                </td>
+                                <td>
+                                    410/150/125
+                                </td>
+                                <td>
+                                    3,30
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" aria-label="Кронштейн поворотный КП 45х1,5 ">
+                                        <div class="product-table__img lazyload"
+                                             data-bg="img/_content/product/ac2.png"></div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap ff-dinpro fw-700 mb-5">
+                                        <a href="#">Кронштейн поворотный КП 45х1,5 </a>
+                                    </div>
+                                    <div>Код: 1233000004</div>
+                                </td>
+                                <td>
+                                    <!-- <span class="product-table__new"></span> -->
+                                </td>
+                                <td class="long-cell">
+                                    Кронштейн поворотный для ДСП47
+                                </td>
+                                <td>
+                                    410/150/125
+                                </td>
+                                <td>
+                                    3,30
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" aria-label="Кронштейн соединяющий КС 2х3 (2 шт.)">
+                                        <div class="product-table__img lazyload"
+                                             data-bg="img/_content/product/ac3.png"></div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap ff-dinpro fw-700 mb-5">
+                                        <a href="#">Кронштейн соединяющий КС 2х3 (2 шт.)</a>
+                                    </div>
+                                    <div>Код: 1233000007</div>
+                                </td>
+                                <td>
+                                    <!-- <span class="product-table__new"></span> -->
+                                </td>
+                                <td class="long-cell">
+                                    Кронштейн для соединения 3 светильников
+                                </td>
+                                <td>
+                                    410/150/125
+                                </td>
+                                <td>
+                                    3,30
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" aria-label="Датчик MS415 IP65 ">
+                                        <div class="product-table__img lazyload"
+                                             data-bg="img/_content/product/ac1.png"></div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap ff-dinpro fw-700 mb-5">
+                                        <a href="#">Датчик MS415 IP65 </a>
+                                    </div>
+                                    <div>Код: 1233000005</div>
+                                </td>
+                                <td>
+                                    <!-- <span class="product-table__new"></span> -->
+                                </td>
+                                <td class="long-cell">
+                                    Датчик микроволновый МS415 IP65, на кронштейне (Высота установки 4-15 м, Дальность
+                                    обнаружения: 2; 5; 7,5; 10 м, Уровень освещенности: 2; 5; 20; 50; 2000 лк)
+                                </td>
+                                <td>
+                                    410/150/125
+                                </td>
+                                <td>
+                                    3,30
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" aria-label="Разъем 2 IP68 ">
+                                        <div class="product-table__img lazyload"
+                                             data-bg="img/_content/product/ac4.png"></div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap ff-dinpro fw-700 mb-5">
+                                        <a href="#">Разъем 2 IP68 </a>
+                                    </div>
+                                    <div>Код: 1233000001</div>
+                                </td>
+                                <td>
+                                    <span class="product-table__new"></span>
+                                </td>
+                                <td class="long-cell">
+                                    Разъем под 2-х жильный провод (для светильников с управлением), IP68
+                                </td>
+                                <td>
+                                    410/150/125
+                                </td>
+                                <td>
+                                    3,30
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" aria-label="Кронштейн поворотный КП 45х1,5 ">
+                                        <div class="product-table__img lazyload"
+                                             data-bg="img/_content/product/ac5.png"></div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap ff-dinpro fw-700 mb-5">
+                                        <a href="#">Кронштейн поворотный КП 45х1,5 </a>
+                                    </div>
+                                    <div>Код: 1233000004</div>
+                                </td>
+                                <td>
+                                    <span class="product-table__new"></span>
+                                </td>
+                                <td class="long-cell">
+                                    Кронштейн поворотный для ДСП47
+                                </td>
+                                <td>
+                                    410/150/125
+                                </td>
+                                <td>
+                                    3,30
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" aria-label="Кронштейн соединяющий КС 2х3 (2 шт.)">
+                                        <div class="product-table__img lazyload"
+                                             data-bg="img/_content/product/ac6.png"></div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap ff-dinpro fw-700 mb-5">
+                                        <a href="#">Кронштейн соединяющий КС 2х3 (2 шт.)</a>
+                                    </div>
+                                    <div>Код: 1233000007</div>
+                                </td>
+                                <td>
+                                    <!-- <span class="product-table__new"></span> -->
+                                </td>
+                                <td class="long-cell">
+                                    Кронштейн для соединения 3 светильников
+                                </td>
+                                <td>
+                                    410/150/125
+                                </td>
+                                <td>
+                                    3,30
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" aria-label="Датчик MS415 IP65">
+                                        <div class="product-table__img lazyload"
+                                             data-bg="img/_content/product/ac7.png"></div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap ff-dinpro fw-700 mb-5">
+                                        <a href="#">Датчик MS415 IP65</a>
+                                    </div>
+                                    <div>Код: 1233000005</div>
+                                </td>
+                                <td>
+                                    <span class="product-table__new"></span>
+                                </td>
+                                <td class="long-cell">
+                                    Датчик микроволновый МS415 IP65, на кронштейне (Высота установки 4-15 м, Дальность
+                                    обнаружения: 2; 5; 7,5; 10 м, Уровень освещенности: 2; 5; 20; 50; 2000 лк)
+                                </td>
+                                <td>
+                                    410/150/125
+                                </td>
+                                <td>
+                                    3,30
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" aria-label="Кронштейн соединяющий КС 2х3 (2 шт.)">
+                                        <div class="product-table__img lazyload"
+                                             data-bg="img/_content/product/ac8.png"></div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap ff-dinpro fw-700 mb-5">
+                                        <a href="#">Кронштейн соединяющий КС 2х3 (2 шт.)</a>
+                                    </div>
+                                    <div>Код: 1233000007</div>
+                                </td>
+                                <td>
+                                    <!-- <span class="product-table__new"></span> -->
+                                </td>
+                                <td class="long-cell">
+                                    Кронштейн для соединения 3 светильников
+                                </td>
+                                <td>
+                                    410/150/125
+                                </td>
+                                <td>
+                                    3,30
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" aria-label="Датчик MS415 IP65 ">
+                                        <div class="product-table__img lazyload"
+                                             data-bg="img/_content/product/ac9.png"></div>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="text-nowrap ff-dinpro fw-700 mb-5">
+                                        <a href="#">Датчик MS415 IP65 </a>
+                                    </div>
+                                    <div>Код: 1233000005</div>
+                                </td>
+                                <td>
+                                    <span class="product-table__new"></span>
+                                </td>
+                                <td class="long-cell">
+                                    Датчик микроволновый МS415 IP65, на кронштейне (Высота установки 4-15 м, Дальность
+                                    обнаружения: 2; 5; 7,5; 10 м, Уровень освещенности: 2; 5; 20; 50; 2000 лк)
+                                </td>
+                                <td>
+                                    410/150/125
+                                </td>
+                                <td>
+                                    3,30
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            <div
+                    class="tab-pane fade"
+                    id="calculation"
+                    role="tabpanel"
+                    aria-labelledby="calculation-tab"
+            >
+                <div class="pt-30 pt-lg-50">
+
+
+                    <div class="calculator fz-lg-18">
+
+                        <div class="text-lg-center fz-18 fz-xl-20 mb-60 mb-xl-80">
+                            Онлайн калькулятор позволяет легко рассчитать количество светильников или уровень
+                            освещенности. <br>
+                            Результаты программы расчета могут отличаться от результатов профессиональной программы.
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xl-8 offset-xl-2">
+                                <div class="row mb-30 mb-xl-50">
+                                    <div class="col-md-6">
+
+                                        <div class="d-none">
+                                            <a href="javascript:void(0)" id="switch-3" class="">Рабочая поверхность</a>
+                                            <!-- Установите класс "checked", для того чтобы переключить калькулятор в режим расчета "Рабочая поверхность" -->
+                                            <a href="javascript:void(0)" id="switch-4" class="checked">Пол</a>
+                                            <!-- Установите класс "checked", для того чтобы переключить калькулятор в режим расчета "Пол" -->
+                                        </div>
+
+                                        <div class="filter mb-10 mb-xl-20">
+                                            <div class="custom-control custom-radio mb-15">
+                                                <input checked="" type="radio" id="switch-1" name="calc-type"
+                                                       class="custom-control-input"/>
+                                                <label class="custom-control-label mb-0" for="switch-1">Расчет
+                                                    освещенности</label>
+                                            </div>
+                                            <div class="custom-control custom-radio mb-15">
+                                                <input type="radio" id="switch-2" name="calc-type"
+                                                       class="custom-control-input"/>
+                                                <label class="custom-control-label mb-0" for="switch-2">Расчет
+                                                    количества светильников</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="row align-items-center mb-10">
+                                            <div class="col-4 col-lg-3">
+                                                <input id="a1" value="12" class="form-control form-control-sm"
+                                                       type="text">
+                                            </div>
+                                            <div class="col-7 col-lg-9">
+                                                <label for="a1" class="mb-0">
+                                                    Длина, м
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-10">
+                                            <div class="col-4 col-lg-3">
+                                                <input id="b1" value="8" class="form-control form-control-sm"
+                                                       type="text">
+                                            </div>
+                                            <div class="col-7 col-lg-9">
+                                                <label for="b1" class="mb-0">
+                                                    Ширина, м
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-10">
+                                            <div class="col-4 col-lg-3">
+                                                <input id="h1" value="3.3" class="form-control form-control-sm"
+                                                       type="text">
+                                            </div>
+                                            <div class="col-7 col-lg-9">
+                                                <label for="h1" class="mb-0">
+                                                    Высота, м
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row align-items-center mb-10">
+                                            <div class="col-4 col-lg-3">
+                                                <input id="h11" value="0.5" class="form-control form-control-sm"
+                                                       type="text">
+                                            </div>
+                                            <div class="col-7 col-lg-9">
+                                                <label for="h11" class="mb-0">
+                                                    Длина подвеса светильника, м
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-10">
+                                            <div class="col-4 col-lg-3">
+                                                <input id="z1" value="1.5" min="1.1" max="2" step="0.1"
+                                                       class="form-control form-control-sm" type="number">
+                                            </div>
+                                            <div class="col-7 col-lg-9">
+                                                <label for="z1" class="mb-0">
+                                                    Коэффициент запаса
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center mb-10">
+                                            <div class="col-4 col-lg-3">
+                                                <input id="k1" value="1.1" min="1" max="1.5" step="0.1"
+                                                       class="form-control form-control-sm" type="number">
+                                            </div>
+                                            <div class="col-7 col-lg-9">
+                                                <label for="k1" class="mb-0">
+                                                    Коэффициент неравномерности освещения
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+                                        <div id="switch-2-input" class="row align-items-center mb-10">
+                                            <div class="col-4 col-lg-3">
+                                                <input id="e1" value="400" class="form-control form-control-sm"
+                                                       type="text">
+                                            </div>
+                                            <div class="col-7 col-lg-9">
+                                                <label for="e1" class="mb-0">
+                                                    Требуемая освещенность
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div id="switch-1-input" class="row align-items-center mb-10">
+                                            <div class="col-4 col-lg-3">
+                                                <input id="count1" value="10" class="form-control form-control-sm"
+                                                       type="text">
+                                            </div>
+                                            <div class="col-7 col-lg-9">
+                                                <label for="count1" class="mb-0">
+                                                    Количество светильников
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            Коэффициент отражения (потолок/стены/пол): <span class="text-nowrap">70 / 50 / 20</span>
+                                        </div>
+
+
+                                        <input type="hidden" id="original_lamp_count" value="4"/>
+                                        <input type="hidden" id="f1" value="1250"/>
+                                        <input type="hidden" id="h21" value="0"/>
+
+                                        <input type="hidden" id="origin_lamp_count" value="4"/>
+                                        <input type="hidden" id="id1" value="90928"/>
+
+                                        <input type="hidden" id="ki0061" value="33"/>
+                                        <input type="hidden" id="ki0081" value="39"/>
+                                        <input type="hidden" id="ki0101" value="44"/>
+                                        <input type="hidden" id="ki1251" value="49"/>
+                                        <input type="hidden" id="ki1501" value="52"/>
+                                        <input type="hidden" id="ki2001" value="57"/>
+                                        <input type="hidden" id="ki2501" value="60"/>
+                                        <input type="hidden" id="ki3001" value="62"/>
+                                        <input type="hidden" id="ki4001" value="65"/>
+                                        <input type="hidden" id="ki5001" value="67"/>
+
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="h-100 d-flex flex-column justify-content-center">
+                                            <div class="calc-room-container text-center mt-auto mb-auto py-15">
+                                                <img class="img-fluid" src="/img/calculator/table.jpg"
+                                                     alt="Схема помещения"/>
+                                            </div>
+                                            <div class="calculator__result d-flex align-items-end justify-content-center text-red">
+                                                <div class="result-1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row justify-content-center text-center text-md-left">
+                                    <div class="col-md-6 mb-md-15 text-md-right mb-15 mb-md-0">
+                                        <button class="calc-button calculate btn btn-sm btn-mw btn-blue-dark fz-18"
+                                                onclick="calc10()">
+                                            Рассчитать
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button class="calc-button download btn btn-sm btn-mw btn-outline-blue-dark fz-18"
+                                                id="pdf-1" onclick="print_calculator_1(this)" data-mod="90928">
+                                            <span class="icon-download mr-10"></span> Скачать (Pdf)
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="py-25 py-lg-60"></div>
+
+    <div class="container">
+        <div class="text-center mb-30 mb-lg-60">
+            <h2 class="ff-dinpro fz-20 fz-lg-25 fw-700 text-uppercase mb-10">
+                Подобная продукция
+            </h2>
+        </div>
+
+        <div class="slider">
+            <div class="slider__navigation">
+                <a href="javascript:void(0)" class="slider__prev mt-n50 js-slider-navigation-prev" role="button"
+                   aria-label="Предыдущий слайд">
+                    <span class="icon-chevron-slider rotate-180"></span>
+                </a>
+            </div>
+            <div class="slider__body">
+                <div class="swiper js-five-columns-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="border rounded">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/sliders/s1.jpg" alt="Серия ДПП03 LED">
+                                </a>
+                                <div class="text-left px-25 py-25">
+                                    <a href="#"
+                                       class="text-truncate-2 text-truncate-autoheight ff-dinpro fw-700 fz-20 fz-lg-22 mb-15">Серия
+                                        ДПП03 LED</a>
+                                    <div class="fz-16 mb-10">Общее освещение помещений производственного и иного
+                                        назначения.
+                                    </div>
+                                    <a href="#" class="d-inline-block fz-18 fw-700">
+                                        380 товаров
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="border rounded">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/sliders/s2.jpg" alt="Серия ДПП03 LED">
+                                </a>
+                                <div class="text-left px-25 py-25">
+                                    <a href="#"
+                                       class="text-truncate-2 text-truncate-autoheight ff-dinpro fw-700 fz-20 fz-lg-22 mb-15">Серия
+                                        ДПП03 LED</a>
+                                    <div class="fz-16 mb-10">Общее освещение помещений производственного и иного
+                                        назначения.
+                                    </div>
+                                    <a href="#" class="d-inline-block fz-18 fw-700">
+                                        380 товаров
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="border rounded">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/sliders/s3.jpg" alt="Серия ДПП03 LED">
+                                </a>
+                                <div class="text-left px-25 py-25">
+                                    <a href="#"
+                                       class="text-truncate-2 text-truncate-autoheight ff-dinpro fw-700 fz-20 fz-lg-22 mb-15">Серия
+                                        ДПП03 LED</a>
+                                    <div class="fz-16 mb-10">Общее освещение помещений производственного и иного
+                                        назначения.
+                                    </div>
+                                    <a href="#" class="d-inline-block fz-18 fw-700">
+                                        380 товаров
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="border rounded">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/sliders/s4.jpg" alt="Серия ДПП03 LED">
+                                </a>
+                                <div class="text-left px-25 py-25">
+                                    <a href="#"
+                                       class="text-truncate-2 text-truncate-autoheight ff-dinpro fw-700 fz-20 fz-lg-22 mb-15">Серия
+                                        ДПП03 LED</a>
+                                    <div class="fz-16 mb-10">Общее освещение помещений производственного и иного
+                                        назначения.
+                                    </div>
+                                    <a href="#" class="d-inline-block fz-18 fw-700">
+                                        380 товаров
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="border rounded">
+                                <a href="#" class="d-block aspect-ratio aspect-ratio_100">
+                                    <img class="lazyload"
+                                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-src="img/_content/sliders/s5.jpg" alt="Серия ДПП03 LED">
+                                </a>
+                                <div class="text-left px-25 py-25">
+                                    <a href="#"
+                                       class="text-truncate-2 text-truncate-autoheight ff-dinpro fw-700 fz-20 fz-lg-22 mb-15">Серия
+                                        ДПП03 LED</a>
+                                    <div class="fz-16 mb-10">Общее освещение помещений производственного и иного
+                                        назначения.
+                                    </div>
+                                    <a href="#" class="d-inline-block fz-18 fw-700">
+                                        380 товаров
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination d-lg-none"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="slider__navigation">
+                <a href="javascript:void(0)" class="slider__next mt-n50 js-slider-navigation-next" role="button"
+                   aria-label="Следующий слайд">
+                    <span class="icon-chevron-slider"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-25 py-lg-60"></div>
+</main>
+
+
+        <footer class="footer bg-blue-dark text-white pt-55 pb-30">
+            <div class="container">
+                <div class="mb-35">
+                    <div class="row">
+                        <div class="col-lg-3 col-xl-2 offset-xl-1">
+    
+                            <div>
+                                <div class="d-none d-lg-block ff-dinpro fz-18 fw-700 text-uppercase">
+                                    Продукты
+                                </div>
+        
+                                <div class="footer-collapse-title d-block d-lg-none ff-dinpro fz-18 py-10 text-uppercase" data-toggle="collapse" data-target="#footer-collapse-1" aria-controls="footer-collapse-1" role="navigation">
+                                    Продукты
+                                </div>
+                            </div>
+    
+                            <div class="hide d-lg-block collapse" id="footer-collapse-1">
+                                <ul class="ul-clean pt-15 pt-lg-30 pr-xl-30">
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Общественные
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Промышленные
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Уличные
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Прожекторы
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Тепличные
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Облучатели
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Аварийные облучатели
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Аппараты
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Системы управления освещением
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-lg-none border-bottom border-white"></div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 offset-xl-1">
+    
+                            <div>
+                                <div class="d-none d-lg-block ff-dinpro fz-18 fw-700 text-uppercase">
+                                    Скачать
+                                </div>
+        
+                                <div class="footer-collapse-title d-block d-lg-none ff-dinpro fz-18 py-10 text-uppercase" data-toggle="collapse" data-target="#footer-collapse-2" aria-controls="footer-collapse-2" role="navigation">
+                                    Скачать
+                                </div>
+                            </div>
+    
+                            <div class="hide d-lg-block collapse" id="footer-collapse-2">
+                                <ul class="ul-clean pt-15 pt-lg-30 pr-xl-30">
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Калькулятор
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Расчет освещения
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Рекламные материалы
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Каталог
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Сертификаты
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Техническая информация
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Нормативные документы
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Видеоматериалы
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Презентации
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-lg-none border-bottom border-white"></div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 offset-xl-1">
+    
+                            <div>
+                                <div class="d-none d-lg-block ff-dinpro fz-18 fw-700 text-uppercase">
+                                    Сотрудничество
+                                </div>
+        
+                                <div class="footer-collapse-title d-block d-lg-none ff-dinpro fz-18 py-10 text-uppercase" data-toggle="collapse" data-target="#footer-collapse-3" aria-controls="footer-collapse-3" role="navigation">
+                                    Сотрудничество
+                                </div>
+                            </div>
+    
+                            <div class="hide d-lg-block collapse" id="footer-collapse-3">
+                                <ul class="ul-clean pt-15 pt-lg-30 pr-xl-30">
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Региональные представительства
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Прайс-лист
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Указания к применению
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Руководство
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Торговые дома
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Дилеры
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-lg-none border-bottom border-white"></div>
+                        </div>
+                        <div class="col-lg-3 col-xl-2 offset-xl-1">
+    
+                            <div>
+                                <div class="d-none d-lg-block ff-dinpro fz-18 fw-700 text-uppercase">
+                                    Компания
+                                </div>
+        
+                                <div class="footer-collapse-title d-block d-lg-none ff-dinpro fz-18 py-10 text-uppercase" data-toggle="collapse" data-target="#footer-collapse-4" aria-controls="footer-collapse-4" role="navigation">
+                                    Компания
+                                </div>
+                            </div>
+    
+                            <div class="hide d-lg-block collapse" id="footer-collapse-4">
+                                <ul class="ul-clean pt-15 pt-lg-30 pr-xl-30">
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            О компании
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            История завода
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Награды
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Качество
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Корпоративный стиль
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Вакансии
+                                        </a>
+                                    </li>
+                                    <li class="mb-5 pb-3">
+                                        <a href="#">
+                                            Клиентам 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-lg-none border-bottom border-white"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-xl-2 order-lg-1">
+                        <div class="footer-social d-flex align-items-center mb-15 mb-md-0 pt-lg-10 ml-lg-n10">
+                            <a class="footer-social__item" href="#">
+                                <span class="icon-telegram"></span>
+                            </a>
+                            <a class="footer-social__item" href="#">
+                                <span class="icon-vkontakte"></span>
+                            </a>
+                            <a class="footer-social__item" href="#">
+                                <span class="icon-facebook"></span>
+                            </a>
+                            <a class="footer-social__item" href="#">
+                                <span class="icon-instagram"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-xl-9 offset-xl-1">
+                        <div class="fz-14">
+                            <div class="mb-3">
+                                <a href="#">Карта сайта</a> | 
+                                <a href="#">Политика о конфиденциальности</a> | 
+                                <a href="#">Пользовательское соглашение</a>
+                            </div>
+                            <div>
+                                © 2022.ОАО "Ардатовский светотехнический завод
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script async src="lib/lazysizes/lazysizes.min.js"></script>
+        <script defer src="lib/jquery/jquery-3.6.0.min.js"></script>
+        <script defer src="lib/bootstrap-4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script defer src="lib/swiper/swiper-bundle.min.js"></script>
+        <script defer src="lib/range-slider/js/rSlider.min.js"></script>
+        <script defer src="lib/select/select.js"></script>
+
+        <script defer src="js/calculator.js"></script> <!-- Калькулятор освещенности. Желательно подключить только детальной странице товара. Там 5К строк!!! -->
+
+        <script defer src="js/script.js"></script>
+
+
+        <div class="fixed-bottom text-uppercase text-danger fz-20">
+            <div class="d-block d-sm-none">xs</div>
+            <div class="d-none d-sm-block d-md-none">sm</div>
+            <div class="d-none d-md-block d-lg-none">md</div>
+            <div class="d-none d-lg-block d-xl-none">lg</div>
+            <div class="d-none d-xl-block">xl</div>
+        </div>
+
+</body>
+</html>
