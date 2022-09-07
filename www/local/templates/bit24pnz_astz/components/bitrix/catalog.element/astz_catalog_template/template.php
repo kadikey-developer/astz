@@ -16,8 +16,9 @@ use Bitrix\Main\Localization\Loc;
 
 $this->setFrameMode(true);
 $this->addExternalJS($templateFolder . "/calculator.js"); // включаем скрипт калькулятора
-$this->addExternalJS($templateFolder . "/FileSaver.js"); // включаем скрипт сохранения файлов
-$this->addExternalJS($templateFolder . "/jszip.min.js"); // включаем скрипт архиватора
+$this->addExternalJS(SITE_TEMPLATE_PATH . "/js/FileSaver.js"); // включаем скрипт сохранения файлов
+$this->addExternalJS(SITE_TEMPLATE_PATH . "/js/jszip.min.js"); // включаем скрипт архиватора
+$this->addExternalJS(SITE_TEMPLATE_PATH . "/js/zippdfsave.js"); // включаем скрипт архиватора
 // $this->addExternalJS($templateFolder . "/jspdf.js"); // включаем скрипт архиватора
 // $this->addExternalJS("https://html2canvas.hertzen.com/dist/html2canvas.js");
 // $this->addExternalJS("https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js");
