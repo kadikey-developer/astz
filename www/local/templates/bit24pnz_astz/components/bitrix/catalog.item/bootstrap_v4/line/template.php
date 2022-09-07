@@ -22,6 +22,10 @@ use \Bitrix\Main\Localization\Loc;
  * @var CatalogSectionComponent $component
  */
 
+$this->addExternalJS(SITE_TEMPLATE_PATH . "/js/FileSaver.js"); // включаем скрипт сохранения файлов
+$this->addExternalJS(SITE_TEMPLATE_PATH . "/js/jszip.min.js"); // включаем скрипт архиватора
+$this->addExternalJS(SITE_TEMPLATE_PATH . "/js/zippdfsave.js"); // включаем скрипт архиватора
+
 if ($haveOffers)
 {
 	$showDisplayProps = !empty($item['DISPLAY_PROPERTIES']);
@@ -180,6 +184,77 @@ else
 					<!-- </div> -->
 					<?
 				}
+
+				/** Кнопка модального окна для скачивания */
+				?>
+				<td>
+					<?if (!empty($item["FILES"])):?>
+						<a href="#" data-toggle="modal" data-target="#download-<?=$item["ID"]?>" aria-label="Скачать документацию">
+							<span class="icon-pdf product-table__icon"></span>
+						</a>
+						<!-- Modal -->
+						<div
+							class="modal fade"
+							id="download-<?=$item["ID"]?>"
+							tabindex="-1"
+							role="dialog"
+							aria-labelledby="download-r<?=$item["ID"]?>"
+							aria-hidden="true"
+							>
+							<div class="modal-dialog modal-xl modal-dialog-centered text-wrap" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button
+											type="button"
+											class="close"
+											data-dismiss="modal"
+											aria-label="Закрыть диалговое окно"
+											>
+											<span class="icon-close" aria-hidden="true"></span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div class="modal-title">
+											Документы для скачивания
+										</div>
+										
+										<div class="row mb-40 mb-xl-50">
+											<?
+											foreach ( $item["FILES"] as $file) {
+												?>
+												<div class="col-lg-6">
+													<div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
+														<input type="checkbox" class="custom-control-input" id="download-docs-<?=$file["ID"]?>" value="<?=$file["SRC"]?>">
+														<label class="custom-control-label" for="download-docs-<?=$file["ID"]?>"><?=$file["FILE_TYPE"]?></label>
+													</div>
+												</div>
+												<?
+											}
+											?>
+										</div>
+						
+										<div id="downloadButtons-<?=$item["ID"]?>" class="row">
+											<div class="d-none d-lg-block col-2 col-xl-3"></div>
+											<div class="col-12 col-lg-4 col-xl-3 text-right mb-20">
+												<button data-target="#download-<?=$item["ID"]?>" class="h-auto btn d-block py-xl-20 btn-grey-dark">
+													<span class="fz-16 fz-xl-20">Скачать выбранные</span>
+												</button>
+											</div>
+											<div class="col-12 col-lg-4 col-xl-3 mb-20">
+												<button data-target="#download-<?=$item["ID"]?>" class="h-auto btn d-block py-xl-20 btn-grey-dark">
+													<span class="fz-16 fz-xl-20">Скачать все</span>
+												</button>
+											</div>
+											<div class="d-none d-lg-block col-2 col-xl-3"></div>
+										</div>
+						
+									</div>
+								</div>
+							</div>
+						</div>
+					<?endif;?>
+				</td>
+				<?
 
 				if ($showProductProps)
 				{

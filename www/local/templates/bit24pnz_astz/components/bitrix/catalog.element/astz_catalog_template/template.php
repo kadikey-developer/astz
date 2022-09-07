@@ -1438,7 +1438,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 										?>
 										<div class="col-lg-4">
 											<div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
-												<input type="checkbox" class="custom-control-input" id="download-docs-<?=$file["ID"]?>">
+												<input type="checkbox" class="custom-control-input" id="download-docs-<?=$file["ID"]?>" value="<?=$file["SRC"]?>">
 												<label class="custom-control-label" for="download-docs-<?=$file["ID"]?>"><?=$file['DESCRIPTION']?></label>
 											</div>
 										</div>
