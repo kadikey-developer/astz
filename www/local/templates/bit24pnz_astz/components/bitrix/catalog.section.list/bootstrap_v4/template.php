@@ -195,6 +195,9 @@ if (!$arResult['SECTIONS_COUNT']) {
 			</div>
 		</div>
 	</div>
+
+	<div class="py-15 py-lg-30"></div>
+	
 	<?
 	//endregion	
 }
