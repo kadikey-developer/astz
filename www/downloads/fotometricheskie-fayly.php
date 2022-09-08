@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Фотометрические файлы");
 $APPLICATION->AddChainItem($APPLICATION->GetTitle());
 ?>
-<div class="container typography">
+<div class="container typography text-grey fz-lg-18 fz-xl-20 px-xl-40">
 	<h3>Фотометрические файлы</h3>
 	<img src="https://www.astz.ru/upload/iblock/325/K3.jpg" class="float-left mr-10">
 	<p>

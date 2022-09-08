@@ -2,7 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Нормативы");
 ?>
-<div class="container typhography">
+<div class="container typography text-grey fz-lg-18 fz-xl-20 px-xl-40">
 	<? $APPLICATION->IncludeComponent(
 		"bitrix:news.list",
 		"",

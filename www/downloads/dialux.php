@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("DIALux");
 $APPLICATION->AddChainItem($APPLICATION->GetTitle());
 ?>
-<div class="container typography">
+<div class="container typography text-grey fz-lg-18 fz-xl-20 px-xl-40">
 	<h3>DIALux</h3>
 	<img src="https://astz.ru/upload/iblock/c5e/K4.jpg" class="float-left mr-10">
 	<p class="pt-50">Для профессионального расчета освещенности. DIALux имеет возможность загружать в виде вспомогательных программ базы данных световых приборов ведущих фирм-производителей.</p>

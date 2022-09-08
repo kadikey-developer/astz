@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Метод коэффициента использования");
 $APPLICATION->AddChainItem($APPLICATION->GetTitle());
 ?>
-<div class="container typography">
+<div class="container typography text-grey fz-lg-18 fz-xl-20 px-xl-40">
 	<h3>Метод коэффициента использования</h3>
 	<img src="https://www.astz.ru/upload/iblock/728/K1.jpg" class="float-left mr-10">Применяется для расчета общего равномерного освещения горизонтальных поверхностей при светильниках любого типа. Суть метода заключается в вычислении коэффициента для каждого помещения, исходя из основных параметров помещения и светоотражающих свойств отделочных материалов. Таким методом производится расчет внутреннего освещения.<br>
 	<p>

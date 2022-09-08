@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Autodesk Revit");
 $APPLICATION->AddChainItem($APPLICATION->GetTitle());
 ?>
-<div class="container typography">
+<div class="container typography text-grey fz-lg-18 fz-xl-20 px-xl-40">
 	<img src="https://astz.ru/upload/iblock/86d/Revit.jpg" class="float-left mr-10">
 	<p>
 		Autodesk Revit Revit — это программа для информационного моделирования зданий (BIM). Revit поддерживает межотраслевой процесс проектирования в среде для совместной работы.
