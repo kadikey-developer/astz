@@ -319,7 +319,7 @@ if (!$arResult['SECTIONS_COUNT']) {
 								);
 								?>
 								<div id="<?= $this->GetEditAreaId($arSection['ID']); ?>" class="col mb-20 mb-lg-80">
-									<div class="border rounded">
+									<div class="border rounded h-100"> 
 										<a
 											href="<?= $arSection['SECTION_PAGE_URL']; ?>"
 											class="d-block aspect-ratio aspect-ratio_100"
