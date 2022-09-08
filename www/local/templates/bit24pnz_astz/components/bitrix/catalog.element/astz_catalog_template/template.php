@@ -1429,12 +1429,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 									</div>
 
 									<?
-									$fileUrls = array();
 									foreach ( $actualItem['FILES'] as $file ) {
-										$fileUrls[$file["ID"]] = array(
-											"NAME" => $file["ORIGINAL_NAME"],
-											"SRC" => $file["SRC"],
-										);
 										?>
 										<div class="col-lg-4">
 											<div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
@@ -1445,9 +1440,6 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 										<?
 									}
 									?>
-								<script>
-										let filesObj = new fileUrls(<?= json_encode($fileUrls) ?>);
-								</script>
 							</div>
 							<div id="downloadButtons" class="row justify-content-center text-center text-md-left">
 								<div class="col-md-6 mb-md-15 text-md-right mb-15 mb-md-0">
