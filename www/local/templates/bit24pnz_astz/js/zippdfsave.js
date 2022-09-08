@@ -5,12 +5,11 @@ function generatePDF(target, save) {
 	$('body').append('<div id="iframe" class="mx-40" style="font-size: 14px;"></div>');
 	var iframe = $('#iframe');
 	var element = $(target);
-	var logo = $('.header__logo');
-	logo = iframe.append(logo);
-	iframe.find('.header__logo').addClass('p-10').css({ 'background-color': '#171E32' }).append(' <div class="text-white">АО "Ардатовский<br>светотехнический завод"</div> <div class="text-white">Россия, 431890, Республика Мордовия, Ардатовский р-он, п. Тургенево<br>ул. Заводская, д. 73, тел/факс: 8 (83431) 21 356, 21 009<br><a href="www.astz.ru">www.astz.ru</a><br></div></div>');
-	// console.log(element);
+	iframe.append('<div id="pdfHeader" class="d-flex justify-content-between border-bottom align-items-center p-10"></div>');
+	header = iframe.find('#pdfHeader');
+	header.append('<div class="info fz-12">АО "Ардатовский<br>светотехнический завод"<br>Россия, 431890, Республика Мордовия, Ардатовский р-он, п. Тургенево<br>ул. Заводская, д. 73, тел/факс: 8 (83431) 21 356, 21 009<br><a href="www.astz.ru">www.astz.ru</a></div>');
+	header.append('<img src="/upload/medialibrary/fd7/ndg3uj59ir9bs1j4gcyehja8mp7di6z0.png" width="230px" class="img-fluid"/>');
 	element.each(function () {
-		// console.log($(this).parent().html());
 		iframe.append($(this).html());
 	});
 	var img = iframe.find('.product-slider img:first');
@@ -47,7 +46,7 @@ function generatePDF(target, save) {
 		.set(opt)
 		.toContainer()
 		.toCanvas().then(function () {
-			// iframe.remove();
+			iframe.remove();
 		})
 		.output('blob', 'testPDF.pdf');
 	
