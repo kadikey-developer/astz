@@ -47,3 +47,32 @@ if ( !empty($arFilterSections) ) {
 		"~SMART_FILTER_PATH" => $arParams["~SMART_FILTER_PATH"],
 	);
 }
+
+/**
+ * Жёстко задаём сортировку для характеристик в фильтре
+ */
+$arFirstItems = array(
+	"MOSHCHNOST_VT",
+	"SVETOVOY_POTOK_LM",
+	"TSVETOVAYA_TEMPERATURA_K",
+	"INDEKS_TSVETOPEREDACHI",
+	"IP_STEPEN_ZASHCHITY",
+	"BAP_BLOK_AVARIYNOGO_PITANIYA",
+	"UPRAVLENIE",
+	"UGOL_RASSEYANIYA_",
+	"TIP_SVETOPROPUSKNOY_ARMATURY",
+	"TSVET_SVETOPROPUSKAYUSHCHEY_ARMATURY",
+);
+$tempArray = array();
+
+foreach ($arResult["ITEMS"] as $key => $item) { // Если в текущем $arResult есть значение из $arFirstItems
+	if ( in_array($item["CODE"], $arFirstItems) ) {
+		$tempArray[$item["CODE"]] = $key;
+	}
+}
+$arFirstItems = array_flip(array_replace(array_flip($arFirstItems), $tempArray));
+foreach ( $arFirstItems as $key => $item) {
+	$arFirstItems[$key] = $arResult["ITEMS"][$key];
+	unset($arResult["ITEMS"][$key]);
+}
+$arResult["ITEMS"] = $arFirstItems + $arResult["ITEMS"];
