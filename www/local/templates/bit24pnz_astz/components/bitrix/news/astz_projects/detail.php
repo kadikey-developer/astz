@@ -207,7 +207,8 @@ $this->setFrameMode(true);
 						"SECTION_USER_FIELDS" => array("",""),
 						"SHOW_PARENT_NAME" => "Y",
 						"TOP_DEPTH" => "",
-						"VIEW_MODE" => "TILE"
+						"VIEW_MODE" => "TILE",
+						"SET_TITLE" => "N",
 					)
 				);?>
 			<?endforeach?>
