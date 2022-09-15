@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Вакансии");
+$APPLICATION->AddChainItem($APPLICATION->GetTitle());
 ?>
 <div class="container typography">
 	<? $APPLICATION->IncludeComponent(
