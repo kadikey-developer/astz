@@ -13,4 +13,7 @@ global $APPLICATION;
  * Принудительно устанавливаем заголовок страницы.
  * -- он перезаписывается, если в компоненте устанавливается другой, так что всё нормально.
  */
-$APPLICATION->SetPageProperty("title", $arResult["SECTION"]["IPROPERTY_VALUES"]["SECTION_META_TITLE"]);
+if ($arParamsp["SET_TITLE"] === "Y") {
+    $APPLICATION->SetPageProperty("title", $arResult["SECTION"]["IPROPERTY_VALUES"]["SECTION_META_TITLE"]);
+}
+?>
