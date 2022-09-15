@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("История");
+$APPLICATION->SetTitle("История завода");
+$APPLICATION->AddChainItem($APPLICATION->GetTitle());
 ?>
 <div class="container typography text-grey fz-lg-18 fz-xl-20 px-xl-40">
 	<img width="333" src="https://www.astz.ru/img/examples/about.jpg" height="222"><br>

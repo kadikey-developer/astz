@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Проекты");
+$APPLICATION->SetPageProperty("title", "Реализованные проекты | Ардатовский светотехнический завод");
+$APPLICATION->SetTitle("Готовые проекты");
 ?>
  <?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
