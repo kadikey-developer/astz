@@ -63,29 +63,12 @@ $arFirstItems = array(
 	"TIP_SVETOPROPUSKNOY_ARMATURY",
 	"TSVET_SVETOPROPUSKAYUSHCHEY_ARMATURY",
 );
-// $tempArray = array();
-/*foreach ($arFirstItems as $cur) { // найти в $arResult текущее значение $arFirstItems
-	
-	?><pre><?// print_r($cur); ?></pre><?
-	// $key = array_search("CODE" == $cur, $arResult["ITEMS"]);
-	$key = array_search($cur, array_column($arResult["ITEMS"], 'CODE'));
-	?><pre><?// print_r($key); ?></pre><?
-	// array_push(array_values()
-}*/
-
-/*foreach ($arResult["ITEMS"] as $key => $item) { // получаем список ключей которые есть
-	if ( in_array($item["CODE"], $arFirstItems) ) {
-		array_search($arFirstItems)
-	}
-}*/
-
+$tempArray = array();
 foreach ($arResult["ITEMS"] as $key => $item) { // Если в текущем $arResult есть значение из $arFirstItems
 	if ( in_array($item["CODE"], $arFirstItems) ) {
-		unset($tempArray);
+		//unset($tempArray);
 		unset($arResult["ITEMS"][$key]);
-		$arResult["ITEMS"] = array($key => $item) + $arResult["ITEMS"];
+		$tempArray = array($key => $item) + $tempArray;
 	}
-} // подставляет их в обратном порядке в начало массива
-?><pre><?// print_r($tempArray); ?></pre><?
-
-?><pre><?// var_dump($arResult["ITEMS"]); ?></pre><?
+}
+$arResult["ITEMS"] = array_reverse($tempArray, true) + $arResult["ITEMS"];
