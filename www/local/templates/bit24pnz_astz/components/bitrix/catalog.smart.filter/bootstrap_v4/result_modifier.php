@@ -64,11 +64,16 @@ $arFirstItems = array(
 	"TSVET_SVETOPROPUSKAYUSHCHEY_ARMATURY",
 );
 $tempArray = array();
+
 foreach ($arResult["ITEMS"] as $key => $item) { // Если в текущем $arResult есть значение из $arFirstItems
 	if ( in_array($item["CODE"], $arFirstItems) ) {
-		//unset($tempArray);
-		unset($arResult["ITEMS"][$key]);
-		$tempArray = array($key => $item) + $tempArray;
+		$tempArray[$item["CODE"]] = $key;
 	}
 }
-$arResult["ITEMS"] = array_reverse($tempArray, true) + $arResult["ITEMS"];
+$arFirstItems = array_flip(array_replace(array_flip($arFirstItems), $tempArray));
+foreach ( $arFirstItems as $key => $item) {
+	$arFirstItems[$key] = $arResult["ITEMS"][$key];
+	unset($arResult["ITEMS"][$key]);
+}
+$arResult["ITEMS"] = $arFirstItems + $arResult["ITEMS"];
+?><pre><? print_r($arResult["ITEMS"]); ?></pre><?
