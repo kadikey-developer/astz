@@ -175,13 +175,19 @@ if ($showTopPager) {
 					$this->AddDeleteAction($uniqueId, $item['DELETE_LINK'], $elementDelete, $elementDeleteParams);
 
 					foreach ($item['DISPLAY_PROPERTIES'] as $prop) {
+						$thParams['ID'] = $prop['ID'];
 						$thParams['CODE'] = $prop['CODE'];
 						$thParams['NAME'] = $prop['NAME'];
+						$thParams['SORT'] = $prop['SORT'];
 						if(!in_array($thParams, $arTh)) {
 							$arTh[] = $thParams;
 						}
 					}
 				}
+				foreach ($arTh as $key => $row) {
+					$sort[$key] = $row["SORT"];
+				}
+				array_multisort($sort, SORT_ASC, $arTh); // сортировка по коду сортировки
 				?>
 				<thead class="text-nowrap">
 					<tr>
@@ -197,6 +203,7 @@ if ($showTopPager) {
 							?><th data-code="<?=$th['CODE']?>"><?=$th['NAME']?></th><?
 						}
 						?>
+						<th data-code="DOWNLOAD">Скачать</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -636,7 +643,8 @@ if ($showTopPager) {
 														'BIG_BUTTONS' => 'N'
 													),
 													'PARAMS' => $generalParams
-														+ array('SKU_PROPS' => $arResult['SKU_PROPS'][$item['IBLOCK_ID']])
+														+ array('SKU_PROPS' => $arResult['SKU_PROPS'][$item['IBLOCK_ID']]),
+													'T_HEADERS' => $arTh
 												),
 												$component,
 												array('HIDE_ICONS' => 'Y')
