@@ -324,12 +324,6 @@
                                 <a class="header-social__item" href="#">
                                     <span class="icon-vkontakte"></span>
                                 </a>
-                                <a class="header-social__item" href="#">
-                                    <span class="icon-facebook"></span>
-                                </a>
-                                <a class="header-social__item" href="#">
-                                    <span class="icon-instagram"></span>
-                                </a>
                             </div>
 
                             <div class="mb-5">
