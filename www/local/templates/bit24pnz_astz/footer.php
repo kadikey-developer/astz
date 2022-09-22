@@ -94,12 +94,6 @@
 					<a class="footer-social__item" href="#">
 						<span class="icon-vkontakte"></span>
 					</a>
-					<a class="footer-social__item" href="#">
-						<span class="icon-facebook"></span>
-					</a>
-					<a class="footer-social__item" href="#">
-						<span class="icon-instagram"></span>
-					</a>
 				</div>
 			</div>
 			<div class="col-lg-9 col-xl-9 offset-xl-1">
@@ -110,6 +104,7 @@
 						array("MODE" => "html")
 					); ?>
 				</div>
+				<div>Старая версия сайта: <a href="https://old.astz.ru/">old.astz.ru</a></div>
 			</div>
 		</div>
 	</div>

@@ -324,12 +324,6 @@
                                 <a class="header-social__item" href="#">
                                     <span class="icon-vkontakte"></span>
                                 </a>
-                                <a class="header-social__item" href="#">
-                                    <span class="icon-facebook"></span>
-                                </a>
-                                <a class="header-social__item" href="#">
-                                    <span class="icon-instagram"></span>
-                                </a>
                             </div>
 
                             <div class="mb-5">
@@ -346,6 +340,7 @@
                                     array("MODE" => "html")
                                 ); ?>
                             </div>
+                            <div>Старая версия сайта: <a href="https://old.astz.ru/">old.astz.ru</a></div>
                         </div>
                     </div>
                 </div>
