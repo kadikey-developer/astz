@@ -340,6 +340,7 @@
                                     array("MODE" => "html")
                                 ); ?>
                             </div>
+                            <div>Старая версия сайта: <a href="https://old.astz.ru/">old.astz.ru</a></div>
                         </div>
                     </div>
                 </div>
