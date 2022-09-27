@@ -1,5 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Продукция");
+$APPLICATION->SetPageProperty("title", "Продукция | Каталог | Ардатовский светотехнический завод");
 $mainBlock = array(
 	"DOPOLNITELNYE_USTROYSTVA",
 	"DOPOLNITELNYE_USTROYSTVA_1",

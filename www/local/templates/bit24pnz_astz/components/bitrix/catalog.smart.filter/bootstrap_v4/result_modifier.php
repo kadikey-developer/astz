@@ -76,4 +76,3 @@ foreach ( $arFirstItems as $key => $item) {
 	unset($arResult["ITEMS"][$key]);
 }
 $arResult["ITEMS"] = $arFirstItems + $arResult["ITEMS"];
-?><pre><? print_r($arResult["ITEMS"]); ?></pre><?
