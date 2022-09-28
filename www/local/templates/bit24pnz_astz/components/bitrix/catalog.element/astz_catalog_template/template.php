@@ -1425,6 +1425,9 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 										<div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
 											<input type="checkbox" class="custom-control-input" id="generatePDF" data-targetpdf=".product, #calculation.tab-pane.show .printToPDF, #features.tab-pane, #description.tab-pane">
 											<label class="custom-control-label" for="generatePDF">Описание</label>
+											<a href="javascript:void(0)" class="m-0" onclick="generatePDF('.product, #calculation.tab-pane.show .printToPDF, #features.tab-pane, #description.tab-pane', 1)">
+												<span class="icon-download fz-20 lh-1 align-middle"></span>
+											</a>
 										</div>
 									</div>
 
@@ -1435,6 +1438,9 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 											<div class="custom-control custom-checkbox round-checkbox mb-10 mb-lg-40">
 												<input type="checkbox" class="custom-control-input" id="download-docs-<?=$file["ID"]?>" value="<?=$file["SRC"]?>">
 												<label class="custom-control-label" for="download-docs-<?=$file["ID"]?>"><?=$file['DESCRIPTION']?></label>
+												<a href="<?=$file["SRC"]?>" class="m-0" download="">
+													<span class="icon-download fz-20 lh-1 align-middle"></span>
+												</a>
 											</div>
 										</div>
 										<?
