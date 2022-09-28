@@ -27,12 +27,16 @@ while ( $arFile = $obFiles->GetNextElement() ) {
 /**
  * Вывод в таблицу согласно заголовкам таблицы
  */
-    $arItem = $arResult["ITEM"];
+$arItem = $arResult["ITEM"];
+$newDisplayProps = array();
 foreach ( $arParams["T_HEADERS"] as $toDisplayProp ) {
     if ( !isset($arItem["DISPLAY_PROPERTIES"][$toDisplayProp["CODE"]]) ) {
         $thisProp = $arItem["PROPERTIES"][$toDisplayProp["CODE"]];
         $thisProp["DISPLAY_VALUE"] = $thisProp["~VALUE"];
-        $arResult["ITEM"]["DISPLAY_PROPERTIES"][$toDisplayProp["CODE"]] = $thisProp;
+        $newDisplayProps[$toDisplayProp["CODE"]] = $thisProp;
+    } else {
+        $newDisplayProps[$toDisplayProp["CODE"]] = $arItem["DISPLAY_PROPERTIES"][$toDisplayProp["CODE"]];
     }
 }
+$arResult["ITEM"]["DISPLAY_PROPERTIES"] = $newDisplayProps;
 ?>
