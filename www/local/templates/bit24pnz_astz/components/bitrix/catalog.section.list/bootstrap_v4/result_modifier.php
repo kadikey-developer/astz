@@ -194,11 +194,11 @@ if ($sElement = $arElements->GetNextElement()) {
 	/**
 	 * Подгружаем картинки из элемента Серия_
 	 */
-	if ( 0 == $arResult['SECTIONS_COUNT'] && 'TILE' ) { // можно добавить, чтобы не перезаписывалось, если заполнено что-либо из админки
+	$thisElFields = $sElement->GetFields();
+	if ( 0 == $arResult['SECTIONS_COUNT'] && 'TILE' && $thisElFields['ACTIVE'] == 'Y' ) { // можно добавить, чтобы не перезаписывалось, если заполнено что-либо из админки
 		/**
 		 * Перезаписываем в $arResult["SECTION"]
 		 */
-		$thisElFields  = $sElement->GetFields();
 		$section = new CIBlockSection;
 		$picture = CFile::MakeFileArray($thisElFields['DETAIL_PICTURE']);
 		$arUpdateFields = Array(
