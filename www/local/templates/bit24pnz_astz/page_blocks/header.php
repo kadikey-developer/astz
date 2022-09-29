@@ -318,30 +318,19 @@
                             </div>
 
                             <div class="header-social d-flex align-items-center mb-25 mb-md-90">
-                                <a class="header-social__item" href="#">
-                                    <span class="icon-telegram"></span>
-                                </a>
-                                <a class="header-social__item" href="#">
-                                    <span class="icon-vkontakte"></span>
-                                </a>
+								<? $APPLICATION->IncludeFile(
+									SITE_DIR . "include/header-social-icons.php",
+									array(),
+									array("MODE" => "html")
+								); ?>
                             </div>
 
-                            <div class="mb-5">
-                                <? $APPLICATION->IncludeFile(
-                                    SITE_DIR . "include/header_email.php",
-                                    array(),
-                                    array("MODE" => "html")
-                                ); ?>
-                            </div>
-                            <div>
-                                <? $APPLICATION->IncludeFile(
-                                    SITE_DIR . "include/header_collapse_tel.php",
-                                    array(),
-                                    array("MODE" => "html")
-                                ); ?>
-                            </div>
-                            <div>Старая версия сайта: <a href="https://old.astz.ru/">old.astz.ru</a></div>
-                        </div>
+							<? $APPLICATION->IncludeFile(
+								SITE_DIR . "include/header_contacts.php",
+								array(),
+								array("MODE" => "html")
+							); ?>
+						</div>
                     </div>
                 </div>
 
