@@ -88,12 +88,11 @@
 		<div class="row">
 			<div class="col-lg-3 col-xl-2 order-lg-1">
 				<div class="footer-social d-flex align-items-center mb-15 mb-md-0 pt-lg-10 ml-lg-n10">
-					<a class="footer-social__item" href="#">
-						<span class="icon-telegram"></span>
-					</a>
-					<a class="footer-social__item" href="#">
-						<span class="icon-vkontakte"></span>
-					</a>
+					<? $APPLICATION->IncludeFile(
+						SITE_DIR . "include/footer-social-icons.php",
+						array(),
+						array("MODE" => "html")
+					); ?>
 				</div>
 			</div>
 			<div class="col-lg-9 col-xl-9 offset-xl-1">
@@ -104,7 +103,6 @@
 						array("MODE" => "html")
 					); ?>
 				</div>
-				<div>Старая версия сайта: <a href="https://old.astz.ru/">old.astz.ru</a></div>
 			</div>
 		</div>
 	</div>
