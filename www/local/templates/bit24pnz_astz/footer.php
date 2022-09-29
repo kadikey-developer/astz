@@ -107,6 +107,22 @@
 		</div>
 	</div>
 </footer>
+<!-- {literal} -->
+<script type='text/javascript'>
+    window['l'+'i'+'v'+'eT'+'e'+'x'] = true,
+    window['liv'+'e'+'T'+'exI'+'D'] = 13255,
+    window['liv'+'e'+'T'+'ex'+'_o'+'bject'] = true;
+    (function() {
+        var t = document['c'+'reat'+'eEle'+'me'+'n'+'t']('script');
+        t.type ='text/javascript';
+        t.async = true;
+        t.src = '//cs15.l'+'ive'+'tex.ru/'+'js/clie'+'n'+'t.js';
+        var c = document['get'+'Ele'+'ment'+'sBy'+'TagName']('script')[0];
+        if ( c ) c['par'+'ent'+'No'+'de']['ins'+'ertBef'+'ore'](t, c);
+        else document['docu'+'m'+'entE'+'lem'+'en'+'t']['firs'+'tC'+'h'+'il'+'d']['ap'+'p'+'e'+'nd'+'Chi'+'ld'](t);
+    })();
+</script>
+<!-- {/literal} -->
 </body>
 
 </html>
