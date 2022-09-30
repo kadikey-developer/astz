@@ -260,7 +260,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 											<?/*<div class="product-item-detail-slider-image<?=($key == 0 ? ' active' : '')?>" data-entity="image" data-id="<?=$photo['ID']?>">*/?>
 											<div class="swiper-slide" data-entity="image" data-id="<?=$photo['ID']?>">
 												<div class="swiper-slide-container">
-													<div class="aspect-ratio aspect-ratio_85">
+													<div class="aspect-ratio aspect-ratio_100 my-50">
 														<img src="<?=$photo['SRC']?>" alt="<?=$alt?>" title="<?=$title?>"<?=($key == 0 ? ' itemprop="image"' : '')?>>
 													</div>
 												</div>
@@ -1426,7 +1426,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 											<input type="checkbox" class="custom-control-input" id="generatePDF" data-targetpdf=".product, #calculation.tab-pane.show .printToPDF, #features.tab-pane, #description.tab-pane">
 											<label class="custom-control-label" for="generatePDF">Описание</label>
 											<a href="javascript:void(0)" class="m-0" onclick="generatePDF('.product, #calculation.tab-pane.show .printToPDF, #features.tab-pane, #description.tab-pane', 1)">
-												<span class="icon-download fz-20 lh-1 align-middle"></span>
+												<span class="icon-download fz-20 lh-1 align-middle ml-5"></span>
 											</a>
 										</div>
 									</div>
@@ -1439,7 +1439,7 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 												<input type="checkbox" class="custom-control-input" id="download-docs-<?=$file["ID"]?>" value="<?=$file["SRC"]?>">
 												<label class="custom-control-label" for="download-docs-<?=$file["ID"]?>"><?=$file['DESCRIPTION']?></label>
 												<a href="<?=$file["SRC"]?>" class="m-0" download="">
-													<span class="icon-download fz-20 lh-1 align-middle"></span>
+													<span class="icon-download fz-20 lh-1 align-middle ml-5"></span>
 												</a>
 											</div>
 										</div>
