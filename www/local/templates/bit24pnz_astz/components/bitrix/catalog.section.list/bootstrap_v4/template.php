@@ -425,4 +425,132 @@ if (!$arResult['SECTIONS_COUNT']) {
 			?></div><?
 		}
 		?>
+
+<? // Расшифровка модификации ?>
+<!-- Расширфрока модификации - start -->
+<pre><?// print_r($arResult); ?></pre>
+<div class="container">
+	<div>
+		<a class="collapse-action text-uppercase ff-dinpro fw-700 fz-16 fz-lg-18" data-toggle="collapse" href="#collapse-modification" role="button" aria-expanded="true" aria-controls="collapse-modification">
+			<span class="mr-20">Расшифровка модификации</span><span class="collapse-caret icon-chevron-bold"></span>
+		</a>
+		<div class="collapse show" id="collapse-modification">
+			<div class="pt-30 pt-lg-60">
+	
+				<div class="modification d-none d-lg-block">
+					<div class="modification__title">
+						<span><?=$arResult["SECTION"]["NAME"]?><?echo (!empty($arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["VALUE"]) ? "-".$arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["~VALUE"] : "");?></span>
+						<?
+						$cifri = $arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["~VALUE"] . $arResult["S_PROPERTIES"]["PRIMER_VTORAYA_TSIFRA_ZAGOLOVOK"]["~VALUE"] . $arResult["S_PROPERTIES"]["PRIMER_TRETYA_TSIFRA_ZAGOLOVOK"]["~VALUE"];
+						if(!empty($cifri)) {
+							?>
+								-<span class="modification__key modification__key_1 active js-mod-key" id="js-mod-key-1" data-target="js-mod-val-1">
+									<?=$arResult["S_PROPERTIES"]["PRIMER_PERVAYA_TSIFRA_ZAGOLOVOK"]["~VALUE"]?>
+									<div class="modification__line"></div>
+								</span>
+								<span class="modification__key modification__key_2 js-mod-key" id="js-mod-key-2" data-target="js-mod-val-2">
+									<?=$arResult["S_PROPERTIES"]["PRIMER_VTORAYA_TSIFRA_ZAGOLOVOK"]["~VALUE"]?>
+									<div class="modification__line"></div>
+								</span>
+								<span class="modification__key modification__key_3 js-mod-key" id="js-mod-key-3" data-target="js-mod-val-3">
+									<?=$arResult["S_PROPERTIES"]["PRIMER_TRETYA_TSIFRA_ZAGOLOVOK"]["~VALUE"]?>
+									<div class="modification__line"></div>
+								</span>
+							<?
+						}
+						?>
+						<span class="modification__key modification__key_4 js-mod-key" id="js-mod-key-4" data-target="js-mod-val-4">
+							&nbsp; <?=$arResult["S_PROPERTIES"]["PRIMER_KOMMERCHESKIE_OBOZNACHENIYA_ZAGOLOVOK"]["~VALUE"]?>
+							<div class="modification__line"></div>
+						</span>
+						&nbsp; <?=$arResult["S_PROPERTIES"]["PRIMER_KOD_ZAKAZA_ZAGOLOVOK"]["~VALUE"]?>
+					</div>
+
+					<div class="row">
+						<div class="col-md-4 col-lg-3">
+							<div class="modification__val modification__val_1 active js-mod-val" id="js-mod-val-1" data-target="js-mod-key-1">
+								<?=$arResult["S_PROPERTIES"]["PERVAYA_TSIFRA"]["~VALUE"]?>
+								<div class="modification__line"></div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-3">
+							<div class="modification__val modification__val_2 js-mod-val" id="js-mod-val-2" data-target="js-mod-key-2">
+								<?=$arResult["S_PROPERTIES"]["VTORAYA_TSIFRA"]["~VALUE"]?>
+								<div class="modification__line"></div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-3">
+							<div class="modification__val modification__val_3 js-mod-val" id="js-mod-val-3" data-target="js-mod-key-3">
+								<?=$arResult["S_PROPERTIES"]["TRETYA_TSIFRA"]["~VALUE"]?>
+								<div class="modification__line"></div>
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-3 pt-30 pt-lg-0">
+							<div class="modification__val modification__val_4 js-mod-val" id="js-mod-val-4" data-target="js-mod-key-4">
+								<?=$arResult["S_PROPERTIES"]["KOMMERCHESKIE_OBOZNACHENIYA"]["~VALUE"]?>
+								<div class="modification__line"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modification-mobile d-lg-none" id="mod-accordion">
+					<div class="text-grey fz-14 mb-10">
+						Нажмите выделенную часть в наименовании модификации, для того чтобы узнать что она означает
+					</div>
+
+					<div class="d-flex align-items-center ff-dinpro fz-18 mb-15">
+						<?=$arResult["SECTION"]["NAME"]?><?echo (!empty($arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["VALUE"]) ? "-".$arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["~VALUE"] : "");?>
+						<?if(!empty($cifri)) {
+							?>
+							-<a href="#mod-1" class="modification-mobile__hilight" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mod-1" id="heading-mod-1">
+								<?=$arResult["S_PROPERTIES"]["PRIMER_PERVAYA_TSIFRA_ZAGOLOVOK"]["~VALUE"]?>
+							</a>
+							<a href="#mod-2" class="modification-mobile__hilight" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mod-2" id="heading-mod-2">
+								<?=$arResult["S_PROPERTIES"]["PRIMER_VTORAYA_TSIFRA_ZAGOLOVOK"]["~VALUE"]?>
+							</a>
+							<a href="#mod-3" class="modification-mobile__hilight" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mod-3" id="heading-mod-3">
+								<?=$arResult["S_PROPERTIES"]["PRIMER_TRETYA_TSIFRA_ZAGOLOVOK"]["~VALUE"]?>
+							</a>
+							&nbsp;
+							<a href="#mod-4" class="modification-mobile__hilight" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mod-4" id="heading-mod-4">
+								<?=$arResult["S_PROPERTIES"]["PRIMER_KOMMERCHESKIE_OBOZNACHENIYA_ZAGOLOVOK"]["~VALUE"]?>
+							</a>
+							<span class="d-none d-sm-block">
+								<?=$arResult["S_PROPERTIES"]["PRIMER_KOD_ZAKAZA_ZAGOLOVOK"]["~VALUE"]?>
+							</span>
+							<?
+						}?>
+					</div>
+
+					<div>
+						<div class="collapse" id="mod-1" data-parent="#mod-accordion" aria-labelledby="heading-mod-1">
+							<div class="bg-grey-light py-10 px-20 ">
+								<?=$arResult["S_PROPERTIES"]["PERVAYA_TSIFRA"]["~VALUE"]?>
+							</div>
+						</div>
+						<div class="collapse" id="mod-2" data-parent="#mod-accordion" aria-labelledby="heading-mod-2">
+							<div class="bg-grey-light py-10 px-20 ">
+								<?=$arResult["S_PROPERTIES"]["VTORAYA_TSIFRA"]["~VALUE"]?>
+							</div>
+						</div>
+						<div class="collapse" id="mod-3" data-parent="#mod-accordion" aria-labelledby="heading-mod-3">
+							<div class="bg-grey-light py-10 px-20 ">
+								<?=$arResult["S_PROPERTIES"]["TRETYA_TSIFRA"]["~VALUE"]?>
+							</div>
+						</div>
+						<div class="collapse" id="mod-4" data-parent="#mod-accordion" aria-labelledby="heading-mod-4">
+							<div class="bg-grey-light py-10 px-20 ">
+								<?=$arResult["S_PROPERTIES"]["KOMMERCHESKIE_OBOZNACHENIYA"]["~VALUE"]?>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+	</div>
 </div>
+<!-- Расширфрока модификации - end -->
+
+<div class="py-25 py-lg-60"></div>

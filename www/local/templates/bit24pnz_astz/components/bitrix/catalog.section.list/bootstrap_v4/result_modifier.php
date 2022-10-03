@@ -192,6 +192,31 @@ if ($sElement = $arElements->GetNextElement()) {
 	}
 
 	/**
+	 * Форматируем расшифровку модификации
+	 */
+	$arDecription = array(
+		"PERVAYA_TSIFRA",
+		"VTORAYA_TSIFRA",
+		"TRETYA_TSIFRA",
+		"KOMMERCHESKIE_OBOZNACHENIYA"
+	);
+
+	foreach ( $arDecription as $decription) {
+		$decr_value = $arResult["S_PROPERTIES"][$decription]["~VALUE"];
+		if (!empty($decr_value)) {
+			if (strpos($decr_value, ";") > 0) {
+				$str = explode(";\n", $arResult["S_PROPERTIES"][$decription]["~VALUE"]);
+			} else {
+				$str = explode(".\n", $arResult["S_PROPERTIES"][$decription]["~VALUE"]);
+			}
+			foreach ($str as $key => $row) {
+				$str[$key] = preg_replace('/^(.+)\s-/', '<strong>$1</strong> -', $row);
+			}
+		}
+		$arResult["S_PROPERTIES"][$decription]["~VALUE"] = implode(';<br>', $str);
+	}
+
+	/**
 	 * Подгружаем картинки из элемента Серия_
 	 */
 	$thisElFields = $sElement->GetFields();
