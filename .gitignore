@@ -1,0 +1,5 @@
+# Ignore .TGZ files
+*.tgz
+
+#Ingore SFTP config
+.vscode/sftp.json
