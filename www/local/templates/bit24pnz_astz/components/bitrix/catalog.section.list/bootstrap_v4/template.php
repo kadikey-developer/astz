@@ -428,7 +428,7 @@ if (!$arResult['SECTIONS_COUNT']) {
 
 <? // Расшифровка модификации ?>
 <!-- Расширфрока модификации - start -->
-<pre><?// print_r($arResult); ?></pre>
+<? if (!$arResult['SECTIONS_COUNT']): ?>
 <div class="container">
 	<div>
 		<a class="collapse-action text-uppercase ff-dinpro fw-700 fz-16 fz-lg-18" data-toggle="collapse" href="#collapse-modification" role="button" aria-expanded="true" aria-controls="collapse-modification">
@@ -551,6 +551,8 @@ if (!$arResult['SECTIONS_COUNT']) {
 		</div>
 	</div>
 </div>
-<!-- Расширфрока модификации - end -->
 
 <div class="py-25 py-lg-60"></div>
+
+<!-- Расширфрока модификации - end -->
+<?endif;?>
