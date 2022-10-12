@@ -1710,21 +1710,65 @@ $icon_line_border_radius: 3px;
 /*@media(max-width: $lg) {
   .custom-control.custom-checkbox.round-checkbox {
     .custom-control-label {
-      font-size: 24px;
-      padding-left: 10px;
+       font-size: 24px;
+       padding-left: 10px;
     }
 
     .custom-control-label::before,
     .custom-control-label::after {
-      top: 1px;
-      width: 32px;
-      height: 32px;
+       top: 1px;
+       width: 32px;
+       height: 32px;
     }
   }
 }*/
 
 
 .lib-select {
+  &.lib-select_multiple{
+    .select .select__input {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        min-height: 50px; /*!!!*/
+        padding: 2px 40px 2px 20px;
+        color: #000;
+        font-size: 16px;
+        cursor: default;
+    }
+    .select .select__input input{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #FFFFFF;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      outline: none;
+    }
+    .select__input > ul {
+        display: inline;
+        padding: 0;
+        margin: 0;
+    }
+
+    .select__input li {
+        position: relative;
+        display: inline-block;
+        margin: 0.1em 0.2em;
+        -webkit-margin-start: 0;
+        margin-inline-start: 0;
+        padding: 2px 7px;
+        font-size: 14px;
+        background: $blue-dark;
+        color: #FFFFFF;
+        border-radius: 0.3em;
+        cursor: default;
+        z-index: 1;
+    }
+  }
   .select {
     display: block;
     width: 100%;
@@ -1743,6 +1787,7 @@ $icon_line_border_radius: 3px;
       transform: translateY(-50%) rotate(90deg);
       transition: 0.2s;
       transform-origin: center;
+      pointer-events: none;
     }
 
     &[aria-expanded="true"] {
@@ -1853,38 +1898,26 @@ $icon_line_border_radius: 3px;
     font-size: inherit;
   }
 
-  .select__input > ul {
-    display: inline;
-    padding: 0;
-    margin: 0;
-  }
-
-  .select__input li {
-    display: inline-block;
-    margin: 0.1em 0.2em;
-    margin-inline-start: 0;
-    padding: 10px 20px;
-    background: rgba(128, 128, 128, .2);
-    color: inherit;
-    border: 1px solid #ced4da;
-    border-radius: 0.3em;
-    cursor: default;
-  }
-
   &.lib-select-sm {
-    .select > input {
+    .select input {
       height: 45px;
       padding: 10px 40px 10px 20px;
       line-height: 1.64;
     }
-  }
+    &.lib-select_multiple .select .select__input{
+        min-height: 45px;
+    }
+}
 
-  &.lib-select-lg {
-    .select > input {
-      height: 66px;
-      font-size: 20px;
-      padding: 17px 40px 17px 20px;
-      line-height: 1.5;
+&.lib-select-lg {
+    .select input{
+        height: 66px;
+        font-size: 20px;
+        padding: 17px 40px 17px 20px;
+        line-height: 1.5;
+    }
+    &.lib-select_multiple .select .select__input{
+        min-height: 66px;
     }
   }
 }
@@ -2042,6 +2075,11 @@ $icon_line_border_radius: 3px;
     outline: none;
   }
 
+  .lib-select.lib-select_multiple .select .select__input input{
+    background-color: #E5E5E5;
+    border: 1px solid #E5E5E5;
+  }
+
   &_red {
     .custom-checkbox .custom-control-input:checked ~ .custom-control-label {
       background-color: $red;
@@ -2075,6 +2113,12 @@ $icon_line_border_radius: 3px;
         background: $red;
         color: #FFFFFF;
       }
+    }
+
+    .lib-select.lib-select_multiple .select__input li{
+        border-color: $red;
+        background-color: $red;
+        color: #FFFFFF;
     }
 
   }
@@ -2707,14 +2751,10 @@ $icon_line_border_radius: 3px;
       color: $red;
       transition: 0.2s;
 
-      .modification__line {
+      .modification__line,
+      .modification__between {
         background-color: $red;
         transition: background 0.2s;
-
-        &::after {
-          background-color: $red;
-          transition: background 0.2s;
-        }
       }
     }
 
@@ -2728,65 +2768,32 @@ $icon_line_border_radius: 3px;
       transform: translateY(100%);
       cursor: default;
       transition: background 0.2s;
-
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        height: 1px;
-        width: 0;
-        background-color: #BBBBBB;
-        bottom: 0;
-        transition: background 0.2s;
-      }
     }
 
     &_1 {
       .modification__line {
         height: 60px;
-
-        &::after {
-          display: none;
-        }
+      }
+      .modification__between{
+        display: none;
       }
     }
 
     &_2 {
       .modification__line {
         height: 30px;
-
-        &::after {
-          width: 590px;
-          @media(max-width: $xl) {
-            width: 322px;
-          }
-        }
       }
     }
 
     &_3 {
       .modification__line {
         height: 20px;
-
-        &::after {
-          width: 1054px;
-          @media(max-width: $xl) {
-            width: 607px;
-          }
-        }
       }
     }
 
     &_4 {
       .modification__line {
         height: 10px;
-
-        &::after {
-          width: 1468px;
-          @media(max-width: $xl) {
-            width: 843px;
-          }
-        }
       }
     }
   }
@@ -2813,7 +2820,7 @@ $icon_line_border_radius: 3px;
         background-color: $red;
         transition: background 0.2s;
       }
-    }
+    }   
 
     .modification__line {
       display: block;
@@ -2836,24 +2843,35 @@ $icon_line_border_radius: 3px;
 
     &_2 {
       .modification__line {
-        height: 30px;
+        height: 31px;
       }
     }
 
     &_3 {
       .modification__line {
-        height: 40px;
+        height: 41px;
       }
     }
 
     &_4 {
       .modification__line {
-        height: 50px;
+        height: 51px;
       }
     }
 
   }
+  // .modification__between
+  &__between{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: #BBBBBB;
+      transition: background 0.2s;
+  }
 }
+
 
 .modification-mobile {
   // .modification-mobile__hilight

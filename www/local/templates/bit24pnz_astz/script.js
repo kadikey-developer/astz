@@ -358,14 +358,45 @@
                 new Select("myselect", customSelect[index]);
             }
         }
-
-
-
+        $(".lib-select_multiple").on("click", function() {
+            let wrap = $(this).find('.select');
+            let select = $(this).find('.js-lib-select');
+            if (wrap.attr("aria-expanded") === 'false') {
+                console.log(select.val());
+            }
+        });
 
         /*tab of modification*/
         const modKeys = document.getElementsByClassName("js-mod-key");
         const modVals = document.getElementsByClassName("js-mod-val");
         if (modKeys.length > 0) {
+            //draw lines
+            drawModificationsLines();
+            $('a#description-tab').on('shown.bs.tab', function (e) {
+                drawModificationsLines();
+            });
+            $(window).resize(function(){
+                drawModificationsLines();
+            });
+            function drawModificationsLines() {
+                $('.modification__between').remove();
+                for (let index = 0; index < modKeys.length; index++) {
+                    const element = $(modKeys[index]);
+                    const lineKey = element.find('.modification__line');
+                    const lineVal = $(modVals[index]).find('.modification__line');
+                    let lineKeyX = lineKey.offset().left;
+                    let lineValX = lineVal.offset().left;
+                    let between = $('<div class="modification__between"></div>');
+                    let betweenWidth = lineValX - lineKeyX;
+                    if (betweenWidth < 0) {
+                        between.css({'left': 'auto', 'right': '0', })
+                    }
+                    lineKey.append(between);
+                    between.css('width', Math.abs(betweenWidth));
+                }
+            }
+
+            //active
             let arr = modKeys;
             addActive(arr, modKeys, modVals);
         
@@ -396,6 +427,7 @@
                     modKey.classList.remove("active");
                 }
             }
+
         }
         /*end tab of modification*/
 
