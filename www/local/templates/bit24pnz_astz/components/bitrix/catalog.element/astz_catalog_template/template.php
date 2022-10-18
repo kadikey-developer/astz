@@ -442,6 +442,11 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 						<div class="ff-dinpro fz-22 fw-700 mb-10">
 							<?=$name?>
 						</div>
+						<?if (!empty($actualItem['PROPERTIES']['NORMATIVNYY_DOKUMENT']['VALUE'])):?>
+							<div class="ff-dinpro fz-20 mb-25">
+								Нормативный документ:  <?=$actualItem['PROPERTIES']['NORMATIVNYY_DOKUMENT']['VALUE']?>
+							</div>
+						<?endif;?>
 						<?if (!empty($actualItem['PROPERTIES']['CML2_ARTICLE']['VALUE'])):?>
 						<div class="ff-dinpro fz-20 mb-25">
 							Код: <?=$actualItem['PROPERTIES']['CML2_ARTICLE']['VALUE']?>
@@ -1119,6 +1124,11 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 										18 => "TIP_APPARATA_ZASHCHITY",
 										19 => "TIP_NAPRYAZHENIYA",
 										20 => "CHASTOTA_TOKA_PITAYUSHCHEY_SETI_GTS",
+										21 => "TIP_NAPRYAZHENIYA",
+										22 => "CHASTOTA_TOKA_PITAYUSHCHEY_SETI_GT",
+										23 => "MOSHCHNOST_VT",
+										24 => "MOSHCHNOST_VT_1",
+										25 => "GARANTIYA_MES",	
 									),
 									'OPERATIONAL_CHARS' => array(
 										0 => "EX_MARKIROVKA_GAZ_",
@@ -1187,24 +1197,26 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 										14 => "SHIRINA_UPAKOVKI_M_EAN13",
 										15 => "SHIRINA_UPAKOVKI_M_ITF14",
 										16 => "EAN13",
-17 => "ITF14", // здесь начинаются свойства аксессуаров
-18 => "VES_BRUTTO_KG_EAN13",
-19 => "VES_BRUTTO_KG_ITF14",
-20 => "VES_NETTO_KG",
-21 => "VYSOTA_UPAKOVKA_M_EAN13",
-22 => "VYSOTA_UPAKOVKA_M_ITF14",
-23 => "VYSOTA_M",
-24 => "DLINA_TROSA_M",
-25 => "DLINA_UPAKOVKA_M_EAN13",
-26 => "DLINA_UPAKOVKA_M_ITF14",
-27 => "DLINA_M",
-28 => "KOLICHESTVO_V_KOMPLEKTE_SHT",
-29 => "KOLICHESTVO_V_UPAKOVKE_SHT",
-30 => "NEOBKHODIMOE_KOLICHESTVO",
-31 => "POGONNYY_METRAZH_M",
-32 => "SHIRINA_UPAKOVKA_M_EAN13",
-33 => "SHIRINA_UPAKOVKA_M_ITF14",
-34 => "SHIRINA_M",
+										17 => "ITF14", // здесь начинаются свойства аксессуаров
+										18 => "VES_BRUTTO_KG_EAN13",
+										19 => "VES_BRUTTO_KG_ITF14",
+										20 => "VES_NETTO_KG",
+										21 => "VYSOTA_UPAKOVKA_M_EAN13",
+										22 => "VYSOTA_UPAKOVKA_M_ITF14",
+										23 => "VYSOTA_M",
+										24 => "DLINA_TROSA_M",
+										25 => "DLINA_UPAKOVKA_M_EAN13",
+										26 => "DLINA_UPAKOVKA_M_ITF14",
+										27 => "DLINA_M",
+										28 => "KOLICHESTVO_V_KOMPLEKTE_SHT",
+										29 => "KOLICHESTVO_V_UPAKOVKE_SHT",
+										30 => "NEOBKHODIMOE_KOLICHESTVO",
+										31 => "POGONNYY_METRAZH_M",
+										32 => "SHIRINA_UPAKOVKA_M_EAN13",
+										33 => "SHIRINA_UPAKOVKA_M_ITF14",
+										34 => "SHIRINA_M",
+										35 => "GARANTIYA_MES",
+										36 => "GRUPPA",
 									),
 									'DIMENSIONS' => array(
 										0 => "P_GABARITY_VNESHNEGO_ISTOCHNIKA_PITANIYA",
@@ -1296,6 +1308,14 @@ $themeClass = isset($arParams['TEMPLATE_THEME']) ? ' bx-'.$arParams['TEMPLATE_TH
 										20 => "POTOK_IZLUCHENIYA_VT",
 										21 => "FOTOSINTETICHESKAYA_OTDACHA_AKTIVNAYA_MKMOL_DZH",
 										22 => "FOTOSINTETICHESKAYA_OTDACHA_MKMOL_DZH",
+										23 => "FOTOSINTETICHESKIY_FOTONNYY_POTOK_PPF_380_850_NM_M",
+										24 => "FOTOSINTETICHESKIY_FOTONNYY_POTOK_PPF_400_700_NM_M",
+										25 => "FOTOSINTETICHESKIY_FOTONNYY_POTOK_PPF_BLUE_MKMOL_S",
+										26 => "FOTOSINTETICHESKIY_FOTONNYY_POTOK_PPF_RED_MKMOL_S_",
+										27 => "FOTOSINTETICHESKIY_FOTONNYY_POTOK_PPF_FARRED_MKMOL",
+										28 => "FOTOSINTETICHESKIY_FOTONNYY_POTOK_PPF_AKTIVNYY_MKM",
+										29 => "SVETOVOY_POTOK_LM",
+
 									),
 								);
 								foreach ($arResult['DISPLAY_PROPERTIES'] as $property) {
