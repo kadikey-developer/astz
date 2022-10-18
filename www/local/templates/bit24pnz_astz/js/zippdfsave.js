@@ -5,7 +5,7 @@ function generatePDF(target, save) {
 	$('body').append('<div id="iframe" class="mx-40" style="font-size: 14px;"></div>');
 	var iframe = $('#iframe');
 	var element = $(target);
-	iframe.append('<div id="pdfHeader" class="d-flex justify-content-between border-bottom align-items-center p-10"></div>');
+	iframe.append('<div id="pdfHeader" class="d-flex justify-content-between border-bottom align-items-center fz-12 p-10"></div>');
 	header = iframe.find('#pdfHeader');
 	header.append('<div class="info fz-12">АО "Ардатовский<br>светотехнический завод"<br>Россия, 431890, Республика Мордовия, Ардатовский р-он, п. Тургенево<br>ул. Заводская, д. 73, тел/факс: 8 (83431) 21 356, 21 009<br><a href="www.astz.ru">www.astz.ru</a></div>');
 	header.append('<img src="/upload/medialibrary/fd7/ndg3uj59ir9bs1j4gcyehja8mp7di6z0.png" width="230px" class="img-fluid"/>');
@@ -16,8 +16,9 @@ function generatePDF(target, save) {
 	img.addClass('img-fluid');
 	iframe.find('.product-slider').replaceWith(img);
 	iframe.find('.removePDF').remove();
-	iframe.find('.fz-20').removeClass('fz-20').addClass('fz-14');
-	iframe.find('.fz-18').removeClass('fz-18').addClass('fz-14').parent().addClass('fz-12');
+	iframe.find('.fz-20').removeClass('fz-20').addClass('fz-12');
+	iframe.find('.fz-18').removeClass('fz-18').addClass('fz-12').parent().addClass('fz-12');
+	iframe.find('.fz-16').removeClass('fz-16').addClass('fz-12');
 	iframe.find('.pb-20').removeClass('pb-20');
 	iframe.find('.mb-40').removeClass('mb-40');
 	iframe.find('.mb-xl-80').removeClass('mb-xl-80');
