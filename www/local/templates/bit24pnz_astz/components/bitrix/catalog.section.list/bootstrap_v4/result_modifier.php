@@ -167,12 +167,15 @@ if ( !empty($arFilterSections) ) {
 use \Bitrix\Main\Loader;
 use \Bitrix\Highloadblock as HL;
 
+/**
+ * Получаем элемент с префиксом СЕРИЯ_ внутри ткужшего раздела
+ */
 $arSection = $arResult["SECTION"];
 $elements = array();
 $arFilter = array(
 	"IBLOCK_ID" => $arSection["IBLOCK_ID"],
 	"CODE" => "seriya%",
-	// "ACTIVE" => "Y",
+	// "ACTIVE" => "Y", // прищлось убрать, чтобы данные в иконки и другие выводимые свойства всегда подгружались, даже при неактивном элементе
 	"SECTION_ID" => $arResult["SECTION"]["ID"]
 );
 
@@ -181,9 +184,8 @@ $arElements = CIBlockElement::GetList( // получаем элементы Се
 	$arFilter,
 );
 if ($sElement = $arElements->GetNextElement()) {
-	/**
-	 * 
-	 */
+	$arResult["S_ELEMENT"] = $sElement->GetFields(); // получаем поля элемента
+	$arResult["S_ELEMENT"]["~NAME"] = preg_replace('/СЕРИЯ_/', '', $arResult["S_ELEMENT"]["~NAME"]); // отсекаем префикс
 	$arResult["S_PROPERTIES"] = $sElement->GetProperties(); // Получаем список свойств
 	foreach ( $arResult["S_PROPERTIES"] as $propCode => $arProp ) { // что было бы если бы через array_intersect_key()?
 		if ( in_array($propCode, $arParams['DETAIL_MAIN_BLOCK_PROPERTY_CODE']) && !empty($arProp["VALUE"]) ) { // Если установлено в детальной карточке отображать свойства в блоке справа от картинки

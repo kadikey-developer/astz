@@ -439,7 +439,7 @@ if (!$arResult['SECTIONS_COUNT']) {
 	
 				<div class="modification d-none d-lg-block">
 					<div class="modification__title">
-						<span><?=$arResult["SECTION"]["NAME"]?><?echo (!empty($arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["VALUE"]) ? "-".$arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["~VALUE"] : "");?></span>
+						<span><?=$arResult["S_ELEMENT"]["~NAME"]?><?echo (!empty($arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["VALUE"]) ? "-".$arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["~VALUE"] : "");?></span>
 						<?
 						$cifri = $arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["~VALUE"] . $arResult["S_PROPERTIES"]["PRIMER_VTORAYA_TSIFRA_ZAGOLOVOK"]["~VALUE"] . $arResult["S_PROPERTIES"]["PRIMER_TRETYA_TSIFRA_ZAGOLOVOK"]["~VALUE"];
 						if(!empty($cifri)) {
@@ -500,7 +500,7 @@ if (!$arResult['SECTIONS_COUNT']) {
 					</div>
 
 					<div class="d-flex align-items-center ff-dinpro fz-18 mb-15">
-						<?=$arResult["SECTION"]["NAME"]?><?echo (!empty($arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["VALUE"]) ? "-".$arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["~VALUE"] : "");?>
+						<?=$arResult["S_ELEMENT"]["~NAME"]?><?echo (!empty($arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["VALUE"]) ? "-".$arResult["S_PROPERTIES"]["PRIMER_MOSHCHNOST_ZAGOLOVOK"]["~VALUE"] : "");?>
 						<?if(!empty($cifri)) {
 							?>
 							-<a href="#mod-1" class="modification-mobile__hilight" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="mod-1" id="heading-mod-1">
