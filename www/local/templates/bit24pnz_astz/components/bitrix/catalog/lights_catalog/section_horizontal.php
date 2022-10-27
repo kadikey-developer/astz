@@ -527,15 +527,21 @@ if ($isFilter && $elementsCount):
 			$propertyLink = "PROPERTY_B_ANALOGI";
 			$elementswAccessories = CIBlockElement::GetList(Array(), Array("SECTION_ID" => $arCurSection, "!" . $propertyLink => false, "ACTIVE" => "Y"), false , false, Array($propertyLink));
 			global $accessoriesFilter;
-			$accessoriesFilter = array();
+			
 			while ($element = $elementswAccessories->GetNext()) {
 				if ( in_array($element[$propertyLink . "_VALUE"], $accessoriesFilter["XML_ID"]) )
 					continue;
 				$accessoriesFilter["XML_ID"][] = $element[$propertyLink . "_VALUE"];
 			}
-			$cntAccessories = count($accessoriesFilter["XML_ID"]);
+			if (is_array($accessoriesFilter["XML_ID"])) {
+				$cntAccessories = CIBlockElement::GetList(
+					array(),
+					array('XML_ID' => $accessoriesFilter["XML_ID"]),
+					array(),
+				);
+			}
 			?>
-			<?if($cntAccessories > 0):?>
+			<?if($cntAccessories):?>
 			<li class="nav-item">
 				<a
 					class="nav-link"
