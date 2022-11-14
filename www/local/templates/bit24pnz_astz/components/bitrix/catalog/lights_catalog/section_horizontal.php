@@ -435,7 +435,6 @@ if ($isFilter && $elementsCount):
 <div class="py-25 py-lg-60"></div>
 
 <?if ( $elementsCount ):?>
-
 <div class="container">
 	<div class="tabs">
 		<ul id="series-tabs" class="nav nav-tabs" role="tablist">
@@ -450,10 +449,10 @@ if ($isFilter && $elementsCount):
 					aria-selected="true"
 				>
 					Все модели
-					<span class="tabs__amount"><?=CIBlockElement::GetList(Array(), Array("SECTION_ID" => $arCurSection, "ACTIVE" => "Y"), Array());?></span>
+					<span class="tabs__amount"><?=CIBlockElement::GetList(Array(), Array("IBLOCK_ID" => $arParams["IBLOCK_ID"], "SECTION_ID" => $arCurSection, "ACTIVE" => "Y"), Array());?></span>
 				</a>
 			</li>
-			<?$baseTab = CIBlockElement::GetList(Array(), Array("SECTION_ID" => $arCurSection, "PROPERTY_MODEL_VALUE" => "Базовые модели", "ACTIVE" => "Y"), Array());?>
+			<?$baseTab = CIBlockElement::GetList(Array(), Array("IBLOCK_ID" => $arParams["IBLOCK_ID"], "SECTION_ID" => $arCurSection, "PROPERTY_MODEL_VALUE" => "Базовые модели", "ACTIVE" => "Y"), Array());?>
 			<?if($baseTab > 0):?>
 				<li class="nav-item">
 					<a
@@ -471,7 +470,7 @@ if ($isFilter && $elementsCount):
 					</a>
 				</li>
 			<?endif;?>
-			<?$drivenTab = CIBlockElement::GetList(Array(), Array("SECTION_ID" => $arCurSection, "PROPERTY_MODEL_VALUE" => "Управляемые", "ACTIVE" => "Y"), Array());?>
+			<?$drivenTab = CIBlockElement::GetList(Array(), Array("IBLOCK_ID" => $arParams["IBLOCK_ID"], "SECTION_ID" => $arCurSection, "PROPERTY_MODEL_VALUE" => "Управляемые", "ACTIVE" => "Y"), Array());?>
 			<?if($drivenTab > 0):?>
 				<li class="nav-item">
 					<a
@@ -489,7 +488,7 @@ if ($isFilter && $elementsCount):
 					</a>
 				</li>
 			<?endif;?>
-			<?$emergencyTab = CIBlockElement::GetList(Array(), Array("SECTION_ID" => $arCurSection, "PROPERTY_MODEL_VALUE" => "С блоком аварийного питания (БАП)", "ACTIVE" => "Y"), Array());?>
+			<?$emergencyTab = CIBlockElement::GetList(Array(), Array("IBLOCK_ID" => $arParams["IBLOCK_ID"], "SECTION_ID" => $arCurSection, "PROPERTY_MODEL_VALUE" => "С блоком аварийного питания (БАП)", "ACTIVE" => "Y"), Array());?>
 			<?if($emergencyTab > 0):?>
 				<li class="nav-item">
 					<a
@@ -506,7 +505,7 @@ if ($isFilter && $elementsCount):
 					</a>
 				</li>
 			<?endif;?>
-			<?$archivalTab = CIBlockElement::GetList(Array(), Array("SECTION_ID" => $arCurSection, "PROPERTY_MODEL_VALUE" => "Архивные", "ACTIVE" => "Y"), Array());?>
+			<?$archivalTab = CIBlockElement::GetList(Array(), Array("IBLOCK_ID" => $arParams["IBLOCK_ID"], "SECTION_ID" => $arCurSection, "PROPERTY_MODEL_VALUE" => "Архивные", "ACTIVE" => "Y"), Array());?>
 			<?if($archivalTab > 0):?>
 				<li class="nav-item">
 					<a
